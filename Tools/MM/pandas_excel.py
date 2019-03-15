@@ -6,7 +6,7 @@ import sys
 import pickle
 import pandas as pd
 
-df = pd.read_excel("E:\\Workspace\\PyCharm\\PythonExercise\\0Tools\\trace_data.xls")
+df = pd.read_excel("E:\\Workspace\\PyCharm\\PythonExercise\\Tools\\trace_data.xls")
 print(df)
 print(df.keys())
 

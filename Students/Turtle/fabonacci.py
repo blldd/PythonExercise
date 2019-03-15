@@ -1,3 +1,4 @@
+# -*- coding:UTF-8 -*-
 """
 def fibonacci(n):
     if n == 0:
@@ -19,8 +20,5 @@ def fab(max):
         a, b = b, a + b
         n = n + 1
 
-def test():
-    print(11111111111111111111111111111111)
-
-for i in fab(10000):
+for i in fab(10):
     print(i)
