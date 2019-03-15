@@ -3,7 +3,6 @@
 
 '''
 
-
 class Solution(object):
     def lastRemain(self, n, m):
         # write code here
@@ -60,13 +59,6 @@ class Solution(object):
     }
 '''
 if __name__ == '__main__':
-    nums = [1, 2, 4, 7, 0, 0]
-    # nums = []
-    target = "I am a student."
-    tar = "abcdefg"
-    matrix = ["a", "b", "c", "e", "s", "f", "c", "s", "a", "d", "e", "e"]
-    path = ["b", "c", "c", "e"]
-
     print(Solution().lastRemain(5, 3))
     print("^^^^^^^^^^^^^^^^^^^^^^")
     print(Solution().lastRemainFormula(5, 3))

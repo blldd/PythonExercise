@@ -9,6 +9,7 @@ class TreeNode:
         self.right = None
 
 
+# recursively
 def maxDepth(root):
     if root is None:
         return 0
@@ -17,12 +18,32 @@ def maxDepth(root):
     return max(left, right) + 1
 
 
+#
+def get_level_func(root):
+    a = []
+    b = []
+    a.append(root)
+    b.append(1)
+    while a:
+        head = a.pop(0)
+        p = b.pop(0)
+        if head.left:
+            a.append(head.left)
+            b.append(p + 1)
+        if head.right:
+            b.append(p + 1)
+            a.append(head.right)
+    return p
+
+
 def minDepth(root):
     if root is None:
         return 0
-    left = minDepth(root.left)
-    right = minDepth(root.right)
-    return min(left, right) + 1
+    leftDepth = minDepth(root.left)
+    rightDepth = minDepth(root.right)
+    if root.left is None or root.right is None:
+        return max(leftDepth, rightDepth) + 1
+    return min(leftDepth, rightDepth) + 1
 
 
 def numOfTreeNode(root):
@@ -52,17 +73,11 @@ def numsOfkLevelTreeNode(root, k):
 
 
 def isBalanced(root):
-    return maxDeath2(root) != -1
-
-
-def maxDeath2(root):
-    if root is None:
-        return 0
-    left = maxDeath2(root.left)
-    right = maxDeath2(root.right)
-    if (left == -1 or right == -1 or abs(left - right) > 1):
-        return -1
-    return max(left, right) + 1
+    if not root:
+        return False
+    left = maxDepth(root.left)
+    right = maxDepth(root.right)
+    return abs(left - right) <= 1
 
 
 def isCompleteTreeNode(root):
@@ -162,7 +177,7 @@ For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another exa
 """
 
 
-def lowestCommonAncestor(self, root, p, q):
+def lowestCommonAncestor_BST(root, p, q):
     """
     :type root: TreeNode
     :type p: TreeNode
@@ -172,35 +187,32 @@ def lowestCommonAncestor(self, root, p, q):
     if (p.val - root.val) * (q.val - root.val) <= 0:
         return root
     if p.val < root.val and q.val < root.val:
-        return self.lowestCommonAncestor(root.left, p, q)
+        return lowestCommonAncestor_BST(root.left, p, q)
     if p.val > root.val and q.val > root.val:
-        return self.lowestCommonAncestor(root.right, p, q)
+        return lowestCommonAncestor_BST(root.right, p, q)
 
+def lca(root, p, q):
+    if p is None or q is None:
+        return root
+    def dfs(node, visited, res):
+        if node is None:
+            return
+        path = visited + [node.val]
+        if node == p or node == q:
+            res.append(path)
+        dfs(node.left, path, res)
+        dfs(node.right, path, res)
+    res = []
+    visited = []
+    dfs(root, visited, res)
+    i = 0
+    for i in range(min(len(res[0]), len(res[1]))):
+        if res[0][i] == res[1][i]:
+            i += 1
+        else:
+            return res[0][i-1]
+    return res[0][i-1]
 
-# 广度优先遍历算法
-def level_queue(root):
-    if root is None:
-        return
-    my_queue = collections.deque()
-    node = root
-    my_queue.append(node)
-    while my_queue:
-        node = my_queue.popleft()
-        print(node.val)
-        if node.left is not None:
-            my_queue.append(node.left)
-        if node.right is not None:
-            my_queue.append(node.right)
-
-
-# 深度优先遍历算法
-def depth_tree(tree_node):
-    if tree_node is not None:
-        print(tree_node.val)
-        if tree_node.left is not None:
-            depth_tree(tree_node.left)
-        if tree_node.right is not None:
-            depth_tree(tree_node.right)
 
 
 """
@@ -254,7 +266,7 @@ def downAdjust(array, parentIndex, length):
 
 
 def buildHeap(array):
-    for i in range(len(array) / 2)[::-1]:
+    for i in range(int(len(array) / 2))[::-1]:
         downAdjust(array, i, len(array))
 
 
@@ -283,16 +295,46 @@ def downAdjustBig(array, parentIndex, length):
 
 def heapSort(array):
     # 1.构建二叉堆
-    for i in range(len(array) / 2)[::-1]:
+    for i in range(int(len(array) / 2))[::-1]:
         downAdjustBig(array, i, len(array))
     print(array)
 
     # 2.循环删除堆顶元素，移到集合尾部，调节堆产生新的堆顶
     for i in range(len(array))[::-1]:
-        temp = array[i]
-        array[i] = array[0]
-        array[0] = temp
+        array[i], array[0] = array[0], array[i]
         downAdjustBig(array, 0, i)
+    print(array)
+
+
+"""
+Traversal
+"""
+
+
+# 广度优先遍历算法
+def level_queue(root):
+    if root is None:
+        return
+    my_queue = collections.deque()
+    node = root
+    my_queue.append(node)
+    while my_queue:
+        node = my_queue.popleft()
+        print(node.val)
+        if node.left is not None:
+            my_queue.append(node.left)
+        if node.right is not None:
+            my_queue.append(node.right)
+
+
+# 深度优先遍历算法
+def depth_tree(tree_node):
+    if tree_node is not None:
+        print(tree_node.val)
+        if tree_node.left is not None:
+            depth_tree(tree_node.left)
+        if tree_node.right is not None:
+            depth_tree(tree_node.right)
 
 
 def inorderTraversal_recur(root):
@@ -328,12 +370,13 @@ def postorderTraversal_recur(root):  ##后序遍历
 """
 当前结点curr不为None时，每一次循环将当前结点curr入栈；
 当前结点curr为None时，则出栈一个结点，且打印出栈结点的value值。
-整个循环在stack和curr皆为None的时候结束。"""
+整个循环在stack和curr皆为None的时候结束。
+"""
 
 
-def inorderTraversal(self, root):
+def inorderTraversal(root):
     stack = []
-    sol = []
+    res = []
     curr = root
     while stack or curr:
         if curr:
@@ -341,9 +384,9 @@ def inorderTraversal(self, root):
             curr = curr.left
         else:
             curr = stack.pop()
-            sol.append(curr.val)
+            res.append(curr.val)
             curr = curr.right
-    return sol
+    return res
 
 
 """
@@ -354,18 +397,18 @@ def inorderTraversal(self, root):
 """
 
 
-def preorderTraversal(self, root):  ## 前序遍历
+def preorderTraversal(root):  ## 前序遍历
     stack = []
-    sol = []
+    res = []
     curr = root
     while stack or curr:
         if curr:
-            sol.append(curr.val)
+            res.append(curr.val)
             stack.append(curr.right)
             curr = curr.left
         else:
             curr = stack.pop()
-    return sol
+    return res
 
 
 """
@@ -374,18 +417,46 @@ def preorderTraversal(self, root):  ## 前序遍历
 """
 
 
-def postorderTraversal(self, root):  ## 后序遍历
+def postorderTraversal(root):  ## 后序遍历
     stack = []
-    sol = []
+    res = []
     curr = root
     while stack or curr:
         if curr:
-            sol.append(curr.val)
+            res.append(curr.val)
             stack.append(curr.left)
             curr = curr.right
         else:
             curr = stack.pop()
-    return sol[::-1]
+    return res[::-1]
+
+
+# 前序 中序 构建树
+def getTreePreMid(pre, mid):
+    if len(pre) == 0:
+        return None
+    if len(pre) == 1:
+        return TreeNode(pre[0])
+    root = TreeNode(pre[0])
+    root_index = mid.index(pre[0])
+    root.left = getTreePreMid(pre[1:root_index + 1], mid[:root_index])
+    root.right = getTreePreMid(pre[root_index + 1:], mid[root_index + 1:])
+    return root
+
+
+# 前序 中序 构建后序
+def getAfterFromPreMid(pre, mid, res):
+    if len(pre) == 0:
+        return
+    if len(pre) == 1:
+        res.append(pre[0])
+        return
+    root = pre[0]
+    root_index = mid.index(root)
+    getAfterFromPreMid(pre[1:root_index + 1], mid[:root_index], res)
+    getAfterFromPreMid(pre[root_index + 1:], mid[root_index + 1:], res)
+    res.append(root)
+    return res
 
 
 if __name__ == '__main__':
@@ -395,7 +466,7 @@ if __name__ == '__main__':
           1     3
          / \
         4   5
-       / \
+       / 
       6
      / \
     8   7
@@ -416,19 +487,21 @@ if __name__ == '__main__':
     c.left = e
     e.right = f
     e.left = g
+    # b.left = TreeNode(9)
 
     # print maxDepth(root)
+    # print get_level_func(root)
     # print minDepth(root)
     # print(numOfTreeNode(root))
     # print(numsOfNoChildNode(root))
-    # print(numsOfkLevelTreeNode(root, 4))
+    print(numsOfkLevelTreeNode(root, 3))
     # print(isBalanced(root))
     # print(maxDeath2(root))
     # print(isCompleteTreeNode(c))
     # print getLastCommonParent(root, a, b)
     print("##" * 20)
     # level_queue(root)
-    # print depth_tree(root)
+    print(depth_tree(root))
 
     array = [7, 1, 3, 10, 5, 2, 8, 9, 6]
     buildHeap(array)
@@ -440,5 +513,12 @@ if __name__ == '__main__':
     print(arr)
 
     print("--" * 20)
-    res = inorderTraversal(root)
+    res = preorderTraversal(root)
     print(res)
+
+    head = getTreePreMid([1, 2, 4, 5, 8, 9, 11, 3, 6, 7, 10], [4, 2, 8, 5, 11, 9, 1, 6, 3, 10, 7])
+    res = getAfterFromPreMid([1, 2, 4, 5, 8, 9, 11, 3, 6, 7, 10], [4, 2, 8, 5, 11, 9, 1, 6, 3, 10, 7], [])
+    print(res)
+    print("hello")
+
+    print(lca(root, a, b))

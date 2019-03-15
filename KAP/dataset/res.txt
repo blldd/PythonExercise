@@ -1,0 +1,8 @@
+E:\Workspace\PyCharm\KAP\dataset\spam_test.txt 行数：1000 字符数：2374391
+E:\Workspace\PyCharm\KAP\dataset\spam_train.txt 行数：5000 字符数：10304828
+E:\Workspace\PyCharm\KAP\dataset\res.txt 行数：2 字符数：162
+E:\Workspace\PyCharm\KAP\dataset\spam_test.txt 行数：1000 字符数：2374391
+E:\Workspace\PyCharm\KAP\dataset\spam_train.txt 行数：5000 字符数：10304828
+E:\Workspace\PyCharm\KAP\dataset\res.txt 行数：5 字符数：391
+E:\Workspace\PyCharm\KAP\dataset\spam_test.txt 行数：1000 字符数：2374391
+E:\Workspace\PyCharm\KAP\dataset\spam_train.txt 行数：5000 字符数：10304828

@@ -20,7 +20,7 @@ class Solution(object):
         for i in range(rows):
             for j in range(cols):
                 if matrix[i * cols + j] == path[0]:
-                    if self.find(list(matrix), rows, cols, path[1:], i, j):
+                    if self.find(matrix, rows, cols, path[1:], i, j):
                         return True
         return False
 

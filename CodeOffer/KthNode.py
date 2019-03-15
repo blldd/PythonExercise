@@ -39,10 +39,10 @@ class Solution:
 
 
 if __name__ == '__main__':
-    pHead = TreeNode(0)
-    pHead.left = TreeNode(1)
-    pHead.right = TreeNode(2)
-    pHead.left.left = TreeNode(3)
+    pHead = TreeNode(3)
+    pHead.left = TreeNode(2)
+    pHead.right = TreeNode(5)
+    pHead.left.left = TreeNode(1)
     pHead.right.left = TreeNode(4)
-    print(Solution().Print(pHead))
+    print(Solution().KthNode(pHead, 4).val)
     pass

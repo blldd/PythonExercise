@@ -15,12 +15,15 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
 
 '''
+
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
 
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
@@ -39,15 +42,16 @@ class Solution(object):
             if node is None:
                 return
 
-            visited_ = visited + [node]
+            path = visited + [node.val]
             if node == p or node == q:
-                res.append(visited_)
+                res.append(path)
 
-            dfs(node.left, visited_, res)
-            dfs(node.right, visited_, res)
+            dfs(node.left, path, res)
+            dfs(node.right, path, res)
 
         res = []
         dfs(root, [], res)
+        # print(res)
 
         i = 0
         for idx in range(min(len(res[0]), len(res[1]))):
@@ -63,7 +67,7 @@ class Solution(object):
         lastVisit = None
         while stack or root:
             # for x in stack:
-                # print(x.val,)
+            # print(x.val,)
             if root:
                 stack.append(root)
                 root = root.left
@@ -77,6 +81,7 @@ class Solution(object):
                     lastVisit = stack.pop()
                     root = None
         return stack
+
 
 if __name__ == '__main__':
     root = TreeNode(0)
@@ -94,5 +99,6 @@ if __name__ == '__main__':
     c.left = e
     e.right = f
 
-    for x in Solution().findPath(a, d):
-        print(x.val)
+    print(Solution().lowestCommonAncestor(root, a, d))
+    # for x in Solution().findPath(a, d):
+    #     print(x.val)

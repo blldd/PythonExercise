@@ -41,9 +41,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    arr = [2, 3, 1, 0, 2, 5, 3]
     A = [1, 2, 3, 4, 5]
-    dups = [0]
     print(Solution().multiply1(A))
     # print(dups)
     # print(arr)

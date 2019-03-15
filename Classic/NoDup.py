@@ -4,7 +4,6 @@
 找到数组中第一个不重复出现的整数 python
 """
 
-
 # 组中不重复的数只有一个，初始值为0，然后直接遍历数组，让每个值与初始值进行异或，得出的最终值就是要找的结果：
 import collections
 
@@ -34,7 +33,7 @@ def findNoDupMany(data):
 
 
 # 找到第一个重复的数字
-def findFirstDup(self, numbers, duplication):
+def findFirstDup(numbers, duplication):
     # write code here
     numbers_set = set()
     for i in numbers:
@@ -55,12 +54,28 @@ def findFirstNoDupMany(data):
             Map[data[i]] += 1
         else:
             Map[data[i]] = 1
+    print Map
     for key in Map:
         if Map[key] == 1:
             single = key
             break
     return single
 
+
+list = [2, 3, 3, 1, 0, 2, 5, 3]
+
+
+def nodup(list):
+    for ind, i in enumerate(list):
+        tmp = list[ind + 1:]
+        for ind_j, j in enumerate(tmp):
+            if i == j:
+                break
+        if ind_j == len(tmp) - 1 and i != j:
+            return i
+
+
+# print(nodup(list))
 
 data = [-10, -1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]
 print(findFirstNoDupMany(data))

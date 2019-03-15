@@ -9,11 +9,11 @@ class Solution:
     def Add(self, num1, num2):
         # write code here
         while num2 != 0:
-            tmp = num1 ^ num2
-            num2 = (num1 & num2) << 1
-            num1 = tmp
+            sum_2 = num1 ^ num2
+            carry = (num1 & num2) << 1
+            num1 = sum_2
+            num2 = carry
         return num1
-
 
 if __name__ == '__main__':
     num1 = 5
