@@ -1,0 +1,43 @@
+1.
+2.   class MedianFinder {
+3.  
+4.   private:
+5.       priority_queue<int,vector<int>, greater<int> > maxHeap;
+6.       priority_queue<int> minHeap;
+7.  
+8.   public:
+9.  
+10.      // Adds a number into the data structure.
+11.      void addNum(int num) {
+12.           if(minHeap.empty() || num <= minHeap.top()){
+13.               if(minHeap.size() > maxHeap.size()){
+14.                   maxHeap.push(minHeap.top());
+15.                   minHeap.pop();
+16.               }
+17.               minHeap.push(num);
+18.           }
+19.           else if(maxHeap.empty() || num > maxHeap.top()){
+20.               if(maxHeap.size() > minHeap.size()){
+21.                   minHeap.push(maxHeap.top());
+22.                   maxHeap.pop();
+23.               }
+24.               maxHeap.push(num);
+25.           }
+26.           else{
+27.               if(maxHeap.size() >= minHeap.size()) minHeap.push(num);
+28.               else if(minHeap.size() > maxHeap.size()) maxHeap.push(num);
+29.           }
+30.      }
+31.  
+32.      // Returns the median of current data stream
+33.      double findMedian() {
+34.          if(minHeap.size() == maxHeap.size()) return (double) (minHeap.top() + maxHeap.top()) / 2.0;
+35.          else if(minHeap.size() > maxHeap.size()) return (double) minHeap.top();
+36.          else return (double) maxHeap.top();
+37.      }
+38.  };
+39.  
+40.  // Your MedianFinder object will be instantiated and called as such:
+41.  // MedianFinder mf;
+42.  // mf.addNum(1);
+43.  // mf.findMedian();
