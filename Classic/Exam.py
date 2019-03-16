@@ -7,7 +7,7 @@ import sys
 
 
 if __name__ == "__main__":
-
+    pass
     # # 读取第一行的n
     # n = int(sys.stdin.readline().strip())
     # ans = 0

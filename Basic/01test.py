@@ -35,56 +35,56 @@
 #         print("%.2f" % new_arr[0])
 
 # -*- coding:UTF-8 -*-
-
-import sys
-
-if __name__ == "__main__":
-    line = sys.stdin.readline().strip()
-    n = int(line)
-
-    result = []
-    for i in range(n):
-        line = sys.stdin.readline().strip()
-        last = ""
-        cnt = 1
-        idx_arr = set()
-        arr2 = []
-        for idx, i in enumerate(line):
-            if i != last:
-                if cnt == 2:
-                    arr2.append(idx - 1)
-                cnt = 1
-            if i == last:
-                cnt += 1
-
-            if cnt >= 3:
-                idx_arr.add(idx)
-            last = i
-        if cnt == 2:
-            arr2.append(idx)
-        rmset = set()
-
-        if len(arr2) > 1:
-            last = arr2[0]
-            last_add = -1
-            for i in arr2[1:]:
-                if i - last_add > 2 and i - last == 2:
-                    rmset.add(i)
-                    last_add = i
-                last = i
-        res = ""
-        for idx, i in enumerate(line):
-            if idx in rmset:
-                continue
-            if idx in idx_arr:
-                continue
-            res += i
-        result.append(res)
-
-    for i in result:
-        print(i)
-
-
+#
+# import sys
+#
+# if __name__ == "__main__":
+#     line = sys.stdin.readline().strip()
+#     n = int(line)
+#
+#     result = []
+#     for i in range(n):
+#         line = sys.stdin.readline().strip()
+#         last = ""
+#         cnt = 1
+#         idx_arr = set()
+#         arr2 = []
+#         for idx, i in enumerate(line):
+#             if i != last:
+#                 if cnt == 2:
+#                     arr2.append(idx - 1)
+#                 cnt = 1
+#             if i == last:
+#                 cnt += 1
+#
+#             if cnt >= 3:
+#                 idx_arr.add(idx)
+#             last = i
+#         if cnt == 2:
+#             arr2.append(idx)
+#         rmset = set()
+#
+#         if len(arr2) > 1:
+#             last = arr2[0]
+#             last_add = -1
+#             for i in arr2[1:]:
+#                 if i - last_add > 2 and i - last == 2:
+#                     rmset.add(i)
+#                     last_add = i
+#                 last = i
+#         res = ""
+#         for idx, i in enumerate(line):
+#             if idx in rmset:
+#                 continue
+#             if idx in idx_arr:
+#                 continue
+#             res += i
+#         result.append(res)
+#
+#     for i in result:
+#         print(i)
+#
+#
 
 # import sys
 #

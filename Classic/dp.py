@@ -77,11 +77,34 @@ def lis3(s):
     dp[0] = 0
 
 
+def maxProductAfterCutting(n):
+    """
+    剪绳子, 求乘积最大
+    :param n:
+    :return:
+    """
+    if n < 2:
+        return 0
+    if n == 2:
+        return 1
+    max_list = [0, 1, 2]
+    for i in range(3, n+1):
+        if i < n:
+            m = i
+        else:
+            m = 0
+        for j in range(1, i//2 + 1):
+            tmp = max_list[j] * max_list[i-j]
+            m = max(m, tmp)
 
+        max_list.append(m)
+    print(max_list)
+    return max_list[n]
 
 if __name__ == '__main__':
     s = "google"
     # print(palindrome_seq(s))
     s = [5, 2, 1, 4, 6, 9, 7, 8]
-    lis(s)
-    print(lis2(s))
+    # lis(s)
+    # print(lis2(s))
+    print(maxProductAfterCutting(16))

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0zuo_training/class1/k_min_num.py" beforeDir="false" afterPath="$PROJECT_DIR$/0zuo_training/class1/k_min_num.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0zuo_training/class5/coin_ways.py" beforeDir="false" afterPath="$PROJECT_DIR$/0zuo_training/class5/coin_ways.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/01test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/01test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classic/Exam.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/Exam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classic/dp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/dp.py" afterDir="false" />
@@ -36,7 +34,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$19SingleNum.coverage" NAME="19SingleNum Coverage Results" MODIFIED="1524034856714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonExercise$multithread.coverage" NAME="multithread Coverage Results" MODIFIED="1539238824972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multiprocess" />
     <SUITE FILE_PATH="coverage/PythonTools$BubbleSort.coverage" NAME="BubbleSort Coverage Results" MODIFIED="1531794752015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xiaohui" />
-    <SUITE FILE_PATH="coverage/PythonExercise$dp.coverage" NAME="dp Coverage Results" MODIFIED="1552658693292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$dp.coverage" NAME="dp Coverage Results" MODIFIED="1552751360223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$study_time.coverage" NAME="study_time Coverage Results" MODIFIED="1550582675788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0zuo_training" />
     <SUITE FILE_PATH="coverage/PythonTools$plotAccuCurve__1_.coverage" NAME="plotAccuCurve (1) Coverage Results" MODIFIED="1523583666522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plot" />
     <SUITE FILE_PATH="coverage/PythonExercise$printMatrix.coverage" NAME="printMatrix Coverage Results" MODIFIED="1551963823849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
@@ -240,14 +238,14 @@
         <counts>
           <entry key="dummy" value="51" />
           <entry key="gitignore" value="3" />
-          <entry key="py" value="34138" />
+          <entry key="py" value="34410" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="79" />
-          <entry key="Python" value="34130" />
+          <entry key="Python" value="34402" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -287,35 +285,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basic/01test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="247">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding>
-                <marker date="1552736246386" expanded="true" signature="1007:1008" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Classic/Exam.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1552750835283" expanded="true" signature="1011:1012" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classic/Exam.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1552748827583" expanded="true" signature="8671:8730" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classic/dp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="370">
+              <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
               <folding>
-                <marker date="1552660473264" expanded="true" signature="46:1181" ph="..." />
-                <marker date="1552660473264" expanded="true" signature="1553:1874" ph="..." />
+                <marker date="1552751360215" expanded="true" signature="46:1181" ph="..." />
+                <marker date="1552751360215" expanded="true" signature="1553:2270" ph="..." />
+                <marker date="1552751360215" expanded="true" signature="1902:2270" ph="..." />
               </folding>
             </state>
           </provider>
@@ -423,11 +423,11 @@
         <option value="$PROJECT_DIR$/fund/1twist_data.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/KAP/Turtle/fabonacci.py" />
-        <option value="$PROJECT_DIR$/Classic/dp.py" />
         <option value="$PROJECT_DIR$/0zuo_training/class1/k_min_num.py" />
         <option value="$PROJECT_DIR$/0zuo_training/class5/coin_ways.py" />
-        <option value="$PROJECT_DIR$/Basic/01test.py" />
         <option value="$PROJECT_DIR$/Classic/Exam.py" />
+        <option value="$PROJECT_DIR$/Basic/01test.py" />
+        <option value="$PROJECT_DIR$/Classic/dp.py" />
       </list>
     </option>
   </component>
@@ -446,7 +446,57 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
+              <item name="0zuo_training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
+              <item name="0zuo_training" type="462c0819:PsiDirectoryNode" />
+              <item name="class1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
+              <item name="0zuo_training" type="462c0819:PsiDirectoryNode" />
+              <item name="class2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
+              <item name="0zuo_training" type="462c0819:PsiDirectoryNode" />
+              <item name="class5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
+              <item name="Basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
+              <item name="Classic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="pdf&#9;null&#9;null&#10;tree&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Tree.py&#10;tes&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/01test.py&#10;rotatea&#9;null&#9;null&#10;rotate&#9;null&#9;null&#10;threes&#9;null&#9;null&#10;permuta&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Permutation.py&#10;lengthOfLongestSubstring&#9;null&#9;null&#10;sum&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1sumN.py&#10;mu&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/multiply.py&#10;lowe&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/LeetCode/40LowestCommenAncestor.py&#10;low&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/KAP/venv/Lib/site-packages/sklearn/manifold/locally_linear.py&#10;jose&#9;null&#9;null&#10;init&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/0Tools/__init__.py&#10;ini&#9;FILE&#9;file:///Users/ddlee/anaconda3/envs/py3/lib/python3.6/site-packages/nltk/corpus/__init__.py&#10;pop&#9;null&#9;null&#10;min&#9;null&#9;null&#10;rev&#9;null&#9;null&#10;reverse&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/sort_by_leetcode/linked_list/easy/206. Reverse Linked List.py&#10;rever&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1Reverse.py&#10;fib&#9;null&#9;null&#10;te&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/1103/test.py&#10;test.t&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/test.txt&#10;path&#9;null&#9;null" />
@@ -482,7 +532,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Exam">
+  <component name="RunManager" selected="Python.dp">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -595,6 +645,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="dp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonExercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/dp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="k_min_num" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -609,28 +681,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0zuo_training/class1/k_min_num.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="money_ways" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonExercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0zuo_training/class1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0zuo_training/class1/money_ways.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -733,19 +783,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.money_ways" />
       <item itemvalue="Python.k_min_num" />
       <item itemvalue="Python.coin_ways" />
       <item itemvalue="Python.01test" />
       <item itemvalue="Python.Exam" />
+      <item itemvalue="Python.dp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dp" />
         <item itemvalue="Python.Exam" />
         <item itemvalue="Python.01test" />
         <item itemvalue="Python.coin_ways" />
         <item itemvalue="Python.k_min_num" />
-        <item itemvalue="Python.money_ways" />
       </list>
     </recent_temporary>
   </component>
@@ -799,9 +849,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18955651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18955651" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -813,7 +862,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5164521" side_tool="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.16385542" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.13493976" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.12650603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1364,7 +1413,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Classic/Exam.py</url>
-          <line>89</line>
+          <line>86</line>
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1678,8 +1727,8 @@
         <state relative-caret-position="760">
           <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
           <folding>
-            <marker date="1552660947011" expanded="true" signature="291:1578" ph="..." />
-            <marker date="1552660947011" expanded="true" signature="570:1578" ph="..." />
+            <marker date="1552748787637" expanded="true" signature="291:1578" ph="..." />
+            <marker date="1552748787637" expanded="true" signature="570:1578" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1698,27 +1747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/01test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <marker date="1552736246386" expanded="true" signature="1007:1008" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/dp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <marker date="1552660473264" expanded="true" signature="46:1181" ph="..." />
-            <marker date="1552660473264" expanded="true" signature="1553:1874" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-532037006/itertools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-567">
@@ -1728,10 +1756,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classic/Exam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="404">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <marker date="1552748827583" expanded="true" signature="8671:8730" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/01test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <marker date="1552750835283" expanded="true" signature="1011:1012" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classic/dp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+          <folding>
+            <marker date="1552751360215" expanded="true" signature="46:1181" ph="..." />
+            <marker date="1552751360215" expanded="true" signature="1553:2270" ph="..." />
+            <marker date="1552751360215" expanded="true" signature="1902:2270" ph="..." />
           </folding>
         </state>
       </provider>
