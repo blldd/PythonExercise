@@ -25,6 +25,12 @@ def process(arr, index, target):
 
 
 def coin_dp_compress(arr, target):
+    """
+    给定一个正数数组arr，arr[i]表示第i种货币的面值，可以使用任意张。
+    给定一个正 target，返回组成aim的方法数有多少种?
+    动态规划优化状态依赖的技巧
+    :return:
+    """
     if len(arr) < 1 or target < 0:
         return 0
 

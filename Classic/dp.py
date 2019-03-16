@@ -61,6 +61,23 @@ def lis2(s):
                 dp[j] = max(dp[i] + 1, dp[j])
     return dp
 
+def lis3(s):
+    """
+    将原来的dp数组的存储由 数值 换成 该序列中，上升子序列长度为i的上升子序列，的最小末尾数值
+    这其实就是一种几近贪心的思想：
+    我们当前的上升子序列长度如果已经确定，那么如果这种长度的子序列的结尾元素越小，
+    后面的元素就可以更方便地加入到这条我们臆测的、可作为结果、的上升子序列中。
+    :param s:
+    :return:
+    """
+    length = len(s)
+    if length < 2:
+        return length
+    dp = [1 for i in range(length + 1)]
+    dp[0] = 0
+
+
+
 
 if __name__ == '__main__':
     s = "google"

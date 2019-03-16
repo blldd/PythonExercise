@@ -1,54 +1,25 @@
 import collections
 import sys
 import numpy as np
+import itertools as it
 
-#coding=utf-8
-# 本题为考试单行多行输入输出规范示例，无需提交，不计分。
 import sys
-for line in sys.stdin:
-    a = line.split()
-    print(int(a[0]) + int(a[1]))
-#coding=utf-8
-# 本题为考试多行输入输出规范示例，无需提交，不计分。
-import sys
+
+
 if __name__ == "__main__":
-    # 读取第一行的n
-    n = int(sys.stdin.readline().strip())
-    ans = 0
-    for i in range(n):
-        # 读取每一行
-        line = sys.stdin.readline().strip()
-        # 把每一行的数字分隔后转化成int列表
-        values = list(map(int, line.split()))
-        for v in values:
-            ans += v
-    print(ans)
 
-try:
-    while True:
-        result = []
-        line = sys.stdin.readline().strip()
-        if line == '':
-            break
-        lines = line.split()
+    # # 读取第一行的n
+    # n = int(sys.stdin.readline().strip())
+    # ans = 0
+    # for i in range(n):
+    #     # 读取每一行
+    #     line = sys.stdin.readline().strip()
+    #     # 把每一行的数字分隔后转化成int列表
+    #     values = list(map(int, line.split()))
+    #     for v in values:
+    #         ans += v
+    # print(ans)
 
-        for i in lines:
-            count = 0
-            if len(i) < 1 or len(i) > 100:
-                print("error")
-
-            length_str = len(i)
-            for j in i:
-                if j in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
-                    count += 1
-
-            if count != length_str:
-                print("error")
-
-            result.append(int(i))
-        print(result[0] + result[1])
-except:
-    pass
 
 """
 堆排序
@@ -373,12 +344,17 @@ def _levenshtein_distance(input_x, input_y):
 """
 permutation
 """
-def str_sort(s=''):
+
+def perm_arr(arr):
+    perm = it.permutations(arr, 3)
+    return list(perm)
+
+def perm_str(s=''):
     if len(s) <= 1:
         return [s]
     str_list = []
     for i in range(len(s)):
-        for j in str_sort(s[0:i] + s[i + 1:]):
+        for j in perm_str(s[0:i] + s[i + 1:]):
             str_list.append(s[i] + j)
     return str_list
 

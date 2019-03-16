@@ -4,6 +4,121 @@
 #
 # if __name__ == "__main__":
 #     line = sys.stdin.readline().strip()
+#     line = list(map(int, line.split()))
+#     M, N = line[0], line[1]
+#
+#     if M < 1 or M > 100000 or N < 1 or N > 100000:
+#         print("error")
+#     line = sys.stdin.readline().strip()
+#     line = list(map(float, line.split()))
+#
+#     res = 0.0
+#     if N <= M:
+#         line = sorted(line)
+#         m = -sys.maxsize
+#         while line[-1] / 2 > line[0]:
+#             tmp = line.pop() / 2
+#             line.append(tmp)
+#             line.append(tmp)
+#             line = sorted(line)
+#             m = max(m, line[-N])
+#         print("%.2f" % m)
+#     else:
+#         line = sorted(line)
+#         l = N - M
+#         tmp_arr = line[-l:]
+#         new_arr = line[:M]
+#         for i in tmp_arr:
+#             new_arr.append(i / 2)
+#             new_arr.append(i / 2)
+#         new_arr = sorted(new_arr)
+#         print("%.2f" % new_arr[0])
+
+# -*- coding:UTF-8 -*-
+
+import sys
+
+if __name__ == "__main__":
+    line = sys.stdin.readline().strip()
+    n = int(line)
+
+    result = []
+    for i in range(n):
+        line = sys.stdin.readline().strip()
+        last = ""
+        cnt = 1
+        idx_arr = set()
+        arr2 = []
+        for idx, i in enumerate(line):
+            if i != last:
+                if cnt == 2:
+                    arr2.append(idx - 1)
+                cnt = 1
+            if i == last:
+                cnt += 1
+
+            if cnt >= 3:
+                idx_arr.add(idx)
+            last = i
+        if cnt == 2:
+            arr2.append(idx)
+        rmset = set()
+
+        if len(arr2) > 1:
+            last = arr2[0]
+            last_add = -1
+            for i in arr2[1:]:
+                if i - last_add > 2 and i - last == 2:
+                    rmset.add(i)
+                    last_add = i
+                last = i
+        res = ""
+        for idx, i in enumerate(line):
+            if idx in rmset:
+                continue
+            if idx in idx_arr:
+                continue
+            res += i
+        result.append(res)
+
+    for i in result:
+        print(i)
+
+
+
+# import sys
+#
+# if __name__ == "__main__":
+#     line = sys.stdin.readline().strip()
+#     cost = int(line)
+#     if cost <= 0 or cost > 1024:
+#         print("error")
+#
+#     money = 1024
+#     coins = [1, 4, 16, 64]
+#
+#     target = money - cost
+#     # print(target)
+#     dp = [0 for i in range(target + 1)]
+#     for i in range(1, target + 1):
+#         c = sys.maxsize
+#         if i - 1 >= 0:
+#             c = min(c, dp[i-1] + 1)
+#         if i - 4 >= 0:
+#             c = min(c, dp[i-4] + 1)
+#         if i - 16 >= 0:
+#             c = min(c, dp[i - 16] + 1)
+#         if i - 64 >= 0:
+#             c = min(c, dp[i-64] + 1)
+#         dp[i] = c
+#     print(dp[-1])
+
+# # -*- coding:UTF-8 -*-
+#
+# import sys
+#
+# if __name__ == "__main__":
+#     line = sys.stdin.readline().strip()
 #     n = int(line)
 #     if n < 1 or n > 100000:
 #         print("error")
@@ -105,25 +220,25 @@
 
 # # -*- coding:UTF-8 -*-
 #
-import sys
-from queue import Queue
-
-
-if __name__ == "__main__":
-    line = sys.stdin.readline().strip()
-    n = int(line)
-    if n < 1 or n > 1000000:
-        print("error")
-    res = []
-    q = Queue()
-    for i in range(1, n+1):
-        q.put(i)
-
-    while not q.empty():
-        res.append(str(q.get()))
-        if not q.empty():
-            q.put(q.get())
-    print(" ".join(res))
+# import sys
+# from queue import Queue
+#
+#
+# if __name__ == "__main__":
+#     line = sys.stdin.readline().strip()
+#     n = int(line)
+#     if n < 1 or n > 1000000:
+#         print("error")
+#     res = []
+#     q = Queue()
+#     for i in range(1, n+1):
+#         q.put(i)
+#
+#     while not q.empty():
+#         res.append(str(q.get()))
+#         if not q.empty():
+#             q.put(q.get())
+#     print(" ".join(res))
 
 # # -*- coding:UTF-8 -*-
 #
@@ -169,6 +284,7 @@ if __name__ == "__main__":
 # if __name__ == "__main__":
 #     # try:
 #     #     while True:
+#     print(perm("123"))
 #     ans = 0
 #     line1 = sys.stdin.readline().strip()
 #
