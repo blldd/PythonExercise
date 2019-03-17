@@ -20,7 +20,7 @@ def most_eor(arr):
             pre = map[xor]
             mosts[i] = 1 if pre == -1 else (mosts[pre] + 1)
         if i > 0:
-            mosts[i] = max(mosts[i-1], mosts[i])
+            mosts[i] = max(mosts[i - 1], mosts[i])
         map[xor] = i
         ans = max(ans, mosts[i])
     return ans

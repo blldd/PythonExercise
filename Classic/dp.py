@@ -1,4 +1,21 @@
 # -*- coding:UTF-8 -*-
+"""
+动态规划：
+- 自底向上
+就是已经知道了所有递归边界，把所有可能的状态都算出来。
+从初始已知的状态出发，向外拓展，最后到达目标状态。
+
+- 自顶向下（“记忆化搜索”）
+从最终状态开始，找到可以到达当前状态的状态，如果该状态还没处理，就先处理该状态。
+自顶向下通常使用递归实现
+
+-总结
+自顶向下，自底向上，只是动态规划实现的套路而已。复杂度并没有多大的变化。
+事实上大多时候用自顶向下复杂度会更低，因为可以过滤掉更多无用的状态；
+不过自底向上可以避免爆栈问题，而且实现往往实现更为简单。
+"""
+import sys
+
 
 def palindrome_seq(s):
     """
@@ -147,14 +164,14 @@ def penguin_merge(arr):
         l = 0
         r = length - 1
         while r > 0:
-            if arr[r-1] > 1:
-                ans += arr[r] * arr[r-1]
+            if arr[r - 1] > 1:
+                ans += arr[r] * arr[r - 1]
                 r -= 2
             else:
                 break
         while l < r:
-            if arr[l+1] <= 0:
-                ans += arr[l] * arr[l+1]
+            if arr[l + 1] <= 0:
+                ans += arr[l] * arr[l + 1]
                 l += 2
             else:
                 break
@@ -164,6 +181,98 @@ def penguin_merge(arr):
     return ans
 
 
+def most_eor(arr):
+    """
+	给出n个数字 a_1,...,a_n，问最多有多少不重叠的非空区间，使得每个区间内数字的 xor都等于0。
+    :param arr:
+    :return:
+    """
+    ans = 0
+    xor = 0
+    length = len(arr)
+
+    mosts = [0 for i in range(length)]
+    map = {}
+    map[0] = -1
+
+    for i in range(length):
+        xor ^= arr[i]
+        if xor in map:
+            pre = map[xor]                                      # 找到那个开头位置
+            mosts[i] = 1 if pre == -1 else (mosts[pre] + 1)     # 开头位置的最大值 + 1
+        if i > 0:
+            mosts[i] = max(mosts[i - 1], mosts[i])   # 只依赖前i-1 和 i 两种情况
+
+        map[xor] = i
+        ans = max(ans, mosts[i])
+    return ans
+
+
+def coins_combine(target):
+    if target <= 0 or target > 1024:
+        raise ValueError
+
+    dp = [0 for i in range(target + 1)]
+    for i in range(1, target + 1):
+        c = sys.maxsize
+        if i - 1 >= 0:
+            c = min(c, dp[i - 1] + 1)
+        if i - 4 >= 0:
+            c = min(c, dp[i - 4] + 1)
+        if i - 16 >= 0:
+            c = min(c, dp[i - 16] + 1)
+        if i - 64 >= 0:
+            c = min(c, dp[i - 64] + 1)
+        dp[i] = c
+    return dp[-1]
+
+
+def coin(arr, target):
+    """
+    给定一个正数数组arr，arr[i]表示第i种货币的面值，可以使用任意张。
+    给定一个正 target，返回组成aim的方法数有多少种?
+    动态规划优化状态依赖的技巧
+    :return:
+    """
+    if len(arr) < 1 or target < 0:
+        return 0
+    return process(arr, 0, target)
+
+
+def process(arr, index, target):
+    res = 0
+    if index == len(arr):
+        res = 1 if target == 0 else 0
+    else:
+        i = 0
+        while arr[index] * i <= target:
+            res += process(arr, index + 1, target - arr[index] * i)
+            i += 1
+    return res
+
+
+def coin_dp_compress(arr, target):
+    """
+    给定一个正数数组arr，arr[i]表示第i种货币的面值，可以使用任意张。
+    给定一个正 target，返回组成aim的方法数有多少种?
+    动态规划优化状态依赖的技巧
+    :return:
+    """
+    if len(arr) < 1 or target < 0:
+        return 0
+
+    dp = [0 for i in range(target + 1)]
+    j = 0
+    while arr[0] * j <= target:
+        dp[arr[0] * j] = 1
+        j += 1
+
+    for i in range(1, len(arr)):
+        for j in range(1, target + 1):
+            dp[j] += dp[j - arr[i]] if j - arr[i] >= 0 else 0
+
+    print(dp)
+    return dp[target]
 
 
 if __name__ == '__main__':
@@ -174,4 +283,8 @@ if __name__ == '__main__':
     # print(lis2(s))
     # print(maxProductAfterCutting(16))
     s = [-5, -3, 0, 1, 3, 5]
-    print(penguin_merge(s))
+    # print(penguin_merge(s))
+
+    # print(coins_combine(15))
+    print(coin([1,5,10], 27))
+    print(coin_dp_compress([1,5,10], 27))
