@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/01test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/01test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classic/Exam.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/Exam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classic/dp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/dp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +32,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$19SingleNum.coverage" NAME="19SingleNum Coverage Results" MODIFIED="1524034856714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonExercise$multithread.coverage" NAME="multithread Coverage Results" MODIFIED="1539238824972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multiprocess" />
     <SUITE FILE_PATH="coverage/PythonTools$BubbleSort.coverage" NAME="BubbleSort Coverage Results" MODIFIED="1531794752015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xiaohui" />
-    <SUITE FILE_PATH="coverage/PythonExercise$dp.coverage" NAME="dp Coverage Results" MODIFIED="1552751360223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$dp.coverage" NAME="dp Coverage Results" MODIFIED="1552787645311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$study_time.coverage" NAME="study_time Coverage Results" MODIFIED="1550582675788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0zuo_training" />
     <SUITE FILE_PATH="coverage/PythonTools$plotAccuCurve__1_.coverage" NAME="plotAccuCurve (1) Coverage Results" MODIFIED="1523583666522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plot" />
     <SUITE FILE_PATH="coverage/PythonExercise$printMatrix.coverage" NAME="printMatrix Coverage Results" MODIFIED="1551963823849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
@@ -217,7 +215,7 @@
     <session id="1206640456">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="67" />
+          <entry key="project.closed" value="68" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="35" />
           <entry key="project.open.time.10" value="2" />
@@ -225,27 +223,27 @@
           <entry key="project.open.time.2" value="9" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="71" />
+          <entry key="project.opened" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="51" />
           <entry key="gitignore" value="3" />
-          <entry key="py" value="34410" />
+          <entry key="py" value="35230" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="79" />
-          <entry key="Python" value="34402" />
+          <entry key="Python" value="35222" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -286,9 +284,9 @@
         <entry file="file://$PROJECT_DIR$/Basic/01test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding>
-                <marker date="1552750835283" expanded="true" signature="1011:1012" ph="..." />
+                <marker date="1552751486309" expanded="true" signature="1011:1012" ph="..." />
               </folding>
             </state>
           </provider>
@@ -297,11 +295,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classic/Exam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state relative-caret-position="342">
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1552748827583" expanded="true" signature="8671:8730" ph="..." />
+                <marker date="1552751486310" expanded="true" signature="8671:8730" ph="..." />
               </folding>
             </state>
           </provider>
@@ -310,12 +308,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classic/dp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+            <state relative-caret-position="583">
+              <caret line="157" column="20" lean-forward="true" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
               <folding>
-                <marker date="1552751360215" expanded="true" signature="46:1181" ph="..." />
-                <marker date="1552751360215" expanded="true" signature="1553:2270" ph="..." />
-                <marker date="1552751360215" expanded="true" signature="1902:2270" ph="..." />
+                <marker date="1552791314830" expanded="true" signature="46:1073" ph="..." />
+                <marker date="1552791314830" expanded="true" signature="1446:3496" ph="..." />
+                <marker date="1552791314830" expanded="true" signature="2817:3496" ph="..." />
               </folding>
             </state>
           </provider>
@@ -447,6 +445,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -495,7 +494,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -849,13 +847,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18955651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19170243" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.2554217" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.2554217" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.3698795" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1418,7 +1417,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Classic/dp.py</url>
-          <line>34</line>
+          <line>33</line>
           <option name="timeStamp" value="176" />
         </line-breakpoint>
       </breakpoints>
@@ -1754,35 +1753,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/Exam.py">
+    <entry file="file://$PROJECT_DIR$/Basic/01test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="247">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1552748827583" expanded="true" signature="8671:8730" ph="..." />
+            <marker date="1552751486309" expanded="true" signature="1011:1012" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/01test.py">
+    <entry file="file://$PROJECT_DIR$/Classic/Exam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="342">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding>
-            <marker date="1552750835283" expanded="true" signature="1011:1012" ph="..." />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1552751486310" expanded="true" signature="8671:8730" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classic/dp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+        <state relative-caret-position="583">
+          <caret line="157" column="20" lean-forward="true" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
           <folding>
-            <marker date="1552751360215" expanded="true" signature="46:1181" ph="..." />
-            <marker date="1552751360215" expanded="true" signature="1553:2270" ph="..." />
-            <marker date="1552751360215" expanded="true" signature="1902:2270" ph="..." />
+            <marker date="1552791314830" expanded="true" signature="46:1073" ph="..." />
+            <marker date="1552791314830" expanded="true" signature="1446:3496" ph="..." />
+            <marker date="1552791314830" expanded="true" signature="2817:3496" ph="..." />
           </folding>
         </state>
       </provider>
