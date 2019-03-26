@@ -31,4 +31,4 @@ def _sample(fin, k):
 
 if __name__ == '__main__':
     k = int(sys.argv[1])
-    print _sample(sys.stdin, k),
+    print(_sample(sys.stdin, k),)

@@ -198,36 +198,31 @@ def most_eor(arr):
     for i in range(length):
         xor ^= arr[i]
         if xor in map:
-            pre = map[xor]                                      # 找到那个开头位置
-            mosts[i] = 1 if pre == -1 else (mosts[pre] + 1)     # 开头位置的最大值 + 1
+            pre = map[xor]  # 找到那个开头位置
+            mosts[i] = 1 if pre == -1 else (mosts[pre] + 1)  # 开头位置的最大值 + 1
         if i > 0:
-            mosts[i] = max(mosts[i - 1], mosts[i])   # 只依赖前i-1 和 i 两种情况
+            mosts[i] = max(mosts[i - 1], mosts[i])  # 只依赖前i-1 和 i 两种情况
 
         map[xor] = i
         ans = max(ans, mosts[i])
     return ans
 
 
-def coins_combine(target):
+def coins_min_combine(arr, target):
     if target <= 0 or target > 1024:
         raise ValueError
 
     dp = [0 for i in range(target + 1)]
     for i in range(1, target + 1):
         c = sys.maxsize
-        if i - 1 >= 0:
-            c = min(c, dp[i - 1] + 1)
-        if i - 4 >= 0:
-            c = min(c, dp[i - 4] + 1)
-        if i - 16 >= 0:
-            c = min(c, dp[i - 16] + 1)
-        if i - 64 >= 0:
-            c = min(c, dp[i - 64] + 1)
+        for coin in arr:
+            if i - coin >= 0:
+                c = min(c, dp[i - coin] + 1)
         dp[i] = c
     return dp[-1]
 
 
-def coin(arr, target):
+def coin_ways(arr, target):
     """
     给定一个正数数组arr，arr[i]表示第i种货币的面值，可以使用任意张。
     给定一个正 target，返回组成aim的方法数有多少种?
@@ -251,7 +246,7 @@ def process(arr, index, target):
     return res
 
 
-def coin_dp_compress(arr, target):
+def coin_ways_dp_compress(arr, target):
     """
     给定一个正数数组arr，arr[i]表示第i种货币的面值，可以使用任意张。
     给定一个正 target，返回组成aim的方法数有多少种?
@@ -275,6 +270,69 @@ def coin_dp_compress(arr, target):
     return dp[target]
 
 
+def _split_process(pre, rest):
+    if rest == 0:
+        return 1
+    if pre > rest:
+        return 0
+    ways = 0
+    for i in range(pre, rest + 1):
+        ways += _split_process(i, rest - i)
+    return ways
+
+
+def split_ways(n):
+    if n < 1:
+        return 0
+    return _split_process(1, n)
+
+
+# def split_ways_dp(n):
+#     if n < 1:
+#         return 0
+#     dp = [[0 for j in range(n + 1)] for i in range(n + 1)]
+#     for i in range(1, n + 1):
+#         dp[i][0] = 1
+#     for pre in range(1, n + 1)[::-1]:
+#         for rest in range(pre, n + 1):
+#             for i in range(pre, rest + 1):
+#                 dp[pre][rest] += dp[i][rest - i]
+#     return dp[1][n]
+
+def split_ways_dp(n):
+    if n < 1:
+        return 0
+    dp = [[0 for j in range(n + 1)] for i in range(n + 1)]
+    for i in range(1, n + 1):
+        dp[i][0] = 1
+    for i in range(1, n + 1):
+        dp[i][i] = 1
+    for pre in range(1, n)[::-1]:
+        for rest in range(pre + 1, n + 1):
+            dp[pre][rest] = dp[pre + 1][rest] + dp[pre][rest - pre]
+
+    return dp[1][n]
+"""
+	public static int ways3(int n) {
+		if (n < 1) {
+			return 0;
+		}
+		int[][] dp = new int[n + 1][n + 1];
+		for (int pre = 1; pre < dp.length; pre++) {
+			dp[pre][0] = 1;
+		}
+		for (int pre = 1; pre < dp.length; pre++) {
+			dp[pre][pre] = 1;
+		}
+		for (int pre = n - 1; pre > 0; pre--) {
+			for (int rest = pre + 1; rest <= n; rest++) {
+				dp[pre][rest] = dp[pre + 1][rest] + dp[pre][rest - pre];
+			}
+		}
+		return dp[1][n];
+	}
+"""
+
 if __name__ == '__main__':
     s = "google"
     # print(palindrome_seq(s))
@@ -285,6 +343,9 @@ if __name__ == '__main__':
     s = [-5, -3, 0, 1, 3, 5]
     # print(penguin_merge(s))
 
-    # print(coins_combine(15))
-    print(coin([1,5,10], 27))
-    print(coin_dp_compress([1,5,10], 27))
+    # print(coins_min_combine([1, 5, 11], 15))
+    # print(coin_ways([1, 5, 10], 27))
+    # print(coin_ways_dp_compress([1, 5, 10], 27))
+
+    for i in range(10):
+        print(split_ways(i), split_ways_dp(i))

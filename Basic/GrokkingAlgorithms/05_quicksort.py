@@ -19,7 +19,7 @@ print(quicksort([10, 5, 2, 3]))
 
 # arr = [1, 2]
 # arr2 = [3, 4]
-# print (arr + arr2)
+# print((arr + arr2))
 
 # 2 ** x = n
 # x = logn

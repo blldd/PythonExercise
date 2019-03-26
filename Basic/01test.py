@@ -512,155 +512,155 @@
 # print("hello")
 #
 # #
-# # print "hello world."
+# # print("hello world.")
 # #
-# # print "中文"
+# # print("中文")
 # #
 # # # 数据类型
 # # # int float str bool
 # #
 # # a = 3
 # # b = 3.0
-# # print type(a)   # type()
-# # print type(b)
+# # print(type(a)   # type())
+# # print(type(b))
 # #
 # # s = "aaa"   # str
-# # print type(s)
+# # print(type(s))
 # #
 # # s2 = "123"
-# # print type(s2)
+# # print(type(s2))
 # #
 # # res = str(b)  # str() 强制转换
-# # print res
-# # print type(res)
+# # print(res)
+# # print(type(res))
 # #
-# # print int(s2) # int() 强制转换
-# # print type(int(2))
+# # print(int(s2) # int() 强制转换)
+# # print(type(int(2)))
 # #
 # # c = False
-# # print type(c)
+# # print(type(c))
 # #
 # # # 控制语句 if elif else while for
 # #
 # # if a < 5:
-# #     print "a < 5"
+# #     print("a < 5")
 # # elif a > 5:
-# #     print "a > 5"
+# #     print("a > 5")
 # # else:
-# #     print "a = 5"
+# #     print("a = 5")
 # #
 # # while a < 5:
-# #     print a
+# #     print(a)
 # #     a = a + 1
 # #
-# # print range(0, 5)
-# # print range(1,21)
+# # print(range(0, 5))
+# # print(range(1,21))
 # #
 # # for i in range(5):   # 遍历
-# #     print i
+# #     print(i)
 # #
 # # # 数据结构  list tuple set dict          tree graph linklist queue stack
 # #
 # # list1 = [0, 1, 2, 3, 4]    # 数组 list []  可以更改
-# # print list1
-# # print type(list1)
+# # print(list1)
+# # print(type(list1))
 # # list2 = range(5)
-# # print list2
+# # print(list2)
 # # list1[0] = 5
-# # print list1
+# # print(list1)
 # #
 # # list3 = range(0, 10, 2)
 # #
-# # print list3
+# # print(list3)
 # #
 # # for i in range(0,4):
-# #     print i
+# #     print(i)
 # #
 # # tuple1 = (0, 1, 2, 3, 4)    # 元组 tuple ()  不能更改
-# # print tuple1
-# # print type(tuple1)
+# # print(tuple1)
+# # print(type(tuple1))
 # #
 # #
 # # set1 = {7, 2, 5, 7, 1, 3, 2, 5, 234, 542}  # set {}  无顺序 无重复
-# # print set1
-# # print type(set1)
+# # print(set1)
+# # print(type(set1))
 # #
 # #
 # # dict1 = {'k1':'v2', 'k2':'v2'} # dict { : , : ,,,}  无顺序 key无重复
-# # print dict1
-# # print type(dict1)
+# # print(dict1)
+# # print(type(dict1))
 # #
-# # print dict1.keys()
-# # print dict1.values()
+# # print(dict1.keys())
+# # print(dict1.values())
 # #
 # # for i in dict1.keys():
-# #     print i
+# #     print(i)
 # # for i in dict1.values():
-# #     print i
+# #     print(i)
 # # for i in dict1.items():
-# #     print i
-# #     print type(i)
+# #     print(i)
+# #     print(type(i))
 # #
 # # set2 = set(list1)
-# # print set2
+# # print(set2)
 # #
 # # for i in range(10):
 # #     set2.add(i)
-# # print set2
+# # print(set2)
 # #
 # # # for i in range(10):
 # # #     set2.remove(i)
-# # #     print set2
+# # #     print(set2)
 # #
-# # print list1
+# # print(list1)
 # # list1.append(33)
 # # list1.append(2)
-# # print list1
+# # print(list1)
 # # list1.remove(1)
-# # print list1
-# # print list1.count(2)
-# # print list1.index(2)
+# # print(list1)
+# # print(list1.count(2))
+# # print(list1.index(2))
 # # list1.pop()
-# # print list1
+# # print(list1)
 # # list1.pop(1)
-# # print list1
+# # print(list1)
 # #
 # # list1.insert(0, 44)
-# # print list1
+# # print(list1)
 # #
 # # list1 = sorted(list1, reverse=True)
-# # print list1
+# # print(list1)
 # # list1 = sorted(list1)
-# # print list1
+# # print(list1)
 # #
 # # rev = reversed(list1)
 # # # while (rev):
-# # #     print rev.next()
+# # #     print(rev.next())
 # #
-# # print set2
+# # print(set2)
 # # set2.pop()
-# # print set2
+# # print(set2)
 # # set2.pop()
-# # print set2
+# # print(set2)
 # # set2.remove(8)
-# # print set2
+# # print(set2)
 # # set2.add(2)
 # # set2.add(2)
 # # set2.add(2)
-# # print set2
-# # print set1
-# # print set2.difference(set1)
-# # print set1.difference(set2)
-# # print set2.intersection(set1)
-# # print set1.union(set2)
-# # print set2
+# # print(set2)
+# # print(set1)
+# # print(set2.difference(set1))
+# # print(set1.difference(set2))
+# # print(set2.intersection(set1))
+# # print(set1.union(set2))
+# # print(set2)
 # # set2.discard(10)
-# # print set2
+# # print(set2)
 # # set2.remove(9)
-# # print ("#" * 20)
-# # print set1
-# # print set2
-# # print set2.difference(set1)
+# # print(("#" * 20))
+# # print(set1)
+# # print(set2)
+# # print(set2.difference(set1))
 # # set2.difference_uset2pdate(set1)
 # # print
 #

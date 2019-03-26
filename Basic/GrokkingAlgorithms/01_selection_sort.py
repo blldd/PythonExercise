@@ -24,9 +24,9 @@ print(selectionSort([5, 3, 6, 2, 10]))
 
 arr = [5, 3, 6, 2, 10]
 a = arr.pop()
-print a
-print arr
+print(a)
+print(arr)
 
 b = arr.pop(3)
-print b
-print arr
+print(b)
+print(arr)

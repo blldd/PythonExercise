@@ -7,7 +7,7 @@ import json
 import numpy as np
 import xlrd
 import xlwt
-# import pandas as pd
+import pandas as pd
 import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
@@ -96,49 +96,49 @@ def write_rows_to_sheet(workbook, sheet_name, header, rows, to_file):
     workbook.save(to_file)
 
 
-# def write_rows2excel(to_file, rows, header=None):
-#     """
-#     写入数据到Excel，如果数据量大于1048575行，自动分sheet，每1000000行分为一个sheet
-#     :param to_file: 写入文件名
-#     :param rows: 待写入数据，二维数组
-#     :param header: 列名
-#     :return:
-#     """
-#     row_num = len(rows)
-#     if row_num < 1:
-#         print("写入数据为空！")
-#     elif row_num > 1048575:
-#         if header == None:
-#             header = range(len(rows[0]))
-#         writer = pd.ExcelWriter(to_file)
-#         for i in range(0, len(rows), 1000000):
-#             rows_slice = rows[i:i + 1000000]
-#             df = pd.DataFrame(rows_slice)
-#             df.columns = header
-#             df.to_excel(writer, index=False, sheet_name=str(i + 1) + "-" + str(i + 1000000))
-#         writer.save()
-#     else:
-#         if header == None:
-#             header = range(len(rows[0]))
-#         writer = pd.ExcelWriter(to_file)
-#         df = pd.DataFrame(rows)
-#         df.columns = header
-#         df.to_excel(writer, index=False, sheet_name="sheet1")
-#         writer.save()
+def write_rows2excel(to_file, rows, header=None):
+    """
+    写入数据到Excel，如果数据量大于1048575行，自动分sheet，每1000000行分为一个sheet
+    :param to_file: 写入文件名
+    :param rows: 待写入数据，二维数组
+    :param header: 列名
+    :return:
+    """
+    row_num = len(rows)
+    if row_num < 1:
+        print("写入数据为空！")
+    elif row_num > 1048575:
+        if header == None:
+            header = range(len(rows[0]))
+        writer = pd.ExcelWriter(to_file)
+        for i in range(0, len(rows), 1000000):
+            rows_slice = rows[i:i + 1000000]
+            df = pd.DataFrame(rows_slice)
+            df.columns = header
+            df.to_excel(writer, index=False, sheet_name=str(i + 1) + "-" + str(i + 1000000))
+        writer.save()
+    else:
+        if header == None:
+            header = range(len(rows[0]))
+        writer = pd.ExcelWriter(to_file)
+        df = pd.DataFrame(rows)
+        df.columns = header
+        df.to_excel(writer, index=False, sheet_name="sheet1")
+        writer.save()
 
 
-# def write_rows2sheet(writer, rows, header, sheet_name="sheet1"):
-#     """
-#     写入数据到指定sheet，为了不同数据写入不同sheet，用户可以多次调用此方法
-#     :param writer: 预先定义好的writer
-#     :param rows: 待写入数据
-#     :param header: 列名
-#     :param sheet_name: sheet名
-#     :return:
-#     """
-#     df = pd.DataFrame(rows)
-#     df.columns = header
-#     df.to_excel(writer, index=False, sheet_name=sheet_name)
+def write_rows2sheet(writer, rows, header, sheet_name="sheet1"):
+    """
+    写入数据到指定sheet，为了不同数据写入不同sheet，用户可以多次调用此方法
+    :param writer: 预先定义好的writer
+    :param rows: 待写入数据
+    :param header: 列名
+    :param sheet_name: sheet名
+    :return:
+    """
+    df = pd.DataFrame(rows)
+    df.columns = header
+    df.to_excel(writer, index=False, sheet_name=sheet_name)
 
 
 def get_sort_idx(vals):

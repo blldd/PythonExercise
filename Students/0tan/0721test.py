@@ -16,11 +16,11 @@ i = 0
 
 # s = "hello "
 #
-# print len(s)
+# print(len(s))
 s = "hello"
-print s
+print(s)
 s = s[::-2]
-print s
+print(s)
 #
 # for i in s:
 #     print(i)
@@ -31,7 +31,7 @@ print s
 # arr = [1, 2, 3, 4, 5]
 # tmp = a
 # while i < len(str(a)):
-#     print (tmp % 10)
+#     print((tmp % 10))
 #     tmp = tmp / 10
 #     i += 1
 
@@ -52,7 +52,7 @@ a = 100
 while a < 1000:
     tep = a
     if a == ((a % 10) ** 3 + ((a / 10) % 10) ** 3 + (a / 100) ** 3):
-        print a
+        print(a)
     a += 1
 
 """
@@ -78,7 +78,7 @@ arr = [3, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7]
 #         if i == j:
 #             a += 1
 #     if a == 1:
-#         print i
+#         print(i)
 
 """
 位运算：
@@ -108,9 +108,9 @@ import random
 import time
 import calendar
 
-print arr
+print(arr)
 
 narr = np.array(arr)
-print narr
+print(narr)
 
 

@@ -26,7 +26,7 @@ def plot_embedding(X, title=None):
                  color=plt.cm.Set1(y[i] / 10.),
                  fontdict={'weight': 'bold', 'size': 9})
     if hasattr(offsetbox, 'AnnotationBbox'):
-        ## only print thumbnails with matplotlib > 1.0
+        ## only print(thumbnails with matplotlib > 1.0)
         shown_images = np.array([[1., 1.]])  # just something big
         for i in range(digits.data.shape[0]):
             dist = np.sum((X[i] - shown_images) ** 2, 1)

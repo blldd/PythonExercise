@@ -61,5 +61,5 @@ while node is not None:
     # Find the next node to process, and loop.
     node = find_lowest_cost_node(costs)
 
-print "Cost from the start to each node:"
-print costs
+print("Cost from the start to each node:")
+print(costs)

@@ -29,7 +29,7 @@ class Pdf2txt(object):
         pdf.close()
         with open(des_path, "w", encoding="utf-8") as fout:
             fout.write(text)
-        print (source_path, ": Done!")
+        print((source_path, ": Done!"))
 
     def batch_convert(self, source_dir, des_dir=None):
         if des_dir is None:
@@ -37,7 +37,7 @@ class Pdf2txt(object):
         for filename in os.listdir(source_dir):
             source_path = os.path.join(source_dir, filename)
             self.single_convert(source_path, des_dir)
-        print ("ALL DONE! ")
+        print(("ALL DONE! "))
 
 if __name__ == '__main__':
     from conf import tmp_dir

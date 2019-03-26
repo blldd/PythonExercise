@@ -49,24 +49,24 @@ def file_status(f):
     for line in fopen:
         c+=line
     '''
-    print f, 'status:'
-    print '长度：', len(c)
-    print '行数：', c.count('\n') + 1
-    print '单词数：', len(normalize(c).split())
+    print(f, 'status:')
+    print('长度：', len(c))
+    print('行数：', c.count('\n') + 1)
+    print('单词数：', len(normalize(c).split()))
     d = make_dict(c)
-    print '单词数：', sum(d[w] for w in d)
-    print '不同单词数：', len([w for w in d])
-    print '单词平均长度：', sum(len(w) for w in d) / sum(d[w] for w in d)
-    print '只出现过一次的单词总数：', len([d[w] for w in d if d[w] == 1])
+    print('单词数：', sum(d[w] for w in d))
+    print('不同单词数：', len([w for w in d]))
+    print('单词平均长度：', sum(len(w) for w in d) / sum(d[w] for w in d))
+    print('只出现过一次的单词总数：', len([d[w] for w in d if d[w] == 1]))
     lst = [(d[w], w) for w in d]
     lst.sort()
     lst.reverse()
-    print '前10名出现次数最多的单词和次数是：'
+    print('前10名出现次数最多的单词和次数是：')
     i = 1
     for count, word in lst[:10]:
         print('%4d.%4d %s' % (i, count, word))
         i += 1
-    print '前10名出现次数最多的单词和次数是(去掉功能词后)：'
+    print('前10名出现次数最多的单词和次数是(去掉功能词后)：')
     j = 1
     for count, word in lst[:]:
         if word not in stop_words and j < 11:

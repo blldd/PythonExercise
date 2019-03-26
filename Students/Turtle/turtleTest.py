@@ -9,12 +9,12 @@ turtlepen.color('red')
 
 # s = "hello honor string"
 
-# print ("hello honor")
-# print ("hello honor")
-# print ("hello honor")
-# print ("hello honor")
-# print ("hello honor")
-# print ("hello honor")
+# print(("hello honor"))
+# print(("hello honor"))
+# print(("hello honor"))
+# print(("hello honor"))
+# print(("hello honor"))
+# print(("hello honor"))
 
 # print(s)
 #

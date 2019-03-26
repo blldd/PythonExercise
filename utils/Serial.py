@@ -32,7 +32,7 @@ import json
 fw = open('test.txt', 'w')  
 for i in xrange(10):  
     json.dump([i], fw)  
-    print >>fw #换行，便于阅读  
+    print(>>fw #换行，便于阅读  )
 fw.close()  
   
   
@@ -41,6 +41,6 @@ for line in fp:
     #一是消除load文件到空的情况  
     #而是正好和上面的换行对应起来，便于阅读  
     lst = json.loads(line)  
-    print lst, type(lst)  
+    print(lst, type(lst)  )
 fp.close()  
 '''

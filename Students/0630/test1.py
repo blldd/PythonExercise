@@ -54,7 +54,7 @@ if __name__ == '__main__':
     square = [2 ** x for x in foo]  # pythonic
     print(square)
 
-    print foo[0]
+    print(foo[0])
     foo[0] = 4
     print(foo[0])
     foo_tuple = (2, 18, 9, 22, 17, 24, 8, 12, 27)
@@ -62,15 +62,15 @@ if __name__ == '__main__':
     # foo_tuple[0] = 4
     # print(foo_tuple[0])
 
-    print foo[2:6]
-    print foo[:6]
-    print foo[2:]
-    print foo[:]
-    print foo[2:6]
+    print(foo[2:6])
+    print(foo[:6])
+    print(foo[2:])
+    print(foo[:])
+    print(foo[2:6])
 
     square = [2 ** x for x in foo if x > 20]  # pythonic
     print(square)
-    print max(square)
+    print(max(square))
     foo = sorted(foo, reverse=True)
     print(foo)
     print(foo[len(foo) - 2:])
@@ -81,7 +81,7 @@ if __name__ == '__main__':
 
     print(foo)
     "27 24 22"
-    # print str(foo)
+    # print(str(foo))
     # for i in range(len(foo)):
     #     print(foo[i])
     for x in foo:
@@ -116,4 +116,4 @@ if __name__ == '__main__':
 
 
 # from ex48 import lexicon
-# print lexicon.scan("go north")
+# print(lexicon.scan("go north"))

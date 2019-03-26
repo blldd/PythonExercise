@@ -8,14 +8,14 @@
 # if 0 < month <= 12:
 #     sum = months[month - 1]
 # else:
-#     print 'data error'
+#     print('data error')
 # sum += day
 # leap = 0
 # if (year % 400 == 0) or ((year % 4 == 0) and (year % 100 != 0)):
 #     leap = 1
 # if (leap == 1) and (month > 2):
 #     sum += 1
-# print 'it is the %dth day.' % sum
+# print('it is the %dth day.' % sum)
 #
 #
 
@@ -89,19 +89,19 @@ def fib(n):
 
 
 res = fib(3)
-print res
+print(res)
 
 """
 """
 
 import time
 
-print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 
 # 暂停一秒
 time.sleep(1)
 
-print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 
 """
 判断100-200之间有多少个素数，并输出所有素数
@@ -119,7 +119,7 @@ for m in range(2, 10):
             leap = 0
             break
     if leap == 1:
-        print '%-4d' % m
+        print('%-4d' % m)
 
 """
 将一个正整数分解质因数。例如：输入90,打印出90=2*3*3*5。
@@ -127,20 +127,20 @@ for m in range(2, 10):
 
 
 def reduceNum(n):
-    print '{} = '.format(n),
+    print('{} = '.format(n),)
     if not isinstance(n, int) or n <= 0:
-        print '请输入一个正确的数字 !'
+        print('请输入一个正确的数字 !')
         exit(0)
     elif n in [1]:
-        print '{}'.format(n)
+        print('{}'.format(n))
     while n not in [1]:  # 循环保证递归
         for index in range(2, n + 1):
             if n % index == 0:
                 n /= index  # n 等于 n/index
                 if n == 1:
-                    print index
+                    print(index)
                 else:  # index 一定是素数
-                    print '{} *'.format(index),
+                    print('{} *'.format(index),)
                 break
 
 

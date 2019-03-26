@@ -105,14 +105,14 @@ if __name__ == '__main__':
              'D': ['C'],
              'E': ['F'],
              'F': ['C']}
-    print find_path(graph, 'A', 'D')
-    print find_all_paths(graph, 'A', 'D')
-    print find_shortest_path(graph, 'A', 'D')
+    print(find_path(graph, 'A', 'D'))
+    print(find_all_paths(graph, 'A', 'D'))
+    print(find_shortest_path(graph, 'A', 'D'))
 
     print("##" * 20)
 
     for path in find_all_paths_bfs(graph, 'A', 'D'):
-        print path
+        print(path)
 
     print("##" * 20)
 
@@ -124,8 +124,8 @@ if __name__ == '__main__':
        +---- E
     '''
     graph = {'A': ['B', 'C'], 'B': ['D', 'E'], 'C': ['D', 'E'], 'D': ['E'], 'E': ['A']}
-    print 'recursive dfs ', recursive_dfs(graph, 'A')
-    print 'iterative dfs ', iterative_dfs(graph, 'A')
-    print 'iterative bfs ', iterative_bfs(graph, 'A')
+    print('recursive dfs ', recursive_dfs(graph, 'A'))
+    print('iterative dfs ', iterative_dfs(graph, 'A'))
+    print('iterative bfs ', iterative_bfs(graph, 'A'))
 
     print("##" * 20)

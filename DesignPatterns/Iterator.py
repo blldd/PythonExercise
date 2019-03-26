@@ -20,9 +20,9 @@ count_to_five = lambda: count_to(5)
 
 print('Counting to two...')
 for number in count_to_two():
-    print number
+    print(number)
 
 print('Counting to five...')
 for number in count_to_five():
-    print number
+    print(number)
 

@@ -5,9 +5,9 @@ import os
 
 # s = "I\tam\ta\t\tchinese"
 # str = s.strip()
-# print str
+# print(str)
 # arr = str.split("\t")
-# print arr
+# print(arr)
 #
 # os.mkdir("newdir")
 
@@ -18,7 +18,7 @@ import os
 # set1.add(1)
 # set1.add(1)
 #
-# print set1
+# print(set1)
 
 # for i in range(10):
 #     if i == 3:
@@ -46,7 +46,7 @@ def fab(max):
 
 
 # for n in fab(5):
-#     print n
+#     print(n)
 
 class Fab(object):
 
@@ -70,13 +70,13 @@ def fab(max):
     n, a, b = 0, 0, 1
     while n < max:
         yield b
-        # print b
+        # print(b)
         a, b = b, a + b
         n = n + 1
 
 #
 # for n in Fab(5):
-#     print n
+#     print(n)
 
 
 
@@ -144,25 +144,25 @@ if __name__ == '__main__':
     #         Employee.empCount += 1
     #
     #     def displayCount(self):
-    #         print "Total Employee %d" % Employee.empCount
+    #         print("Total Employee %d" % Employee.empCount)
     #
     #     def displayEmployee(self):
-    #         print "Name : ", self.name, ", Salary: ", self.salary
+    #         print("Name : ", self.name, ", Salary: ", self.salary)
     #
     #
-    # print "Employee.__doc__:", Employee.__doc__
-    # print "Employee.__name__:", Employee.__name__
-    # print "Employee.__module__:", Employee.__module__
-    # print "Employee.__bases__:", Employee.__bases__
-    # print "Employee.__dict__:", Employee.__dict__
+    # print("Employee.__doc__:", Employee.__doc__)
+    # print("Employee.__name__:", Employee.__name__)
+    # print("Employee.__module__:", Employee.__module__)
+    # print("Employee.__bases__:", Employee.__bases__)
+    # print("Employee.__dict__:", Employee.__dict__)
     # # try:
     # #     a = 8/0
     # #     # fh = open("testfile", "w")
     # #     # fh.write("这是一个测试文件，用于测试异常!!")
     # # except ZeroDivisionError:
-    # #     print "integer division or modulo by zero"
+    # #     print("integer division or modulo by zero")
     # # finally:
-    # #     print ""
+    # #     print("")
     #
     # # excel2csv(new_excel)
     #

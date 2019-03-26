@@ -27,7 +27,7 @@ china = utcnow.astimezone(cst_tz)
 print(china)
 
 now = datetime.utcnow().replace(tzinfo=utc_tz).astimezone(cst_tz)
-print now
+print(now)
 # now.fromtimestamp()
 
 def table_exists(cursor,table_name):        #这个函数用来判断表是否存在
@@ -91,7 +91,7 @@ connection.commit()
 stmt = "select * from %s" % table_name
 cursor.execute(stmt)
 for id_, createTime_, confidence_, event_id_ in cursor.fetchall():
-    print id_, createTime_, confidence_, event_id_
+    print(id_, createTime_, confidence_, event_id_)
 
 # 5. Update row.
 stmt = "update %s set event_id = 'ok' where id = 1" % table_name
@@ -108,7 +108,7 @@ connection.commit()
 stmt = "select * from %s" % table_name
 cursor.execute(stmt)
 for id_, createTime_, confidence_, event_id_ in cursor.fetchall():
-    print id_, createTime_, confidence_, event_id_
+    print(id_, createTime_, confidence_, event_id_)
 
 cursor.close()
 db_pool.release(connection)

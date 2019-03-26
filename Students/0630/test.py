@@ -28,12 +28,12 @@ classmates = ['Michael', 'Bob', 'Tracy']   # 数组 list
 #               -3         -2       -1
 
 #    -3 -2 -1 0 1 2 3
-print len(classmates)
+print(len(classmates))
 
 q=['hello']
 print(len(str(['100'])))   # str ‘100’
 
-print classmates
+print(classmates)
 
 classmates.append('Adam')    # 追加
 

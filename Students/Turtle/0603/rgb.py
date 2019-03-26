@@ -1,13 +1,13 @@
 from PIL import ImageColor
 from PIL import Image
 
-print ImageColor.getcolor('red', 'RGBA')
+print(ImageColor.getcolor('red', 'RGBA'))
 
 catIm = Image.open('zophie.png')
-# print catIm.size
-# print catIm.filename
-# print catIm.format
-# print catIm.format_description
+# print(catIm.size)
+# print(catIm.filename)
+# print(catIm.format)
+# print(catIm.format_description)
 # catIm.save('zophie.jpg')
 # catIm.rotate(90).save('rotated90.png')
 #
@@ -18,7 +18,7 @@ catIm = Image.open('zophie.png')
 catCopyIm = catIm.copy()
 
 faceIm = catIm.crop((335, 345, 565, 560))
-print faceIm.size
+print(faceIm.size)
 #
 # catCopyIm.paste(faceIm, (0, 0))
 # catCopyIm.paste(faceIm, (400, 500))
@@ -40,7 +40,7 @@ print faceIm.size
 # catIm.transpose(Image.FLIP_TOP_BOTTOM).save('vertical_ _flip.png')
 
 im = Image.new('RGBA', (100, 100))
-print im.getpixel((0, 0))
+print(im.getpixel((0, 0)))
 
 for x in range(100):
     for y in range(50):
@@ -49,8 +49,8 @@ from PIL import ImageColor
 for x in range(100):
     for y in range(50, 100):
         im.putpixel((x, y), ImageColor.getcolor('darkgray', 'RGBA'))
-print im.getpixel((0, 0))
+print(im.getpixel((0, 0)))
 
-print im.getpixel((0, 50))
+print(im.getpixel((0, 50)))
 
 im.save('putPixel.png')

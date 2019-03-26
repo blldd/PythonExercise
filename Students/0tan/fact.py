@@ -6,6 +6,6 @@ def fact(x):
             sum *= i
         else:
             break
-    print sum
+    print(sum)
 
 fact(5)

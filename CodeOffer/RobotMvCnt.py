@@ -12,7 +12,7 @@ class Solution(object):
         if threshold < 0 or rows < 0 or cols < 0:
             return 0
         visited = [[0 for j in range(cols)] for i in range(rows)]
-        # print visited
+        # print(visited)
         cnt = self.mvCntCore(threshold, rows, cols, 0, 0, visited)
         return cnt
 

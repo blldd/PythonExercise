@@ -54,7 +54,7 @@ def findFirstNoDupMany(data):
             Map[data[i]] += 1
         else:
             Map[data[i]] = 1
-    print Map
+    print(Map)
     for key in Map:
         if Map[key] == 1:
             single = key

@@ -22,7 +22,7 @@ Aa01A01= 人 士 人物 人士 人氏 人选
 """
 fopen=open("F:\\ana_work\\3\\syn.txt",'rb')  
 lines=fopen.readlines()
-#print lines.count
+#print(lines.count)
 
 fw=open("synonym_test_format.txt","w+")  
 

@@ -12,14 +12,16 @@ def get_dp_arb(arr, money):
     dp = [[0 for j in range(money + 1)] for i in range(length)]
     for i in range(length):
         dp[i][0] = 1
+
     j = 1
     while arr[0] * j <= money:
         dp[0][arr[0] * j] = 1
         j += 1
+
     for i in range(1, length):
         for j in range(1, money + 1):
             dp[i][j] = dp[i - 1][j]
-            dp[i][j] += dp[i][j - arr[i]] if j - arr[i] >= 0 else 0
+            dp[i][j] += dp[i][j - arr[i]] if j - arr[i] >= 0 else 0  # 注意 ⚠ dp[i][j - arr[i]]是第i行，因为已经累加过所有情况
     return dp
 
 
@@ -35,12 +37,14 @@ def get_dp_one(arr, money):
     dp = [[0 for j in range(money + 1)] for i in range(length)]
     for i in range(length):
         dp[i][0] = 1
+
     if arr[0] <= money:
         dp[0][arr[0]] = 1
+
     for i in range(1, length):
         for j in range(1, money + 1):
-            dp[i][j] = dp[i - 1][j]
-            dp[i][j] += dp[i - 1][j - arr[i]] if j - arr[i] >= 0 else 0
+            dp[i][j] = dp[i - 1][j]  # i 号硬币不要的情况
+            dp[i][j] += dp[i - 1][j - arr[i]] if j - arr[i] >= 0 else 0  # i号硬币要的情况
     return dp
 
 

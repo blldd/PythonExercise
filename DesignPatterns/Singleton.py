@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
 
     s1 = SingleSpam('spam')
-    print id(s1), s1
+    print(id(s1), s1)
     s2 = SingleSpam('spa')
-    print id(s2), s2
-    print id(s1), s1
+    print(id(s2), s2)
+    print(id(s1), s1)

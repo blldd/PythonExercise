@@ -15,19 +15,19 @@ plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
 #
 # def job():
 #     now = datetime.datetime.now() + datetime.timedelta(days=-1)
-#     print now
+#     print(now)
 #     da = now.date()
-#     print da
-#     print datetime.date.today()
+#     print(da)
+#     print(datetime.date.today())
 #
 #
 # def my_job():
-#     print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-#     print time.strftime('%Y-%m-%d', time.localtime(time.time()))
-#     print (datetime.datetime.now() + datetime.timedelta(days=-1)).strftime("%Y-%m-%d")
-#     print datetime.datetime.now().strftime("%Y-%m-%d")
-#     # print time.strftime('%Y-%m-%d %H:%M:%S', datetime.datetime.now() + datetime.timedelta(days=-1))
-#     # print time.time() + datetime.timedelta(days=-1)
+#     print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+#     print(time.strftime('%Y-%m-%d', time.localtime(time.time())))
+#     print((datetime.datetime.now() + datetime.timedelta(days=-1)).strftime("%Y-%m-%d"))
+#     print(datetime.datetime.now().strftime("%Y-%m-%d"))
+#     # print(time.strftime('%Y-%m-%d %H:%M:%S', datetime.datetime.now() + datetime.timedelta(days=-1)))
+#     # print(time.time() + datetime.timedelta(days=-1))
 #
 #
 # def main():

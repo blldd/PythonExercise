@@ -154,8 +154,8 @@ def get_feature_by_feat_dict(dict, feat_dict):
 
 
 def mergeFeatures(feature_list, name=""):
-    # print "-"*80
-    # print "\n".join([feature_file.feat_string+feature_file.name for feature_file in feature_list])
+    # print("-"*80)
+    # print("\n".join([feature_file.feat_string+feature_file.name for feature_file in feature_list]))
     dimension = 0
     feat_string = ""
     for feature in feature_list:

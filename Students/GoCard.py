@@ -37,17 +37,17 @@ class GoCard:
         return self._balance
 
     def printStatement(self):
-        print "Statement:"
-        print "{:15s} {:>11s} {:>11s}".format("event", "amount ($)", "balance ($)")
+        print("Statement:")
+        print("{:15s} {:>11s} {:>11s}".format("event", "amount ($)", "balance ($)"))
         balance = self._record[0]
-        print "{:15s} {:11s} {:11.2f}".format("Initial balance", "", balance)
+        print("{:15s} {:11s} {:11.2f}".format("Initial balance", "", balance))
         for r in self._record[1:]:
             balance += r
             if r < 0.0:
-                print "{:15s} {:11.2f} {:11.2f}".format("Ride", -r, balance)
+                print("{:15s} {:11.2f} {:11.2f}".format("Ride", -r, balance))
             else:
-                print "{:15s} {:11.2f} {:11.2f}".format("Top up", r, balance)
-        print "{:15s} {:11s} {:11.2f}".format("Final balance", "", balance)
+                print("{:15s} {:11.2f} {:11.2f}".format("Top up", r, balance))
+        print("{:15s} {:11s} {:11.2f}".format("Final balance", "", balance))
 
 # 获取到账户初始值
 amount = float(raw_input("Creating account. Input initial balance:"))
@@ -64,17 +64,17 @@ while command.strip() != "q":
             dollars = float(ws[1])
             account.trip(dollars)                               # 调用 account.trip()
         except:
-            print "Bad command."
+            print("Bad command.")
     elif len(ws) == 2 and ws[0] == 't':
         try:
             dollars = float(ws[1])
             account.topUp(dollars)                              # 调用 account.topUp()
         except:
-            print "Bad command."
+            print("Bad command.")
     elif len(ws) == 1 and ws[0] == 'b':
-        print "Balance = ${:.2f}".format(account.getBalance())  # 调用 account.getBalance()
+        print("Balance = ${:.2f}".format(account.getBalance())  # 调用 account.getBalance())
     else:
-        print "Bad command."
+        print("Bad command.")
     command = raw_input("? ")
 
 # 调用 account.printStatement()， 里面用到了很多符号，需要你去学习一下format函数，例如>是指右对齐

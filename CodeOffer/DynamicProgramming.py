@@ -54,5 +54,5 @@ class Solution(object):
         return dp[-1]
 
 if __name__ == '__main__':
-    print Solution().maxProduct(5)
-    print Solution().rob([3,7,1,2,9,10])
+    print(Solution().maxProduct(5))
+    print(Solution().rob([3,7,1,2,9,10]))

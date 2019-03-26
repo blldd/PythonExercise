@@ -14,9 +14,9 @@ def wordCount():
             for ch in line:
                 charCnt += 1
 
-    print lineCnt, "lines"
-    print wordCnt, "words"
-    print charCnt, "characters"
+    print(lineCnt, "lines")
+    print(wordCnt, "words")
+    print(charCnt, "characters")
 
 if __name__ == '__main__':
     wordCount()

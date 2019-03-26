@@ -16,23 +16,23 @@ from multiprocessing import Pool
 #
 # if __name__ == "__main__":
 #     testFL = [1, 2, 3, 4, 5, 6]
-#     print 'shunxu:'  # 顺序执行(也就是串行执行，单进程)
+#     print('shunxu:'  # 顺序执行(也就是串行执行，单进程))
 #     s = time.time()
 #     for fn in testFL:
 #         run(fn)
 #
 #     e1 = time.time()
-#     print "顺序执行时间：", int(e1 - s)
+#     print("顺序执行时间：", int(e1 - s))
 #
-#     print 'concurrent:'  # 创建多个进程，并行执行
+#     print('concurrent:'  # 创建多个进程，并行执行)
 #     pool = Pool(5)  # 创建拥有5个进程数量的进程池
 #     # testFL:要处理的数据列表，run：处理testFL列表中数据的函数
 #     rl = pool.map(run, testFL)
 #     pool.close()  # 关闭进程池，不再接受新的进程
 #     pool.join()  # 主进程阻塞等待子进程的退出
 #     e2 = time.time()
-#     print "并行执行时间：", int(e2 - e1)
-#     print rl
+#     print("并行执行时间：", int(e2 - e1))
+#     print(rl)
 
 #
 # import time
@@ -41,7 +41,7 @@ from multiprocessing import Pool
 #
 # def run(fn):
 #     time.sleep(2)
-#     print fn
+#     print(fn)
 #
 #
 # if __name__ == "__main__":
@@ -65,7 +65,7 @@ from multiprocessing import Pool
 #     pool.close()
 #     pool.join()
 #     endTime = time.time()
-#     print "time :", endTime - startTime
+#     print("time :", endTime - startTime)
 
 
 # 实例
@@ -108,7 +108,7 @@ def out(list1, writeFilePath):
         fileLines += i[0]
         charNum += i[1]
     fp.close()
-    print fileLines, charNum
+    print(fileLines, charNum)
 
 
 if __name__ == "__main__":
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     pool.join()
 
     writeFilePath = "E:\\Workspace\\PyCharm\\KAP\\dataset\\res.txt"
-    print resultList
+    print(resultList)
     out(resultList, writeFilePath)
     endTime = time.time()
-    print "used time is ", endTime - startTime
+    print("used time is ", endTime - startTime)

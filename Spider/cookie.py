@@ -21,4 +21,4 @@ cookie.save(ignore_discard=True, ignore_expires=True)
 gradeUrl = 'https://passport.csdn.net/account/login'
 # 请求访问成绩查询网址
 result = opener.open(gradeUrl)
-print result.read()
+print(result.read())

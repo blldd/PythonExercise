@@ -6,7 +6,7 @@ def fab(n):
     return fab(n-1) + fab(n-2)
 
 res = fab(5)
-print res
+print(res)
 
 # 1 1 2 3 5 8
 # 5--> 3 4

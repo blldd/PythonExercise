@@ -85,7 +85,7 @@ if __name__ == '__main__':
     # print(res.val, circle_cnt, left_cnt)
     # while res.next:
     #     res = res.next
-    #     print res.val
+    #     print(res.val)
     p = Solution().reverseList(head)
     while p:
         print(p.val)

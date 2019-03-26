@@ -68,5 +68,5 @@ class Solution(object):
         res = []
         self.preorder(root, 0, res)
         res.reverse()
-        print res
+        print(res)
         return res

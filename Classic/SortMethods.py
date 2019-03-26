@@ -98,10 +98,10 @@ if __name__ == '__main__':
     print(input)
     # input.sort()
     # res = quick_sort_lam(input)
-    # print res
+    # print(res)
     # quick_sort_recur(input, 0, 13)
-    # print input
+    # print(input)
     # quick_sort_stack(input, 0, 13)
-    # print input
+    # print(input)
     input = [4, 4, 3, 1, 8]
     print(bubble_sort(input))

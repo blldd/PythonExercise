@@ -38,7 +38,7 @@ def printListFromTailToHead1(listNode):
 def printRecursively(listNode):
     if listNode:
         if list_node.next == None:
-            print list_node.val
+            print(list_node.val)
         else:
             printRecursively(list_node.next)
 
@@ -47,6 +47,6 @@ if __name__ == '__main__':
     list_node = ListNode(1)
     list_node_2 = ListNode(2)
     list_node.next = list_node_2
-    print printListFromTailToHead(list_node)
-    print printListFromTailToHead1(list_node)
-    print printRecursively(list_node)
+    print(printListFromTailToHead(list_node))
+    print(printListFromTailToHead1(list_node))
+    print(printRecursively(list_node))

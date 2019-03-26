@@ -139,9 +139,9 @@ def main():
     # regression.train(x_train, y_train)
     # y_predict = regression.predict(x_train)
     # regression.plot(x_train, y_train)
-    # print '相关系数矩阵：', np.corrcoef(y_train, np.squeeze(y_predict))
+    # print('相关系数矩阵：', np.corrcoef(y_train, np.squeeze(y_predict)))
     # y_predict = regression.lwlr_predict([[15],[20]], x_train, y_train, k=0.1)
-    # print y_predict
+    # print(y_predict)
     # regression.ridge_regression(x_train, y_train, lam=3)
     # regression.plot_lr(x_train, y_train)
     regression.lasso_regression(x_train, y_train, itr_num=1000)

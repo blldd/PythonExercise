@@ -1,20 +1,25 @@
 # -*- coding:UTF-8 -*-
 
-def perm(list,stack):
-    if not list:
-        print(stack)    # 到树的最后，输出结果
+def perm(arr, stack):
+    if not arr:
+        print(stack)     # 到树的最后，输出结果
+        tmp = stack.copy()
+        res.append(tmp)
 
     else:               # 没有到树的叶子节点的时候，使用递归继续往下找。
-        for i in range(len(list)):
-            stack.append(list[i])
-            del list[i]
-            perm(list,stack)
-            list.insert(i,stack.pop())
+        for i in range(len(arr)):
+            stack.append(arr[i])
+            del arr[i]
+            perm(arr, stack)
+            arr.insert(i, stack.pop())
 
-# list=[1,2,3]
-# stack=[]
-# perm(list, stack)
-
+arr=[1,2,3]
+stack=[]
+res = []
+# for i in perm(arr, stack):
+#     print(i)
+perm(arr, stack)
+print(res)
 
 def str_sort(s=''):
     if len(s) <= 1:
@@ -26,5 +31,5 @@ def str_sort(s=''):
     return str_list
 
 
-str_list = str_sort("123")
-print(str_list)
+# str_list = str_sort("123")
+# print(str_list)

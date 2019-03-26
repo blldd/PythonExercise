@@ -145,7 +145,7 @@ if __name__ == '__main__':
                 tmp = fake_trace[i][j] + round(1000 * np.random.randn(), 1)
                 trace_res.append(tmp)
         traces_res.append(trace_res)
-        print trace_res
+        print(trace_res)
 
 
     _write2excel2(traces_res, "result2.xlsx")
@@ -181,7 +181,7 @@ if __name__ == '__main__':
     data_dots_x = sio.loadmat(dataFile)["savedata"]['dots'][0][0][0][0][0]
     data_dots_y = sio.loadmat(dataFile)["savedata"]['dots'][0][0][0][0][1]
     data_dots_z = sio.loadmat(dataFile)["savedata"]['dots'][0][0][0][0][2]
-    # print data_dots_x
+    # print(data_dots_x)
 
     # fig = plt.figure(figsize=(10, 7))
     # ax = fig.add_subplot(111, projection='3d')

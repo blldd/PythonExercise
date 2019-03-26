@@ -5,7 +5,7 @@
 # 11    “11”  “hello”  'h'  "had"   0.2
 # variable =
 
-# print "hello world!"
+# print("hello world!")
 #
 # for i in range(11):
 #     print(i)
@@ -13,7 +13,7 @@
 # a = 1
 #
 # if a == 1:
-#     print "a==1"
+#     print("a==1")
 
 # 0 1 2 3 4 5 6 7 8 9 10 11 12
 # 0 1 10
