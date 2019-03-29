@@ -44,7 +44,6 @@ def longest_sum_subarr(arr, target):
     length = len(arr)
     if length < 1 or target <= 0:
         return 0
-
     sum = 0
     ans = 0
 

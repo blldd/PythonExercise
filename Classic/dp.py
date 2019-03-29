@@ -334,8 +334,8 @@ def split_ways_dp(n):
 """
 
 if __name__ == '__main__':
-    s = "google"
-    # print(palindrome_seq(s))
+    s = "abacdgfdcaba"
+    print(palindrome_seq(s))
     s = [5, 2, 1, 4, 6, 9, 7, 8]
     # lis(s)
     # print(lis2(s))

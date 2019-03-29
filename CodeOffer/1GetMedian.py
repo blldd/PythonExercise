@@ -16,7 +16,7 @@ class MedianFinder(object):
 
         if length == 1:
             return self.arr[0]
-        self.quick_sort(self.arr)
+        self.quick_sort(self.arr, 0, length - 1)
 
         mid = length // 2
         if length % 2 == 0:
@@ -110,16 +110,19 @@ if __name__ == '__main__':
     print(mf.max_heap)
     print(mf.find_median())
 
-    import heapq
+    arr = [5,4,3,8]
+    mf.down_ajust_max(arr)
+    print(arr)
 
-    # 向堆中插入元素，heapq会维护列表heap中的元素保持堆的性质
-    heapq.heappush()
-    # heapq把列表x转换成堆
-    heapq.heapify()
-    # 从可迭代的迭代器中返回最大的n个数，可以指定比较的key
-    heapq.nlargest()
-    # 从可迭代的迭代器中返回最小的n个数，可以指定比较的key
-    heapq.nsmallest()
-    # 从堆中删除元素，返回值是堆中最小或者最大的元素
-    heapq.heappop()
-
+    # import heapq
+    #
+    # # 向堆中插入元素，heapq会维护列表heap中的元素保持堆的性质
+    # heapq.heappush()
+    # # heapq把列表x转换成堆
+    # heapq.heapify()
+    # # 从可迭代的迭代器中返回最大的n个数，可以指定比较的key
+    # heapq.nlargest()
+    # # 从可迭代的迭代器中返回最小的n个数，可以指定比较的key
+    # heapq.nsmallest()
+    # # 从堆中删除元素，返回值是堆中最小或者最大的元素
+    # heapq.heappop()

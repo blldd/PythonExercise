@@ -16,6 +16,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.stem.porter import *
 import scipy.stats
 from datetime import datetime
+
 datesuffix = time.strftime("%Y-%m-%d", time.localtime())
 
 
@@ -26,6 +27,7 @@ def excute_time_log(func):
     :param func:
     :return:
     """
+
     @functools.wraps(func)
     def wrapper(*args, **kw):
         t1 = time.time()
@@ -53,6 +55,24 @@ def read_excel_row(in_file, col_idxs):
             for col_idx in col_idxs:
                 one_row.append(row[col_idx])
             yield tuple(one_row)
+
+
+def read_sheet_row(table, col_idxs):
+    """
+    :param table: 待读取Excel文件的sheet
+    :param col_idxs: 待读取列编号，如[1,3,5] 表示第2，4，6列
+    :return:
+    """
+
+    nrows = table.nrows
+    for i in range(nrows):
+        if i == 0:
+            continue
+        row = table.row_values(i)
+        one_row = []
+        for col_idx in col_idxs:
+            one_row.append(row[col_idx])
+        yield tuple(one_row)
 
 
 def write_rows_to_excel(header, rows, to_file):
@@ -198,6 +218,7 @@ def json2doc(in_file, col_names, header, sep="\t"):
             fout.write(line + "\n")
     print(to_file)
 
+
 def save_json_file(instances, to_file):
     """
     :param instances:  [{"code": code, "name": name, ...}, {...}, ...]
@@ -206,4 +227,3 @@ def save_json_file(instances, to_file):
     """
     with open(to_file, "w", encoding='utf-8') as fout:
         json.dump(instances, fout, ensure_ascii=False, indent=2)
-
