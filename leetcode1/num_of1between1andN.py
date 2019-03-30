@@ -30,15 +30,18 @@ class Solution(object):
         cnt = 0
         i = 1
         arr = []
+
         while i <= n:
             arr.append(i)
             i *= 10
+
         for i in arr:
             a = n // i
             b = n % i
             cnt = cnt + (a + 8) // 10 * i + (a % 10 == 1) * (b + 1)
+
         return cnt
 
 
 if __name__ == '__main__':
-    print(Solution().num_of1between1nN(10))
+    print(Solution().num_of1between1nN(20))

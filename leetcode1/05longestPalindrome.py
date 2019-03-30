@@ -13,6 +13,7 @@ class Solution:
         # rs = s[::-1]
         length = len(s)
         for idx, i in enumerate(s):
+            # jishu
             for j in range(length - idx):
                 if idx - j >= 0 and idx + j <= length and s[idx - j] == s[idx + j]:
                     if 2 * j + 1 > max_len:
@@ -20,6 +21,7 @@ class Solution:
                         res = s[idx - j:idx + j + 1]
                 else:
                     break
+            # oushu
             for j in range(length - idx - 1):
                 if idx - j >= 0 and idx + j + 1 <= length and s[idx - j] == s[idx + j + 1]:
                     if 2 * (j + 1) > max_len:
