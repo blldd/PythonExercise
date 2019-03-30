@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
-      <change afterPath="$PROJECT_DIR$/ML/gbdt_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode1/06convert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/08atoi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/10reg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode1/05longestPalindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode1/05longestPalindrome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode1/num_of1between1andN.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode1/num_of1between1andN.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +47,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$NumWithSum.coverage" NAME="NumWithSum Coverage Results" MODIFIED="1533027914139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$6ZigZagOrder.coverage" NAME="6ZigZagOrder Coverage Results" MODIFIED="1523934540694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonExercise$newton.coverage" NAME="newton Coverage Results" MODIFIED="1551449345883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML" />
+    <SUITE FILE_PATH="coverage/PythonExercise$08atoi.coverage" NAME="08atoi Coverage Results" MODIFIED="1553954819496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$21Sum.coverage" NAME="21Sum Coverage Results" MODIFIED="1524038338276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$math_model.coverage" NAME="math_model Coverage Results" MODIFIED="1537238159024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0Tools" />
     <SUITE FILE_PATH="coverage/PythonTools$10MinDepth.coverage" NAME="10MinDepth Coverage Results" MODIFIED="1523947530234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
@@ -113,6 +112,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$15Transaction.coverage" NAME="15Transaction Coverage Results" MODIFIED="1524014733820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonExercise$Tree.coverage" NAME="Tree Coverage Results" MODIFIED="1553782562256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$FirstApearOnce.coverage" NAME="FirstApearOnce Coverage Results" MODIFIED="1533025126092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
+    <SUITE FILE_PATH="coverage/PythonExercise$10reg.coverage" NAME="10reg Coverage Results" MODIFIED="1553957211945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$kSum.coverage" NAME="kSum Coverage Results" MODIFIED="1543889264236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$TreeLevel.coverage" NAME="TreeLevel Coverage Results" MODIFIED="1532766526122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$30BTRight.coverage" NAME="30BTRight Coverage Results" MODIFIED="1524127095977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
@@ -255,16 +255,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="74" />
+          <entry key="dummy" value="79" />
           <entry key="gitignore" value="3" />
-          <entry key="py" value="42691" />
+          <entry key="py" value="43156" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="102" />
-          <entry key="Python" value="42683" />
+          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="Python" value="43148" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -277,7 +277,7 @@
           <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="493" />
+          <entry key="py" value="498" />
           <entry key="pyi" value="4" />
           <entry key="test_set" value="4" />
           <entry key="train_set" value="1" />
@@ -291,7 +291,7 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="488" />
+          <entry key="Python" value="493" />
           <entry key="PythonStub" value="4" />
           <entry key="XML" value="4" />
           <entry key="YouTrack" value="5" />
@@ -302,24 +302,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ML/page_rank.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classic/StringProblems.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode1/05longestPalindrome.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
@@ -328,11 +310,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ML/gbdt_test.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML/gbdt_split.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+            <state relative-caret-position="398">
+              <caret line="108" column="26" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML/gbdt_simple.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+              <folding>
+                <element signature="e#92#110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -352,7 +346,7 @@
             <state relative-caret-position="379">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
-                <marker date="1553867147926" expanded="true" signature="949:1260" ph="..." />
+                <marker date="1553950899151" expanded="true" signature="949:1260" ph="..." />
               </folding>
             </state>
           </provider>
@@ -361,8 +355,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode1/06convert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="288">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode1/08atoi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode1/10reg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
@@ -435,9 +447,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Classic/SecondLargest.py" />
-        <option value="$PROJECT_DIR$/feature_functions.py" />
-        <option value="$PROJECT_DIR$/ML/newton.py" />
         <option value="$PROJECT_DIR$/ML/dt_regression.py" />
         <option value="$PROJECT_DIR$/Classic/Tree.py" />
         <option value="$PROJECT_DIR$/Classic/SortMethods.py" />
@@ -486,6 +495,9 @@
         <option value="$PROJECT_DIR$/leetcode1/06convert.py" />
         <option value="$PROJECT_DIR$/leetcode1/05longestPalindrome.py" />
         <option value="$PROJECT_DIR$/ML/gbdt_test.py" />
+        <option value="$PROJECT_DIR$/ML/gbdt_simple.py" />
+        <option value="$PROJECT_DIR$/leetcode1/08atoi.py" />
+        <option value="$PROJECT_DIR$/leetcode1/10reg.py" />
       </list>
     </option>
   </component>
@@ -540,6 +552,11 @@
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
               <item name="Basic" type="462c0819:PsiDirectoryNode" />
               <item name="at" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
@@ -608,7 +625,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gbdt_test">
+  <component name="RunManager" selected="Python.10reg">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -677,7 +694,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="172trailingZeroes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="08atoi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -690,7 +707,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/172trailingZeroes.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/08atoi.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -699,7 +716,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="10reg" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -707,12 +724,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/Tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/10reg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -859,19 +876,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Tree" />
-      <item itemvalue="Python.172trailingZeroes" />
       <item itemvalue="Python.num_of1between1andN" />
       <item itemvalue="Python.06convert" />
       <item itemvalue="Python.gbdt_test" />
+      <item itemvalue="Python.08atoi" />
+      <item itemvalue="Python.10reg" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.10reg" />
+        <item itemvalue="Python.08atoi" />
         <item itemvalue="Python.gbdt_test" />
         <item itemvalue="Python.06convert" />
         <item itemvalue="Python.num_of1between1andN" />
-        <item itemvalue="Python.172trailingZeroes" />
-        <item itemvalue="Python.Tree" />
       </list>
     </recent_temporary>
   </component>
@@ -926,13 +943,13 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21459228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15593705" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.41084337" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.3" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" visible="true" weight="0.28554216" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
@@ -1574,9 +1591,24 @@
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ML/gbdt_test.py</url>
+          <url>file://$PROJECT_DIR$/ML/gbdt_split.py</url>
           <line>94</line>
           <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode1/08atoi.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode1/10reg.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode1/10reg.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="207" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1592,38 +1624,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classic/Exam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1552751486310" expanded="true" signature="8671:8730" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py3/lib/python3.6/site-packages/pandas/io/excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="1205" column="56" selection-start-line="1205" selection-start-column="56" selection-end-line="1205" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/py3/lib/python3.6/site-packages/xlrd/xldate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="228" column="8" selection-start-line="228" selection-start-column="8" selection-end-line="228" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0zuo_training/class1/money_ways.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1895,15 +1895,8 @@
         <state relative-caret-position="379">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
-            <marker date="1553867147926" expanded="true" signature="949:1260" ph="..." />
+            <marker date="1553950899151" expanded="true" signature="949:1260" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode1/06convert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1973,10 +1966,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML/gbdt_test.py">
+    <entry file="file://$PROJECT_DIR$/ML/gbdt_split.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+        <state relative-caret-position="398">
+          <caret line="108" column="26" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/gbdt_simple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+          <folding>
+            <element signature="e#92#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/06convert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/08atoi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="318" column="33" lean-forward="true" selection-start-line="318" selection-start-column="33" selection-end-line="318" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/10reg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
