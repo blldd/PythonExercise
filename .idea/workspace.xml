@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
-      <change afterPath="$PROJECT_DIR$/leetcode1/08atoi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode1/10reg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/32longestValidParentheses.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Students/fund/merge_sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Students/fund/merge_sheet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode1/05longestPalindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode1/05longestPalindrome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode1/10reg.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode1/10reg.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +114,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$15Transaction.coverage" NAME="15Transaction Coverage Results" MODIFIED="1524014733820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonExercise$Tree.coverage" NAME="Tree Coverage Results" MODIFIED="1553782562256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$FirstApearOnce.coverage" NAME="FirstApearOnce Coverage Results" MODIFIED="1533025126092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
-    <SUITE FILE_PATH="coverage/PythonExercise$10reg.coverage" NAME="10reg Coverage Results" MODIFIED="1553957211945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
+    <SUITE FILE_PATH="coverage/PythonExercise$10reg.coverage" NAME="10reg Coverage Results" MODIFIED="1553995177978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$kSum.coverage" NAME="kSum Coverage Results" MODIFIED="1543889264236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$TreeLevel.coverage" NAME="TreeLevel Coverage Results" MODIFIED="1532766526122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$30BTRight.coverage" NAME="30BTRight Coverage Results" MODIFIED="1524127095977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
@@ -153,7 +155,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$pytest_in_01test_py.coverage" NAME="pytest in 01test.py Coverage Results" MODIFIED="1541240966081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1103" />
     <SUITE FILE_PATH="coverage/PythonExercise$Vectorize.coverage" NAME="Vectorize Coverage Results" MODIFIED="1543588417672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KAP/Pre" />
     <SUITE FILE_PATH="coverage/PythonExercise$fabonacci.coverage" NAME="fabonacci Coverage Results" MODIFIED="1552659265238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KAP/Turtle" />
-    <SUITE FILE_PATH="coverage/PythonExercise$merge_sheet.coverage" NAME="merge_sheet Coverage Results" MODIFIED="1553699026280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Students/fund" />
+    <SUITE FILE_PATH="coverage/PythonExercise$merge_sheet.coverage" NAME="merge_sheet Coverage Results" MODIFIED="1554002884624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Students/fund" />
     <SUITE FILE_PATH="coverage/PythonExercise$40LowestCommenAncestor.coverage" NAME="40LowestCommenAncestor Coverage Results" MODIFIED="1544537547401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$Path.coverage" NAME="Path Coverage Results" MODIFIED="1526988706180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$01test.coverage" NAME="01test Coverage Results" MODIFIED="1552709249570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
@@ -222,6 +224,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$22MaxProductSub.coverage" NAME="22MaxProductSub Coverage Results" MODIFIED="1524039880382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$12PathSumII.coverage" NAME="12PathSumII Coverage Results" MODIFIED="1523951097097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonExercise$merge_sheett.coverage" NAME="merge_sheett Coverage Results" MODIFIED="1553682748152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Students/fund" />
+    <SUITE FILE_PATH="coverage/PythonExercise$32longestValidParentheses.coverage" NAME="32longestValidParentheses Coverage Results" MODIFIED="1554043978795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$StringProblems.coverage" NAME="StringProblems Coverage Results" MODIFIED="1553695657024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$pro2.coverage" NAME="pro2 Coverage Results" MODIFIED="1541516036260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1103" />
     <SUITE FILE_PATH="coverage/PythonExercise$NextNode.coverage" NAME="NextNode Coverage Results" MODIFIED="1542553182929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
@@ -257,14 +260,14 @@
         <counts>
           <entry key="dummy" value="79" />
           <entry key="gitignore" value="3" />
-          <entry key="py" value="43156" />
+          <entry key="py" value="43937" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="107" />
-          <entry key="Python" value="43148" />
+          <entry key="Python" value="43929" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -277,7 +280,7 @@
           <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="498" />
+          <entry key="py" value="503" />
           <entry key="pyi" value="4" />
           <entry key="test_set" value="4" />
           <entry key="train_set" value="1" />
@@ -291,7 +294,7 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="493" />
+          <entry key="Python" value="498" />
           <entry key="PythonStub" value="4" />
           <entry key="XML" value="4" />
           <entry key="YouTrack" value="5" />
@@ -304,8 +307,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode1/05longestPalindrome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="494">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -320,33 +323,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ML/gbdt_simple.py">
+        <entry file="file://$PROJECT_DIR$/Students/fund/merge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="-818">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
-                <element signature="e#92#110#0" expanded="true" />
+                <element signature="e#23#32#0" expanded="true" />
+                <marker date="1553680716431" expanded="true" signature="227:2813" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leetcode1/172trailingZeroes.py">
+        <entry file="file://$PROJECT_DIR$/util_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="197">
+              <caret line="149" column="15" lean-forward="true" selection-start-line="149" selection-start-column="15" selection-end-line="149" selection-end-column="15" />
+              <folding>
+                <element signature="e#24#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leetcode1/num_of1between1andN.py">
+        <entry file="file://$PROJECT_DIR$/ML/gbdt_simple.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="176">
+              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
               <folding>
-                <marker date="1553950899151" expanded="true" signature="949:1260" ph="..." />
+                <element signature="e#92#110#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -356,7 +363,7 @@
         <entry file="file://$PROJECT_DIR$/leetcode1/06convert.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -370,11 +377,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode1/10reg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="434">
+              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode1/32longestValidParentheses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="64" column="20" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -447,8 +463,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ML/dt_regression.py" />
-        <option value="$PROJECT_DIR$/Classic/Tree.py" />
         <option value="$PROJECT_DIR$/Classic/SortMethods.py" />
         <option value="$PROJECT_DIR$/0zuo_training/class1/max_gap.py" />
         <option value="$PROJECT_DIR$/todo.py" />
@@ -484,7 +498,6 @@
         <option value="$PROJECT_DIR$/leetcode1/02add_two_link.py" />
         <option value="$PROJECT_DIR$/ML/page_rank.py" />
         <option value="$PROJECT_DIR$/Students/fund/merge.py" />
-        <option value="$PROJECT_DIR$/util_tools.py" />
         <option value="$PROJECT_DIR$/Students/fund/merge_sheett.py" />
         <option value="$PROJECT_DIR$/0zuo_training/class2/LongestSumSubArrayLengthInPositiveArray.py" />
         <option value="$PROJECT_DIR$/leetcode1/03lengthOfLongestSubstring.py" />
@@ -493,11 +506,14 @@
         <option value="$PROJECT_DIR$/leetcode1/172trailingZeroes.py" />
         <option value="$PROJECT_DIR$/leetcode1/num_of1between1andN.py" />
         <option value="$PROJECT_DIR$/leetcode1/06convert.py" />
-        <option value="$PROJECT_DIR$/leetcode1/05longestPalindrome.py" />
         <option value="$PROJECT_DIR$/ML/gbdt_test.py" />
         <option value="$PROJECT_DIR$/ML/gbdt_simple.py" />
         <option value="$PROJECT_DIR$/leetcode1/08atoi.py" />
+        <option value="$PROJECT_DIR$/util_tools.py" />
+        <option value="$PROJECT_DIR$/Students/fund/merge_sheet.py" />
         <option value="$PROJECT_DIR$/leetcode1/10reg.py" />
+        <option value="$PROJECT_DIR$/leetcode1/05longestPalindrome.py" />
+        <option value="$PROJECT_DIR$/leetcode1/32longestValidParentheses.py" />
       </list>
     </option>
   </component>
@@ -507,7 +523,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="828" />
@@ -561,16 +577,6 @@
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="ML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
               <item name="Students" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -592,7 +598,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="dp&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/dp.py&#10;test&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/01test.py&#10;pdf&#9;null&#9;null&#10;tree&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Tree.py&#10;tes&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/01test.py&#10;rotatea&#9;null&#9;null&#10;rotate&#9;null&#9;null&#10;threes&#9;null&#9;null&#10;permuta&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Permutation.py&#10;lengthOfLongestSubstring&#9;null&#9;null&#10;sum&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1sumN.py&#10;mu&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/multiply.py&#10;lowe&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/LeetCode/40LowestCommenAncestor.py&#10;low&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/KAP/venv/Lib/site-packages/sklearn/manifold/locally_linear.py&#10;jose&#9;null&#9;null&#10;init&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/0Tools/__init__.py&#10;ini&#9;FILE&#9;file:///Users/ddlee/anaconda3/envs/py3/lib/python3.6/site-packages/nltk/corpus/__init__.py&#10;pop&#9;null&#9;null&#10;min&#9;null&#9;null&#10;rev&#9;null&#9;null&#10;reverse&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/sort_by_leetcode/linked_list/easy/206. Reverse Linked List.py&#10;rever&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1Reverse.py&#10;fib&#9;null&#9;null&#10;te&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/1103/test.py&#10;test.t&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/test.txt&#10;path&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Students/fund/merge_sheet.py&#10;dp&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/dp.py&#10;test&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/01test.py&#10;pdf&#9;null&#9;null&#10;tree&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Tree.py&#10;tes&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/01test.py&#10;rotatea&#9;null&#9;null&#10;rotate&#9;null&#9;null&#10;threes&#9;null&#9;null&#10;permuta&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Permutation.py&#10;lengthOfLongestSubstring&#9;null&#9;null&#10;sum&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1sumN.py&#10;mu&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/multiply.py&#10;lowe&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/LeetCode/40LowestCommenAncestor.py&#10;low&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/KAP/venv/Lib/site-packages/sklearn/manifold/locally_linear.py&#10;jose&#9;null&#9;null&#10;init&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/0Tools/__init__.py&#10;ini&#9;FILE&#9;file:///Users/ddlee/anaconda3/envs/py3/lib/python3.6/site-packages/nltk/corpus/__init__.py&#10;pop&#9;null&#9;null&#10;min&#9;null&#9;null&#10;rev&#9;null&#9;null&#10;reverse&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/sort_by_leetcode/linked_list/easy/206. Reverse Linked List.py&#10;rever&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1Reverse.py&#10;fib&#9;null&#9;null&#10;te&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/1103/test.py&#10;test.t&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/test.txt&#10;path&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -625,7 +631,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.10reg">
+  <component name="RunManager" selected="Python.32longestValidParentheses">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -672,28 +678,6 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="06convert" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonExercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/06convert.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="08atoi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -738,6 +722,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="32longestValidParentheses" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonExercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/32longestValidParentheses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="gbdt_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -760,7 +766,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="num_of1between1andN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="merge_sheet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -768,12 +774,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Students/fund" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/num_of1between1andN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Students/fund/merge_sheet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -876,19 +882,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.num_of1between1andN" />
-      <item itemvalue="Python.06convert" />
       <item itemvalue="Python.gbdt_test" />
       <item itemvalue="Python.08atoi" />
       <item itemvalue="Python.10reg" />
+      <item itemvalue="Python.merge_sheet" />
+      <item itemvalue="Python.32longestValidParentheses" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.32longestValidParentheses" />
+        <item itemvalue="Python.merge_sheet" />
         <item itemvalue="Python.10reg" />
         <item itemvalue="Python.08atoi" />
         <item itemvalue="Python.gbdt_test" />
-        <item itemvalue="Python.06convert" />
-        <item itemvalue="Python.num_of1between1andN" />
       </list>
     </recent_temporary>
   </component>
@@ -941,15 +947,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15593705" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22103004" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" visible="true" weight="0.28554216" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.23012048" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.28554216" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
@@ -1610,6 +1617,11 @@
           <line>55</line>
           <option name="timeStamp" value="207" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode1/32longestValidParentheses.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1624,13 +1636,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/0zuo_training/class1/money_ways.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0zuo_training/class2/building_outline.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1755,13 +1760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0zuo_training/study_time.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1793,27 +1791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="4172" column="27" lean-forward="true" selection-start-line="4172" selection-start-column="27" selection-end-line="4172" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Students/fund/merge_sheet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Students/fund/merge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-            <marker date="1553680716431" expanded="true" signature="227:2813" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1959,13 +1936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode1/05longestPalindrome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ML/gbdt_split.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -1973,20 +1943,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML/gbdt_simple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-          <folding>
-            <element signature="e#92#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode1/06convert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
@@ -2004,10 +1964,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ML/gbdt_simple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding>
+            <element signature="e#92#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Students/fund/merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-818">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+            <marker date="1553680716431" expanded="true" signature="227:2813" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="149" column="15" lean-forward="true" selection-start-line="149" selection-start-column="15" selection-end-line="149" selection-end-column="15" />
+          <folding>
+            <element signature="e#24#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Students/fund/merge_sheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/05longestPalindrome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode1/10reg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="434">
+          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/32longestValidParentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="20" />
         </state>
       </provider>
     </entry>

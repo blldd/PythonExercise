@@ -80,6 +80,7 @@ def process(in_file, IC_file, IH_file):
                             rows.append(row)
 
         write_rows2sheet(writer, rows, header, sheet_name=table.name)
+    writer.save()
     print("Done!")
 
 

@@ -59,7 +59,7 @@ class Solution(object):
                     elif p[j - 2] == s[i - 1] or p[j - 2] == '.':
                         dp[i][j] = dp[i - 1][j] or dp[i][j - 2]
 
-                elif s[i - 1] == p[j - 1] or p[j - 1] == '.':
+                elif p[j - 1] == s[i - 1] or p[j - 1] == '.':
                     dp[i][j] = dp[i - 1][j - 1]
         for i in dp:
             print(i)
@@ -68,6 +68,6 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    s = "aa"
-    p = "a*"
+    s = "ac"
+    p = ".*"
     print(Solution().isMatch_dp(s, p))
