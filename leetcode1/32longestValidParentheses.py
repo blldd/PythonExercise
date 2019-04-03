@@ -75,6 +75,6 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    s = ")()())"
+    s = ")(()))"
     print(Solution().longestValidParentheses_dp(s))
     # print(Solution().isValid(s))

@@ -56,6 +56,26 @@ def read_excel_row(in_file, col_idxs):
                 one_row.append(row[col_idx])
             yield tuple(one_row)
 
+def read_excel_row_by_sheet(in_file, sheet_names, col_idxs):
+    """
+    :param in_file: 待读取Excel文件路径
+    :param sheet_names: 待读取的sheet 名称，如["", ""]
+    :param col_idxs: 待读取列编号，如[1,3,5] 表示第2，4，6列
+    :return:
+    """
+    data = xlrd.open_workbook(in_file)
+    for sheet_name in sheet_names:
+        table = data.sheet_by_name(sheet_name)
+        nrows = table.nrows
+        for i in range(nrows):
+            if i == 0:
+                continue
+            row = table.row_values(i)
+            one_row = []
+            for col_idx in col_idxs:
+                one_row.append(row[col_idx])
+            yield tuple(one_row)
+
 
 def read_sheet_row(table, col_idxs):
     """
