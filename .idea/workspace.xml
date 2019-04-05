@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
-      <change afterPath="$PROJECT_DIR$/Classic/archer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ML/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/at/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/at/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classic/printMatrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/printMatrix.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode1/416partitionEqual.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode1/416partitionEqual.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -145,7 +140,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$Permutation.coverage" NAME="Permutation Coverage Results" MODIFIED="1536675135490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$Proxy.coverage" NAME="Proxy Coverage Results" MODIFIED="1540716885236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DesignPatterns" />
     <SUITE FILE_PATH="coverage/PythonExercise$LinkList.coverage" NAME="LinkList Coverage Results" MODIFIED="1544325169129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
-    <SUITE FILE_PATH="coverage/PythonExercise$416partitionEqual.coverage" NAME="416partitionEqual Coverage Results" MODIFIED="1554454482998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
+    <SUITE FILE_PATH="coverage/PythonExercise$416partitionEqual.coverage" NAME="416partitionEqual Coverage Results" MODIFIED="1554468569512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$Builder.coverage" NAME="Builder Coverage Results" MODIFIED="1540710986179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DesignPatterns" />
     <SUITE FILE_PATH="coverage/PythonExercise$1sum2.coverage" NAME="1sum2 Coverage Results" MODIFIED="1544450463116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$multi_factor.coverage" NAME="multi_factor Coverage Results" MODIFIED="1554120925848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Students/fund" />
@@ -269,14 +264,14 @@
         <counts>
           <entry key="dummy" value="79" />
           <entry key="gitignore" value="3" />
-          <entry key="py" value="48525" />
+          <entry key="py" value="48997" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="107" />
-          <entry key="Python" value="48517" />
+          <entry key="Python" value="48989" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -349,7 +344,7 @@
               <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
-                <marker date="1554302110510" expanded="true" signature="1512:1705" ph="..." />
+                <marker date="1554454686473" expanded="true" signature="1512:1705" ph="..." />
               </folding>
             </state>
           </provider>
@@ -358,8 +353,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode1/416partitionEqual.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="261">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
             </state>
           </provider>
         </entry>
@@ -926,14 +921,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.3060241" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.35060242" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.28554216" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5164521" side_tool="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22409639" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.23975904" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.12650603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1927,7 +1922,7 @@
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
-            <marker date="1554302110510" expanded="true" signature="1512:1705" ph="..." />
+            <marker date="1554454686473" expanded="true" signature="1512:1705" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2002,8 +1997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode1/416partitionEqual.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="261">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
         </state>
       </provider>
     </entry>
