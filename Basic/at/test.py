@@ -1,35 +1,66 @@
 # -*- coding:UTF-8 -*-
-import re
+import math
 import sys
 
-if __name__ == "__main__":
-    A = sys.stdin.readline().strip()
-    B = sys.stdin.readline().strip()
-    Q = int(sys.stdin.readline().strip())
 
-    if Q < 1 or Q > 100000 or len(A) < 1 or len(A) > 500000 or len(B) < 1 or len(B) > 100:
-        print("error")
+# Read only region start
+class UserMainCode(object):
+    @classmethod
+    def honey(cls, input1, input2, input3, input4, input5, input6):
+        '''
+        input1 : int
+        input2 : int
+        input3 : int[-]
+        input4 : int[-]
+        input5 : int[]
+        input6 : int
 
-    res = []
-    for i in range(Q):
-        line = sys.stdin.readline().strip()
-        line = list(map(int, line.split()))
+        Expected return type : int
+        '''
+        # Read only region end
+        # Write code here
+        flower = input3
+        honeys = input4
+        source = input5
+        period = input6
 
-        l, r = line[0], line[1]
-        # ans = re.findall(B, A[l-1:r])
+        dis = math.sqrt(pow(source[0] - flower[0][0], 2) + pow(source[1] - flower[0][1], 2))
+        while dis < period:
+            dis
 
-        str_s = A[l-1:r]
-        str_p = B
-        length  = len(str_p)
-        ans = 0
-        for k in range(len(str_s) - length+1):
-            if str_p == str_s[k:k+length]:
-                ans += 1
+if __name__ == '__main__':
+    print(UserMainCode().honey(5, 3, [[1, 0], [3, 3], [2, 2]]))
 
-        res.append(ans)
+#
 
-    for i in res:
-        print(i)
+#
+# # Read only region start
+# class UserMainCode(object):
+#     @classmethod
+#     def findPosition(cls, input1, input2, input3):
+#         '''
+#         input1 : int
+#         input2 : int
+#         input3 : int[-]
+#
+#         Expected return type : int
+#         '''
+#         # Read only region end
+#         # Write code here
+#
+#         res = 0
+#         arr = list(range(input1))
+#         for x, y in input3:
+#             if x == 1:
+#                 arr.pop(0)
+#             if x == 3:
+#                 res += arr.index(y - 1) + 1
+#             if x == 2:
+#                 idx = arr.index(y - 1)
+#                 arr.pop(idx)
+#         return res
+
+
 
 # # -*- coding:UTF-8 -*-
 #

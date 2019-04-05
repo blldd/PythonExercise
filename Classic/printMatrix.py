@@ -50,5 +50,7 @@ def snail(array):
 
 if __name__ == '__main__':
     mat = [[1, 2, 8, 9], [2, 4, 9, 12], [4, 7, 10, 13], [6, 8, 11, 15]]
-    # print(zip(*mat))
+    print(*mat)
+    for i in zip(*mat):
+        print(i)
     print(printMatrix(mat))
