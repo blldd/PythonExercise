@@ -1,0 +1,6 @@
+# Python Excercise
+
+ 
+## 
+- leetcode
+- ML

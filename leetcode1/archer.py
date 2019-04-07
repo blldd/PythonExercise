@@ -1,22 +1,49 @@
 # -*- coding:UTF-8 -*-
 import sys
 
+"""
+消消乐问题
+
+"""
 
 def archer(n, nums):
-    # todo
+    """
+    动态规划
+    :param n:
+    :param nums:
+    :return:
+    """
+    dp = [[sys.maxsize for j in range(n)] for i in range(n)]
 
-    dp = [[0 for j in range(n + 1)] for i in range(n + 1)]
+    for i in range(n):
+        for j in range(i, n):
+            if i == j:
+                dp[i][j] = 1
+                continue
+            if j - i == 1:
+                dp[i][j] = 1 if nums[i] == nums[j] else 2
+                break
 
-    for i in range(1, n + 1):
-        for j in range(1, n + 1):
-            for k in range(i - 1, j):
+    for i in range(n):
+        for j in range(i, n):
+            for k in range(i, j):
                 dp[i][j] = min(dp[i][j], dp[i][k] + dp[k + 1][j])
+            if nums[i] == nums[j] and i + 1 < j - 1 and j - 1 < n and i + 1 >= 0:
+                dp[i][j] = min((dp[i][j], dp[i + 1][j - 1]))
     for i in dp:
         print(i)
-    return dp[-1][-1]
+    return dp[0][n - 1]
 
 
 def dfs(l, r):
+    """
+    动态规划
+    递归形式
+    :param l:
+    :param r:
+    :return:
+    """
+
     if dp[l][r] != -1:
         return dp[l][r]
     if l == r:
@@ -42,23 +69,6 @@ if __name__ == '__main__':
     print(dfs(0, n - 1))
     for i in dp:
         print(i)
-    # print(archer(n, nums))
 
-"""
-int dfs(int l, int r){
-
-    if(dp[l][r] != -1)return dp[l][r];
-    if(l == r)return dp[l][r] = 1;
-    if(r - l == 1){
-        return dp[l][r] = (a[l] == a[r] ? 1 : 2);
-    }
-    int ans = 10086;
-    for(int k = l; k < r; k++){
-        ans = min(ans, dfs(l, k) + dfs(k + 1, r));
-    }
-    if(a[l] == a[r])
-        ans = min(ans, dfs(l + 1, r - 1));
-    //printf("%d %d %d\n", l, r, ans);
-    return dp[l][r] = ans;
-}
-"""
+    print("--" * 10)
+    print(archer(n, nums))
