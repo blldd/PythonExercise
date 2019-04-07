@@ -40,16 +40,16 @@ class Solution:
         # write code here
         if not pRoot:
             return []
-        res=[]
-        tmp=[pRoot]
+        res = []
+        tmp = [pRoot]
         while tmp:
-            size=len(tmp)
-            row=[]
+            size = len(tmp)
+            row = []
             for i in tmp:
                 row.append(i.val)
             res.append(row)
             for i in range(size):
-                node=tmp.pop(0)
+                node = tmp.pop(0)
                 if node.left:
                     tmp.append(node.left)
                 if node.right:
@@ -63,5 +63,5 @@ if __name__ == '__main__':
     pHead.right = TreeNode(2)
     pHead.left.left = TreeNode(3)
     pHead.right.left = TreeNode(4)
-    print(Solution().Print(pHead))
+    print(Solution().Print1(pHead))
     pass
