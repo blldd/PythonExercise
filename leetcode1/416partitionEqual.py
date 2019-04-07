@@ -40,9 +40,9 @@ class Solution(object):
                 if current_sum[j] < current_sum[j - nums[i]] + nums[i]:
                     current_sum[j] = current_sum[j - nums[i]] + nums[i]
                     state[i][j] = 1
-        for i in state:
-            print(i)
-        print(current_sum)
+            print(state[i])
+            print(current_sum)
+            print()
         res = []
         j = total // 2
         for i in range(len(nums) - 1, -1, -1):
