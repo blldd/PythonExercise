@@ -28,7 +28,7 @@ def archer(n, nums):
         for j in range(i, n):
             for k in range(i, j):
                 dp[i][j] = min(dp[i][j], dp[i][k] + dp[k + 1][j])
-            if nums[i] == nums[j] and i + 1 < j - 1 and j - 1 < n and i + 1 >= 0:
+            if nums[i] == nums[j] and i + 1 < j - 1:
                 dp[i][j] = min((dp[i][j], dp[i + 1][j - 1]))
     for i in dp:
         print(i)
@@ -63,8 +63,8 @@ def dfs(l, r):
 
 
 if __name__ == '__main__':
-    n = 5
-    nums = [1, 4, 3, 1, 5]
+    n = 4
+    nums = [1, 4, 3, 1]
     dp = [[-1 for j in range(n)] for i in range(n)]
     print(dfs(0, n - 1))
     for i in dp:
