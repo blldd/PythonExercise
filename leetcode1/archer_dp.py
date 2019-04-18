@@ -63,6 +63,11 @@ def dfs(l, r):
 
 
 if __name__ == '__main__':
+    """
+    问题描述：
+    打气球，一下 能 连续打爆一串回文串，或者打爆一个
+    求打爆所有的最少需要几次？
+    """
     n = 4
     nums = [1, 4, 3, 1]
     dp = [[-1 for j in range(n)] for i in range(n)]

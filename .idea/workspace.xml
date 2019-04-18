@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
-      <change afterPath="$PROJECT_DIR$/ML/nb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ML/svd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/0414test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/994orange_rotting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/TSP_problem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/tsp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/MM/function_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/MM/function_plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode1/archer_dp.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode1/archer_dp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +48,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$printMatrix.coverage" NAME="printMatrix Coverage Results" MODIFIED="1554443399704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$LongestSubStr.coverage" NAME="LongestSubStr Coverage Results" MODIFIED="1547351503592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$RobotMvCnt.coverage" NAME="RobotMvCnt Coverage Results" MODIFIED="1542783557186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
-    <SUITE FILE_PATH="coverage/PythonExercise$archer.coverage" NAME="archer Coverage Results" MODIFIED="1554697099271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$archer.coverage" NAME="archer Coverage Results" MODIFIED="1555038494847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$sumN.coverage" NAME="sumN Coverage Results" MODIFIED="1533027672656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$23MinStack.coverage" NAME="23MinStack Coverage Results" MODIFIED="1524039959951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$NumWithSum.coverage" NAME="NumWithSum Coverage Results" MODIFIED="1533027914139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
@@ -149,6 +153,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$1sum2.coverage" NAME="1sum2 Coverage Results" MODIFIED="1544450463116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$multi_factor.coverage" NAME="multi_factor Coverage Results" MODIFIED="1554120925848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Students/fund" />
     <SUITE FILE_PATH="coverage/PythonExercise$Prototype.coverage" NAME="Prototype Coverage Results" MODIFIED="1540711738468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DesignPatterns" />
+    <SUITE FILE_PATH="coverage/PythonExercise$TSP_problem.coverage" NAME="TSP_problem Coverage Results" MODIFIED="1555576819728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$str2int.coverage" NAME="str2int Coverage Results" MODIFIED="1531747405926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$1TwoSum.coverage" NAME="1TwoSum Coverage Results" MODIFIED="1533863989025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$GetMedian.coverage" NAME="GetMedian Coverage Results" MODIFIED="1532785861714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
@@ -178,6 +183,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$2linkList.coverage" NAME="2linkList Coverage Results" MODIFIED="1542524777279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$analyzerCurve.coverage" NAME="analyzerCurve Coverage Results" MODIFIED="1524292942447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plot" />
     <SUITE FILE_PATH="coverage/PythonExercise$Adapter.coverage" NAME="Adapter Coverage Results" MODIFIED="1540712108907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DesignPatterns" />
+    <SUITE FILE_PATH="coverage/PythonExercise$function_plot.coverage" NAME="function_plot Coverage Results" MODIFIED="1555118517507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools/MM" />
     <SUITE FILE_PATH="coverage/PythonTools$trace_plot.coverage" NAME="trace_plot Coverage Results" MODIFIED="1537175672045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0Tools" />
     <SUITE FILE_PATH="coverage/PythonTools$Reverse.coverage" NAME="Reverse Coverage Results" MODIFIED="1533026729821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$66plusone.coverage" NAME="66plusone Coverage Results" MODIFIED="1533991051027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
@@ -199,12 +205,14 @@
     <SUITE FILE_PATH="coverage/PythonTools$function_plot.coverage" NAME="function_plot Coverage Results" MODIFIED="1537279714833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0Tools" />
     <SUITE FILE_PATH="coverage/PythonTools$sum2.coverage" NAME="sum2 Coverage Results" MODIFIED="1531792017555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$5LevelOrder.coverage" NAME="5LevelOrder Coverage Results" MODIFIED="1523933576414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
+    <SUITE FILE_PATH="coverage/PythonExercise$tsp.coverage" NAME="tsp Coverage Results" MODIFIED="1555573748787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$40LowestCommenAncestor.coverage" NAME="40LowestCommenAncestor Coverage Results" MODIFIED="1536674523797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonExercise$circle_paths.coverage" NAME="circle_paths Coverage Results" MODIFIED="1554619237852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$20LCPre.coverage" NAME="20LCPre Coverage Results" MODIFIED="1524035393235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$solution.coverage" NAME="solution Coverage Results" MODIFIED="1537324346591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0Tools" />
     <SUITE FILE_PATH="coverage/PythonExercise$02add_two_link.coverage" NAME="02add_two_link Coverage Results" MODIFIED="1553579785675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$xgboost.coverage" NAME="xgboost Coverage Results" MODIFIED="1553410581198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML" />
+    <SUITE FILE_PATH="coverage/PythonExercise$994orange_rotting.coverage" NAME="994orange_rotting Coverage Results" MODIFIED="1555569664707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$NoDup.coverage" NAME="NoDup Coverage Results" MODIFIED="1542522772946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$DynamicProgramming.coverage" NAME="DynamicProgramming Coverage Results" MODIFIED="1542812832298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$num_of1between1andN.coverage" NAME="num_of1between1andN Coverage Results" MODIFIED="1553867116013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
@@ -227,6 +235,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$04maxSubarr.coverage" NAME="04maxSubarr Coverage Results" MODIFIED="1533990222991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$Tree.coverage" NAME="Tree Coverage Results" MODIFIED="1537192917248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$168__Excel_Sheet_Column_Title.coverage" NAME="168. Excel Sheet Column Title Coverage Results" MODIFIED="1535504179267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sort_by_leetcode/math/easy" />
+    <SUITE FILE_PATH="coverage/PythonExercise$0414test.coverage" NAME="0414test Coverage Results" MODIFIED="1555213718316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
     <SUITE FILE_PATH="coverage/PythonExercise$1111test.coverage" NAME="1111test Coverage Results" MODIFIED="1542000739834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1103" />
     <SUITE FILE_PATH="coverage/PythonExercise$sqrt.coverage" NAME="sqrt Coverage Results" MODIFIED="1551451652323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$SerializeTree.coverage" NAME="SerializeTree Coverage Results" MODIFIED="1536493731591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
@@ -247,25 +256,25 @@
     <session id="1206640456">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="82" />
+          <entry key="project.closed" value="87" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="37" />
+          <entry key="project.open.time.1" value="38" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="11" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="6" />
-          <entry key="project.open.time.7" value="8" />
+          <entry key="project.open.time.7" value="10" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.8" value="6" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="88" />
+          <entry key="project.opened" value="95" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -273,7 +282,7 @@
           <entry key="dummy" value="82" />
           <entry key="gitignore" value="3" />
           <entry key="md" value="29" />
-          <entry key="py" value="50344" />
+          <entry key="py" value="52570" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
@@ -281,7 +290,7 @@
         <counts>
           <entry key="Markdown" value="29" />
           <entry key="PLAIN_TEXT" value="110" />
-          <entry key="Python" value="50336" />
+          <entry key="Python" value="52562" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -295,8 +304,8 @@
           <entry key="iml" value="1" />
           <entry key="ipynb" value="1" />
           <entry key="md" value="1" />
-          <entry key="png" value="1" />
-          <entry key="py" value="544" />
+          <entry key="png" value="3" />
+          <entry key="py" value="556" />
           <entry key="pyi" value="4" />
           <entry key="test_set" value="4" />
           <entry key="train_set" value="1" />
@@ -309,10 +318,10 @@
           <entry key="CSV" value="2" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="IPNB" value="1" />
-          <entry key="Image" value="1" />
+          <entry key="Image" value="3" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="539" />
+          <entry key="Python" value="551" />
           <entry key="PythonStub" value="4" />
           <entry key="XML" value="4" />
           <entry key="YouTrack" value="5" />
@@ -323,28 +332,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classic/dp.py">
+        <entry file="file://$PROJECT_DIR$/Basic/0414test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="438">
+              <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
               <folding>
-                <marker date="1553696083292" expanded="true" signature="310:1337" ph="..." />
-                <marker date="1553696083292" expanded="true" signature="1710:7303" ph="..." />
-                <marker date="1553696083292" expanded="true" signature="3081:7303" ph="..." />
-                <marker date="1553696083292" expanded="true" signature="6046:7303" ph="..." />
+                <marker date="1555213843034" expanded="true" signature="2337:2353" ph="..." />
+                <marker date="1555213843034" expanded="true" signature="2379:2742" ph="..." />
+                <marker date="1555213843034" expanded="true" signature="2768:4411" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Basic/01test.py">
+        <entry file="file://$PROJECT_DIR$/leetcode1/994orange_rotting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="323">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode1/tsp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding>
-                <marker date="1553585614448" expanded="true" signature="1011:1012" ph="..." />
+                <marker date="1555573780725" expanded="true" signature="59:1088" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode1/TSP_problem.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/toutiao_leet/ArraySort.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7486">
+              <caret line="394" column="27" selection-start-line="369" selection-start-column="4" selection-end-line="394" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2147">
+              <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -352,8 +396,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basic/at/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="1748">
+              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
                 <marker date="1554454686473" expanded="true" signature="1512:1705" ph="..." />
@@ -365,38 +409,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode1/archer_dp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ML/nb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-              <folding>
-                <element signature="e#15#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ML/svd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tools/reservoir_sampling.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="589">
+              <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -404,8 +418,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode1/circle_paths.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="342">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -413,8 +427,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeOffer/TreeLevel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="266">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -431,10 +445,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>xlrd</find>
-      <find>int</find>
-      <find>sorted</find>
-      <find>config</find>
       <find>小根堆</find>
       <find>bubble</find>
       <find>class</find>
@@ -461,6 +471,10 @@
       <find>mat</find>
       <find>print (.*)</find>
       <find>zip</find>
+      <find>LAMBDA</find>
+      <find>plt</find>
+      <find>plt.subplot</find>
+      <find>permu</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -478,12 +492,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Classic/median_of_two_sorted_arr.py" />
-        <option value="$PROJECT_DIR$/0zuo_training/class1/money_ways.py" />
-        <option value="$PROJECT_DIR$/0zuo_training/class1/Josephus.py" />
-        <option value="$PROJECT_DIR$/Classic/Permutation.py" />
-        <option value="$PROJECT_DIR$/0zuo_training/toutiao0317.py" />
-        <option value="$PROJECT_DIR$/Basic/GrokkingAlgorithms/dijkstras.py" />
         <option value="$PROJECT_DIR$/ML/xgboost.py" />
         <option value="$PROJECT_DIR$/ML/auc.py" />
         <option value="$PROJECT_DIR$/ML/xgboost_test.py" />
@@ -525,10 +533,16 @@
         <option value="$PROJECT_DIR$/leetcode1/archer.py" />
         <option value="$PROJECT_DIR$/Classic/DFSBFS.py" />
         <option value="$PROJECT_DIR$/CodeOffer/TreeLevel.py" />
-        <option value="$PROJECT_DIR$/leetcode1/circle_paths.py" />
-        <option value="$PROJECT_DIR$/leetcode1/archer_dp.py" />
         <option value="$PROJECT_DIR$/ML/nb.py" />
         <option value="$PROJECT_DIR$/ML/svd.py" />
+        <option value="$PROJECT_DIR$/leetcode1/circle_paths.py" />
+        <option value="$PROJECT_DIR$/leetcode1/archer_dp.py" />
+        <option value="$PROJECT_DIR$/KAP/L5/iris.py" />
+        <option value="$PROJECT_DIR$/Tools/MM/function_plot.py" />
+        <option value="$PROJECT_DIR$/Basic/0414test.py" />
+        <option value="$PROJECT_DIR$/leetcode1/994orange_rotting.py" />
+        <option value="$PROJECT_DIR$/leetcode1/tsp.py" />
+        <option value="$PROJECT_DIR$/leetcode1/TSP_problem.py" />
       </list>
     </option>
   </component>
@@ -538,7 +552,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="828" />
@@ -571,38 +585,7 @@
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="Classic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeOffer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
               <item name="leetcode1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="ML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="Students" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="Students" type="462c0819:PsiDirectoryNode" />
-              <item name="fund" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -644,7 +627,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.svd">
+  <component name="RunManager" selected="Python.TSP_problem">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -709,7 +692,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DFSBFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="0414test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -717,12 +700,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Basic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/DFSBFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/0414test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -731,7 +714,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TreeLevel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="994orange_rotting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -739,12 +722,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CodeOffer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CodeOffer/TreeLevel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/994orange_rotting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -753,7 +736,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="archer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TSP_problem" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -761,12 +744,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/archer_dp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/TSP_problem.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -775,7 +758,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="function_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -783,12 +766,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tools/MM" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML/nb.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tools/MM/function_plot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -797,7 +780,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="svd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tsp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -805,12 +788,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML/svd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/tsp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -914,19 +897,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.PythonExercise" />
-      <item itemvalue="Python.archer" />
-      <item itemvalue="Python.DFSBFS" />
-      <item itemvalue="Python.TreeLevel" />
-      <item itemvalue="Python.nb" />
-      <item itemvalue="Python.svd" />
+      <item itemvalue="Python.function_plot" />
+      <item itemvalue="Python.0414test" />
+      <item itemvalue="Python.994orange_rotting" />
+      <item itemvalue="Python.tsp" />
+      <item itemvalue="Python.TSP_problem" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.svd" />
-        <item itemvalue="Python.nb" />
-        <item itemvalue="Python.archer" />
-        <item itemvalue="Python.TreeLevel" />
-        <item itemvalue="Python.DFSBFS" />
+        <item itemvalue="Python.TSP_problem" />
+        <item itemvalue="Python.tsp" />
+        <item itemvalue="Python.994orange_rotting" />
+        <item itemvalue="Python.0414test" />
+        <item itemvalue="Python.function_plot" />
       </list>
     </recent_temporary>
   </component>
@@ -979,22 +962,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2732475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.32289156" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.4361446" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.15903614" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.26506025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5164521" side_tool="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3433735" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30240965" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.12650603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1679,6 +1661,26 @@
           <line>35</line>
           <option name="timeStamp" value="219" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Basic/0414test.py</url>
+          <line>132</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Basic/0414test.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode1/994orange_rotting.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode1/994orange_rotting.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1693,90 +1695,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/leetcode1/03lengthOfLongestSubstring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot/fitAccuCurve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot/meanAccuCurve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot/paraCurve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot/plotAccuCurve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot/analyzerCurve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/at/SpamNB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML/gbdt_split.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="108" column="26" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode1/06convert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode1/08atoi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="318" column="33" lean-forward="true" selection-start-line="318" selection-start-column="33" selection-end-line="318" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/xlrd/book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="461" column="45" lean-forward="true" selection-start-line="461" selection-start-column="45" selection-end-line="461" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Students/fund/1twist_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1908,13 +1826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1872408764/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="5734" column="12" lean-forward="true" selection-start-line="5734" selection-start-column="12" selection-end-line="5734" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classic/printMatrix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1995,6 +1906,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ML/nb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/svd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/reservoir_sampling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/MM/angle_fig.png" />
+    <entry file="file://$PROJECT_DIR$/Tools/MM/function_fig.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/MM/function_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KAP/L5/iris.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KAP/Pre/TagTopK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/at/SpamNB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classic/dp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -2010,18 +1974,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Basic/01test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state>
+          <caret selection-end-line="35" />
           <folding>
             <marker date="1553585614448" expanded="true" signature="1011:1012" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao_leet/ArraySort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7486">
+          <caret line="394" column="27" selection-start-line="369" selection-start-column="4" selection-end-line="394" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2147">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Basic/at/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="1748">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
             <marker date="1554454686473" expanded="true" signature="1512:1705" ph="..." />
@@ -2031,46 +2009,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode1/archer_dp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML/nb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="e#15#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="589">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode1/circle_paths.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        <state relative-caret-position="342">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeOffer/TreeLevel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML/svd.py">
+    <entry file="file://$PROJECT_DIR$/Basic/0414test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="438">
+          <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
+          <folding>
+            <marker date="1555213843034" expanded="true" signature="2337:2353" ph="..." />
+            <marker date="1555213843034" expanded="true" signature="2379:2742" ph="..." />
+            <marker date="1555213843034" expanded="true" signature="2768:4411" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/reservoir_sampling.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1872408764/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="152">
+          <caret line="306" column="29" lean-forward="true" selection-start-line="306" selection-start-column="29" selection-end-line="306" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/994orange_rotting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/tsp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <marker date="1555573780725" expanded="true" signature="59:1088" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/TSP_problem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
         </state>
       </provider>
     </entry>

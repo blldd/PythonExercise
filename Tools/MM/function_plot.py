@@ -66,8 +66,8 @@ def function_plot():
     plt.grid(True, which='major')
     plt.legend(fontsize=14)
 
-    plt.savefig('function_fig.png', dpi=520)
-    plt.savefig('function_fig.eps')
+    # plt.savefig('function_fig.png', dpi=520)
+    # plt.savefig('function_fig.eps')
     plt.show()
 
 
@@ -265,7 +265,7 @@ if __name__ == '__main__':
     trajectory_path2 = "trajectory_fig2.png"
     trajectory_path3 = "trajectory_fig3.png"
 
-    # function_plot()
-    angle_plot(angle_path)
+    function_plot()
+    # angle_plot(angle_path)
     # trajectory_plot2(trajectory_path2)
     # trajectory_plot3(trajectory_path3)
