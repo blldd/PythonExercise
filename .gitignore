@@ -5,3 +5,5 @@ data/
 *.pkl
 *.jar
 
+*.eps
+*.png
