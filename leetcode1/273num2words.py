@@ -1,6 +1,16 @@
 # -*- coding:UTF-8 -*-
 
-import sys
+"""
+将非负整数转换为其对应的英文表示。可以保证给定输入小于 231 - 1 。
+示例 1:
+
+输入: 123
+输出: "One Hundred Twenty Three"
+示例 2:
+
+输入: 12345
+输出: "Twelve Thousand Three Hundred Forty Five"
+"""
 
 class Solution(object):
     def numberToWords(self, num):

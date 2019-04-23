@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
+      <change afterPath="$PROJECT_DIR$/leetcode1/207toposort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/0420test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/0420test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/seaborn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/seaborn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classic/SortMethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/SortMethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode1/273num2words.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode1/273num2words.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +32,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$test.coverage" NAME="test Coverage Results" MODIFIED="1523603654875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/PythonExercise$deleteNchar.coverage" NAME="deleteNchar Coverage Results" MODIFIED="1551922814522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonTools" />
     <SUITE FILE_PATH="coverage/PythonExercise$median_of_two_sorted_arr.coverage" NAME="median_of_two_sorted_arr Coverage Results" MODIFIED="1552806027193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$207toposort.coverage" NAME="207toposort Coverage Results" MODIFIED="1556007199424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$digit.coverage" NAME="digit Coverage Results" MODIFIED="1533024705453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$172trailingZeroes.coverage" NAME="172trailingZeroes Coverage Results" MODIFIED="1553830917798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$28Reverse.coverage" NAME="28Reverse Coverage Results" MODIFIED="1524114618926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
@@ -119,7 +121,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$contest.coverage" NAME="contest Coverage Results" MODIFIED="1551963572416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$decorator.coverage" NAME="decorator Coverage Results" MODIFIED="1550632970195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$15Transaction.coverage" NAME="15Transaction Coverage Results" MODIFIED="1524014733820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
-    <SUITE FILE_PATH="coverage/PythonExercise$Tree.coverage" NAME="Tree Coverage Results" MODIFIED="1553782562256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$Tree.coverage" NAME="Tree Coverage Results" MODIFIED="1556008665439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$FirstApearOnce.coverage" NAME="FirstApearOnce Coverage Results" MODIFIED="1533025126092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$10reg.coverage" NAME="10reg Coverage Results" MODIFIED="1553995177978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$kSum.coverage" NAME="kSum Coverage Results" MODIFIED="1543889264236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
@@ -136,7 +138,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$LastRemain.coverage" NAME="LastRemain Coverage Results" MODIFIED="1544447610878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$multiply.coverage" NAME="multiply Coverage Results" MODIFIED="1533025670804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$zigzag.coverage" NAME="zigzag Coverage Results" MODIFIED="1532765808202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
-    <SUITE FILE_PATH="coverage/PythonExercise$SortMethods.coverage" NAME="SortMethods Coverage Results" MODIFIED="1555934259742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$SortMethods.coverage" NAME="SortMethods Coverage Results" MODIFIED="1556007984997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$plotAccuCurve.coverage" NAME="plotAccuCurve Coverage Results" MODIFIED="1524292854925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plot" />
     <SUITE FILE_PATH="coverage/PythonTools$DicePro.coverage" NAME="DicePro Coverage Results" MODIFIED="1533024666772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$42RMDup.coverage" NAME="42RMDup Coverage Results" MODIFIED="1531744190851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
@@ -286,18 +288,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="105" />
+          <entry key="dummy" value="117" />
           <entry key="gitignore" value="18" />
           <entry key="md" value="29" />
-          <entry key="py" value="54231" />
+          <entry key="py" value="54413" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="29" />
-          <entry key="PLAIN_TEXT" value="148" />
-          <entry key="Python" value="54223" />
+          <entry key="PLAIN_TEXT" value="160" />
+          <entry key="Python" value="54405" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -310,9 +312,9 @@
           <entry key="gitignore" value="2" />
           <entry key="iml" value="1" />
           <entry key="ipynb" value="2" />
-          <entry key="md" value="4" />
+          <entry key="md" value="5" />
           <entry key="png" value="3" />
-          <entry key="py" value="604" />
+          <entry key="py" value="608" />
           <entry key="pyi" value="4" />
           <entry key="test_set" value="4" />
           <entry key="train_set" value="1" />
@@ -326,9 +328,9 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="IPNB" value="2" />
           <entry key="Image" value="3" />
-          <entry key="Markdown" value="4" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="599" />
+          <entry key="Python" value="603" />
           <entry key="PythonStub" value="4" />
           <entry key="XML" value="4" />
           <entry key="YouTrack" value="5" />
@@ -341,17 +343,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classic/Tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="290" column="32" selection-start-line="290" selection-start-column="32" selection-end-line="290" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classic/SortMethods.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+            <state relative-caret-position="1648">
+              <caret line="317" column="34" lean-forward="true" selection-start-line="317" selection-start-column="34" selection-end-line="317" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -359,17 +352,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode1/TSP_problem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Basic/0420test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="266">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -377,8 +361,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="228">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode1/207toposort.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1178">
+              <caret line="62" column="30" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -451,9 +444,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/leetcode1/06convert.py" />
-        <option value="$PROJECT_DIR$/ML/gbdt_test.py" />
-        <option value="$PROJECT_DIR$/ML/gbdt_simple.py" />
         <option value="$PROJECT_DIR$/leetcode1/08atoi.py" />
         <option value="$PROJECT_DIR$/Students/fund/merge_sheet.py" />
         <option value="$PROJECT_DIR$/leetcode1/10reg.py" />
@@ -502,6 +492,9 @@
         <option value="$PROJECT_DIR$/leetcode1/470rand10.py" />
         <option value="$PROJECT_DIR$/Tools/seaborn.py" />
         <option value="$PROJECT_DIR$/Basic/0420test.py" />
+        <option value="$PROJECT_DIR$/leetcode1/273num2words.py" />
+        <option value="$PROJECT_DIR$/leetcode1/207toposort.py" />
+        <option value="$PROJECT_DIR$/Classic/SortMethods.py" />
       </list>
     </option>
   </component>
@@ -532,13 +525,12 @@
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="awesome-algorithm-master" type="462c0819:PsiDirectoryNode" />
+              <item name="Basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="awesome-algorithm-master" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="Classic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
@@ -558,25 +550,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="042&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/0420test.py&#10;sea&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Tools/seaborn.py&#10;sort&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/SortMethods.py&#10;test&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/at/test.py&#10;samp&#9;null&#9;null&#10;dp&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/dp.py&#10;pdf&#9;null&#9;null&#10;tree&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Tree.py&#10;tes&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/01test.py&#10;rotatea&#9;null&#9;null&#10;rotate&#9;null&#9;null&#10;threes&#9;null&#9;null&#10;permuta&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Permutation.py&#10;lengthOfLongestSubstring&#9;null&#9;null&#10;sum&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1sumN.py&#10;mu&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/multiply.py&#10;lowe&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/LeetCode/40LowestCommenAncestor.py&#10;low&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/KAP/venv/Lib/site-packages/sklearn/manifold/locally_linear.py&#10;jose&#9;null&#9;null&#10;init&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/0Tools/__init__.py&#10;ini&#9;FILE&#9;file:///Users/ddlee/anaconda3/envs/py3/lib/python3.6/site-packages/nltk/corpus/__init__.py&#10;pop&#9;null&#9;null&#10;min&#9;null&#9;null&#10;rev&#9;null&#9;null&#10;reverse&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/sort_by_leetcode/linked_list/easy/206. Reverse Linked List.py&#10;rever&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1Reverse.py&#10;fib&#9;null&#9;null&#10;te&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/1103/test.py&#10;test.t&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/test.txt&#10;path&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="0207&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0207._course_schedule.md&#10;042&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/0420test.py&#10;sea&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Tools/seaborn.py&#10;sort&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/SortMethods.py&#10;test&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/at/test.py&#10;samp&#9;null&#9;null&#10;dp&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/dp.py&#10;pdf&#9;null&#9;null&#10;tree&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Tree.py&#10;tes&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Basic/01test.py&#10;rotatea&#9;null&#9;null&#10;rotate&#9;null&#9;null&#10;threes&#9;null&#9;null&#10;permuta&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/Permutation.py&#10;lengthOfLongestSubstring&#9;null&#9;null&#10;sum&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1sumN.py&#10;mu&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/multiply.py&#10;lowe&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/LeetCode/40LowestCommenAncestor.py&#10;low&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/KAP/venv/Lib/site-packages/sklearn/manifold/locally_linear.py&#10;jose&#9;null&#9;null&#10;init&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/0Tools/__init__.py&#10;ini&#9;FILE&#9;file:///Users/ddlee/anaconda3/envs/py3/lib/python3.6/site-packages/nltk/corpus/__init__.py&#10;pop&#9;null&#9;null&#10;min&#9;null&#9;null&#10;rev&#9;null&#9;null&#10;reverse&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/sort_by_leetcode/linked_list/easy/206. Reverse Linked List.py&#10;rever&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/CodeOffer/1Reverse.py&#10;fib&#9;null&#9;null&#10;te&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/1103/test.py&#10;test.t&#9;FILE&#9;file:///Users/ddlee/PycharmProjects/PythonExercise/Classic/test.txt&#10;path&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Students/fund" />
-      <recent name="$PROJECT_DIR$/KAP" />
-      <recent name="$PROJECT_DIR$/KAP/Regre" />
-      <recent name="$PROJECT_DIR$/KAP/Pre" />
-      <recent name="$PROJECT_DIR$/1103" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/leetcode1" />
       <recent name="$PROJECT_DIR$/ML" />
       <recent name="$PROJECT_DIR$/Basic" />
       <recent name="$PROJECT_DIR$/Students" />
       <recent name="$PROJECT_DIR$/Tools" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Students/fund" />
+      <recent name="$PROJECT_DIR$/KAP" />
+      <recent name="$PROJECT_DIR$/KAP/Regre" />
+      <recent name="$PROJECT_DIR$/KAP/Pre" />
+      <recent name="$PROJECT_DIR$/1103" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -591,7 +583,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.seaborn">
+  <component name="RunManager" selected="Python.Tree">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -656,6 +648,28 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="207toposort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonExercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/207toposort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="470rand10" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -700,7 +714,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hedging_ratio1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -708,34 +722,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Students/fund" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Students/fund/hedging_ratio1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="hedging_ratio2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonExercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Students/fund" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Students/fund/hedging_ratio2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/Tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -861,19 +853,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.PythonExercise" />
-      <item itemvalue="Python.hedging_ratio1" />
-      <item itemvalue="Python.hedging_ratio2" />
       <item itemvalue="Python.SortMethods" />
       <item itemvalue="Python.470rand10" />
       <item itemvalue="Python.seaborn" />
+      <item itemvalue="Python.207toposort" />
+      <item itemvalue="Python.Tree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Tree" />
+        <item itemvalue="Python.SortMethods" />
+        <item itemvalue="Python.207toposort" />
         <item itemvalue="Python.seaborn" />
         <item itemvalue="Python.470rand10" />
-        <item itemvalue="Python.SortMethods" />
-        <item itemvalue="Python.hedging_ratio2" />
-        <item itemvalue="Python.hedging_ratio1" />
       </list>
     </recent_temporary>
   </component>
@@ -929,19 +921,19 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21745351" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21745351" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.26746988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.26746988" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.26506025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5164521" side_tool="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3385542" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2819277" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.12650603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1216,7 +1208,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Classic/SortMethods.py</url>
-          <line>63</line>
+          <line>64</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1226,7 +1218,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Classic/SortMethods.py</url>
-          <line>99</line>
+          <line>101</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1624,6 +1616,11 @@
           <line>15</line>
           <option name="timeStamp" value="228" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode1/207toposort.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1638,21 +1635,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ML/svd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/reservoir_sampling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/MM/angle_fig.png" />
     <entry file="file://$PROJECT_DIR$/Tools/MM/function_fig.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1889,13 +1871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1872408764/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Students/fund/hedging_ratio2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1921,20 +1896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="331" column="4" selection-start-line="331" selection-start-column="4" selection-end-line="331" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/Tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="290" column="32" selection-start-line="290" selection-start-column="32" selection-end-line="290" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1984,24 +1945,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/SortMethods.py">
+    <entry file="file://$PROJECT_DIR$/leetcode1/273num2words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+        <state relative-caret-position="152">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode1/TSP_problem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="266">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/0420test.py">
+    <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="228">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1872408764/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="3603" column="43" selection-start-line="3603" selection-start-column="40" selection-end-line="3603" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1872408764/_collections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0207._course_schedule.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classic/SortMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classic/Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1648">
+          <caret line="317" column="34" lean-forward="true" selection-start-line="317" selection-start-column="34" selection-end-line="317" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/207toposort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="30" />
         </state>
       </provider>
     </entry>

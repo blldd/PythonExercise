@@ -29,6 +29,7 @@ def quick_sort_recur(array, l, r):
         quick_sort_recur(array, l, q - 1)
         quick_sort_recur(array, q + 1, r)
 
+
 def partition(nums, left, right):
     key = nums[left]
     while left < right:
@@ -85,11 +86,12 @@ def bubble_sort(arr):
     length = len(arr)
     if length < 2:
         return arr
-    for i in range(length)[::-1]:
-        for j in range(i - 1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+    for i in range(length):
+        for j in range(i, length):
+            if arr[j] < arr[i]:
+                arr[j], arr[i] = arr[i], arr[j]
     return arr
+
 
 if __name__ == '__main__':
     input = [1, 4, 7, 1, 5, 5, 3, 85, 34, 75, 23, 75, 2, 0]
