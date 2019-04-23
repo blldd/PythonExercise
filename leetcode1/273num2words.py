@@ -2,46 +2,6 @@
 
 import sys
 
-
-def read(group):
-    d =  {0:"zero", 1:"one", 2:"two", 3:"three", 4:"four", 5:"five",
-          6:"six",  7:"seven", 9:"nine", 10:"ten", 19:"nineteen", 20:"twenty"}
-
-
-    if len(group) == 0:
-        return ""
-    if len(group) == 1:
-        return d[int(group)]
-    if len(group) == 2 and int(group) <= 20:
-        return d[int(group)]
-    elif len(group) == 2 and int(group) > 20:
-        return
-    elif len(group) == 3:
-        return d[int(group[0])] + "hundrund" + read(group[1:])
-
-
-def process(num):
-
-    num_s = str(num)
-    length = len(num_s)
-    split_arr = []
-
-    while length > 0:
-        split_arr.append(num_s[-3:])
-        num_s = num_s[:-3]
-        length = len(num_s)
-    split_arr = split_arr[::-1]
-    print(split_arr)
-
-    group_size  = len(split_arr)
-    res = ""
-    for idx, group in enumerate(split_arr):
-        i =  group_size - idx
-        gs = read(group)
-        res += gs
-    print(res)
-
-
 class Solution(object):
     def numberToWords(self, num):
         """

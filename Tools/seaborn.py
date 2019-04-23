@@ -1,30 +1,27 @@
 # -*- coding:UTF-8 -*-
 
-
 import random
 from matplotlib import pyplot as plt
 from matplotlib import cm
 from matplotlib import axes
 from matplotlib.font_manager import FontProperties
+import seaborn as sns
 
 font = FontProperties(fname='/Library/Fonts/Songti.ttc')
 
 
 def draw():
-    # 定义热图的横纵坐标
     xLabel = ['A', 'B', 'C', 'D', 'E']
     yLabel = ['1', '2', '3', '4', '5']
 
-    # 准备数据阶段，利用random生成二维数据（5*5）
     data = []
     for i in range(5):
         temp = []
         for j in range(5):
-            k = random.randint(0, 100)
+            k = random.randint(0, 10)
             temp.append(k)
         data.append(temp)
 
-    # 作图阶段
     fig = plt.figure()
     ax = fig.add_subplot(111)
 
@@ -33,7 +30,9 @@ def draw():
     ax.set_xticks(range(len(xLabel)))
     ax.set_xticklabels(xLabel)
 
-    im = ax.imshow(data, cmap=plt.cm.hot_r)
+    # cmap = sns.cubehelix_palette(start=1, rot=3, gamma=0.8, as_cmap=True)
+
+    im = ax.imshow(data, cmap=plt.cm.summer)
 
     plt.colorbar(im)
 
@@ -43,6 +42,20 @@ def draw():
 
 
 d = draw()
+
+
+"""
+hot 从黑平滑过度到红、橙色和黄色的背景色，然后到白色。
+cool 包含青绿色和品红色的阴影色。从青绿色平滑变化到品红色。
+gray 返回线性灰度色图。
+bone 具有较高的蓝色成分的灰度色图。该色图用于对灰度图添加电子的视图。
+white 全白的单色色图。
+spring 包含品红和黄的阴影颜色。
+summer 包含绿和黄的阴影颜色。
+autumn 从红色平滑变化到橙色，然后到黄色。
+winter 包含蓝和绿的阴影色。
+"""
+
 
 """
 import seaborn as sns
