@@ -30,9 +30,7 @@ class Solution:
             copy.pop(i)  # 删除第i个节点，认为已经完成对其的访问
             distance.append(self.X[node][s_i] + self.solve(s_i, copy))
 
-        # 动态规划递推方程，利用递归
         min_dis = min(distance)
-        # node需要连接的下一个节点
         next_one = future_sets[distance.index(min_dis)]
 
         # 未遍历节点集合

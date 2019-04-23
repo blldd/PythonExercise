@@ -14,15 +14,19 @@ def process(in_file, sheet_names):
 
     rows = []
     last = [0, 0, 0, 0]
+    cnt = 0
     for (_date, B, C, D, E, F, G, H, I, J, K) in read_excel_row_by_sheet(in_file, sheet_names, range(11)):
+        cnt += 1
         if isinstance(C, float):
             L = (C - B) / B
             M = (H - G) / G
             N = (B - C) / C
             O = (G - H) / H
-
-            P = 1 if last[0] > last[1] else -1
-            Q = 1 if last[2] > last[3] else -1
+            if cnt == 1:
+                P, Q = "", ""
+            else:
+                P = 1 if last[0] > last[1] else -1
+                Q = 1 if last[2] > last[3] else -1
             last = [L, M, N, O]
 
             _date = datetime(*xldate_as_tuple(_date, 0))

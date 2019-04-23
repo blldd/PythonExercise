@@ -1,78 +1,83 @@
 # -*- coding:UTF-8 -*-
-import matplotlib.pyplot as plt
-import datetime
-import time
-import random
 
+
+import random
+from matplotlib import pyplot as plt
+from matplotlib import cm
+from matplotlib import axes
 from matplotlib.font_manager import FontProperties
 
-myfont = FontProperties(fname='/System/Library/Fonts/PingFang.ttc', size=14)
-# plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
-plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
+font = FontProperties(fname='/Library/Fonts/Songti.ttc')
 
-# from apscheduler.schedulers.blocking import BlockingScheduler
 
+def draw():
+    # 定义热图的横纵坐标
+    xLabel = ['A', 'B', 'C', 'D', 'E']
+    yLabel = ['1', '2', '3', '4', '5']
+
+    # 准备数据阶段，利用random生成二维数据（5*5）
+    data = []
+    for i in range(5):
+        temp = []
+        for j in range(5):
+            k = random.randint(0, 100)
+            temp.append(k)
+        data.append(temp)
+
+    # 作图阶段
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+
+    ax.set_yticks(range(len(yLabel)))
+    ax.set_yticklabels(yLabel, fontproperties=font)
+    ax.set_xticks(range(len(xLabel)))
+    ax.set_xticklabels(xLabel)
+
+    im = ax.imshow(data, cmap=plt.cm.hot_r)
+
+    plt.colorbar(im)
+
+    plt.title("This is a title中文", fontproperties=font)
+
+    plt.show()
+
+
+d = draw()
+
+"""
+import seaborn as sns
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Create a random dataset
+data = pd.DataFrame(np.random.random((10, 6)),
+                    columns=["Iron Man", "CaptainAmerica", "BlackWidow", "Thor", "Hulk", "Hawkeye"])
+
+print(data)
+
+# Plot the heatmap
+heatmap_plot = sns.heatmap(data, center=0, cmap='gist_ncar')
+
+plt.show()
+
+
+#cmap(颜色)
 #
-# def job():
-#     now = datetime.datetime.now() + datetime.timedelta(days=-1)
-#     print(now)
-#     da = now.date()
-#     print(da)
-#     print(datetime.date.today())
+# f, (ax1,ax2) = plt.subplots(figsize = (6,4),nrows=2)
 #
+# # cmap用cubehelix map颜色
+# cmap = sns.cubehelix_palette(start = 1.5, rot = 3, gamma=0.8, as_cmap = True)
+# sns.heatmap(data, linewidths = 0.05, ax = ax1, vmax=900, vmin=0, cmap=cmap)
+# ax1.set_title('cubehelix map')
+# ax1.set_xlabel('')
+# ax1.set_xticklabels([]) #设置x轴图例为空值
+# ax1.set_ylabel('kind')
 #
-# def my_job():
-#     print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
-#     print(time.strftime('%Y-%m-%d', time.localtime(time.time())))
-#     print((datetime.datetime.now() + datetime.timedelta(days=-1)).strftime("%Y-%m-%d"))
-#     print(datetime.datetime.now().strftime("%Y-%m-%d"))
-#     # print(time.strftime('%Y-%m-%d %H:%M:%S', datetime.datetime.now() + datetime.timedelta(days=-1)))
-#     # print(time.time() + datetime.timedelta(days=-1))
-#
-#
-# def main():
-#     # BlockingScheduler
-#     scheduler = BlockingScheduler()
-#     scheduler.add_job(job, 'cron', day_of_week='0-6', hour=0, minute=1)
-#     scheduler.add_job(my_job, 'interval', seconds=1)
-#     scheduler.start()
-
-
-def _plot_summary(summary_file, img_file):
-    with open(summary_file) as fin:
-        x = []
-        y_precision_product = []
-        y_precision_susp = []
-        for line in fin:
-            num, right_part = line.strip().split(":")
-            precision_product, precision_susp = right_part.split(" ")
-            x.append(float(num))
-            y_precision_product.append(float(precision_product))
-            y_precision_susp.append(float(precision_susp))
-
-    plt.figure(figsize=(10, 7))
-
-    plt.plot(x, y_precision_product, '*-', label=u"预测可疑且给出正确商品编号准确率(%)")
-    plt.plot(x, y_precision_susp, 'm--', label=u"预测可疑准确率(%)")
-
-    plt.ylabel(u"准确率（%）", fontproperties=myfont, fontsize=18)
-    plt.xlabel(u"阈值", fontproperties=myfont, fontsize=18)
-    plt.title(u"200条数据（20180315）预测性能与阈值关系", fontproperties=myfont, fontsize=28, color='blue')
-
-    # 遍历每一个点，使用text将y值显示
-    for i, j in zip(x, y_precision_product):
-        plt.annotate("%.1f" % (j * 100), xy=(i, j))
-
-    for i, j in zip(x, y_precision_susp):
-        plt.annotate("%.1f" % (j * 100), xy=(i, j))
-
-    plt.grid(True, which='major')
-    plt.legend(prop=myfont)
-    plt.savefig(img_file, dpi=500)
-
-
-if __name__ == '__main__':
-
-    summary_file = "200summary.txt"
-    img_file = "200summary.png"
-    _plot_summary(summary_file, img_file)
+# # cmap用matplotlib colormap
+# sns.heatmap(data, linewidths = 0.05, ax = ax2, vmax=900, vmin=0, cmap='rainbow')
+# # rainbow为 matplotlib 的colormap名称
+# ax2.set_title('matplotlib colormap')
+# ax2.set_xlabel('region')
+# ax2.set_ylabel('kind')
+"""

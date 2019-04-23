@@ -1,7 +1,11 @@
 # -*- coding:UTF-8 -*-
 import numpy as np
 import matplotlib.pyplot as plt
-
+import matplotlib
+matplotlib.colors
+matplotlib.axes.Axes.imshow
+matplotlib.figure.Figure.text
+matplotlib.axes.Axes.set_axis_off
 
 cmaps = [('Perceptually Uniform Sequential', [
             'viridis', 'plasma', 'inferno', 'magma', 'cividis']),
