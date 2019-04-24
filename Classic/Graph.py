@@ -1,6 +1,14 @@
 # -*- coding:UTF-8 -*-
 
 def find_one_path(graph, start, end, path=[]):
+    """
+    返回任意一条路径
+    :param graph:
+    :param start:
+    :param end:
+    :param path:
+    :return:
+    """
     path = path + [start]
     if start == end:
         return path
@@ -15,6 +23,14 @@ def find_one_path(graph, start, end, path=[]):
 
 
 def find_all_paths(graph, start, end, path=[]):
+    """
+    返回所有路径DFS
+    :param graph:
+    :param start:
+    :param end:
+    :param path:
+    :return:
+    """
     path = path + [start]
     if start == end:
         return [path]
@@ -30,6 +46,14 @@ def find_all_paths(graph, start, end, path=[]):
 
 
 def find_shortest_path(graph, start, end, path=[]):
+    """
+    返回最短路径
+    :param graph:
+    :param start:
+    :param end:
+    :param path:
+    :return:
+    """
     path = path + [start]
     if start == end:
         return path
@@ -46,6 +70,13 @@ def find_shortest_path(graph, start, end, path=[]):
 
 
 def find_all_paths_bfs(graph, start, end):
+    """
+    返回所有路径BFS
+    :param graph:
+    :param start:
+    :param end:
+    :return:
+    """
     paths = []
     todo = [[start, [start]]]
     while 0 < len(todo):
@@ -61,7 +92,13 @@ def find_all_paths_bfs(graph, start, end):
 
 
 def recursive_dfs(graph, start, path=[]):
-    '''recursive depth first search from start'''
+    """
+    dfs遍历 递归形式
+    :param graph:
+    :param start:
+    :param path:
+    :return:
+    """
     path = path + [start]
     for node in graph[start]:
         if not node in path:
@@ -70,7 +107,13 @@ def recursive_dfs(graph, start, path=[]):
 
 
 def iterative_dfs(graph, start, path=[]):
-    '''iterative depth first search from start'''
+    '''
+    dfs遍历 非递归形式
+    :param graph:
+    :param start:
+    :param path:
+    :return:
+    '''
     q = [start]
     while q:
         v = q.pop(0)
@@ -81,7 +124,13 @@ def iterative_dfs(graph, start, path=[]):
 
 
 def iterative_bfs(graph, start, path=[]):
-    '''iterative breadth first search from start'''
+    '''
+    bfs遍历 非递归形式
+    :param graph:
+    :param start:
+    :param path:
+    :return:
+    '''
     q = [start]
     while q:
         v = q.pop(0)
@@ -104,15 +153,15 @@ if __name__ == '__main__':
              'C': ['D', 'E'],
              'D': ['E'],
              'E': ['A']}
-    print('recursive dfs ', recursive_dfs(graph, 'A'))
-    print('iterative dfs ', iterative_dfs(graph, 'A'))
-    print('iterative bfs ', iterative_bfs(graph, 'A'))
+    print('recursive dfs: ', recursive_dfs(graph, 'A'))
+    print('iterative dfs: ', iterative_dfs(graph, 'A'))
+    print('iterative bfs: ', iterative_bfs(graph, 'A'))
 
     print("##" * 20)
 
-    print(find_one_path(graph, 'A', 'E'))
-    print(find_all_paths(graph, 'A', 'E'))
-    print(find_shortest_path(graph, 'A', 'E'))
+    print('find_one_path: ', find_one_path(graph, 'A', 'E'))
+    print('find_all_paths: ', find_all_paths(graph, 'A', 'E'))
+    print('find_shortest_path: ', find_shortest_path(graph, 'A', 'E'))
 
     print("##" * 20)
 
