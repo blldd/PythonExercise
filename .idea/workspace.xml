@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess" />
+    <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +366,7 @@
         <entry file="file://$PROJECT_DIR$/Basic/0423test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
               <folding>
                 <element signature="e#101#119#0" expanded="true" />
                 <marker date="1556113900259" expanded="true" signature="212:223" ph="..." />
@@ -377,7 +379,7 @@
         <entry file="file://$PROJECT_DIR$/Basic/0424test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding>
                 <element signature="e#102#120#0" expanded="true" />
               </folding>
@@ -385,20 +387,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1458">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Classic/DFSBFS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="171" column="9" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="9" />
+            <state relative-caret-position="415">
+              <caret line="81" column="22" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -947,20 +940,20 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26895565" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26895565" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.26746988" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.26746988" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.3746988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5164521" side_tool="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.14457831" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.14337349" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.12650603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1995,7 +1988,7 @@
     <entry file="file://$PROJECT_DIR$/Basic/0424test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding>
             <element signature="e#102#120#0" expanded="true" />
           </folding>
@@ -2005,7 +1998,7 @@
     <entry file="file://$PROJECT_DIR$/Basic/0423test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
           <folding>
             <element signature="e#101#119#0" expanded="true" />
             <marker date="1556113900259" expanded="true" signature="212:223" ph="..." />
@@ -2020,17 +2013,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
+    <entry file="file://$PROJECT_DIR$/Classic/DFSBFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1458">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/DFSBFS.py">
+    <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="171" column="9" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="9" />
+        <state relative-caret-position="415">
+          <caret line="81" column="22" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="22" />
         </state>
       </provider>
     </entry>

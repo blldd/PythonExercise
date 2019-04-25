@@ -22,29 +22,6 @@ def find_one_path(graph, start, end, path=[]):
     return None
 
 
-def find_all_paths(graph, start, end, path=[]):
-    """
-    返回所有路径DFS
-    :param graph:
-    :param start:
-    :param end:
-    :param path:
-    :return:
-    """
-    path = path + [start]
-    if start == end:
-        return [path]
-    if start not in graph:
-        return []
-    paths = []
-    for node in graph[start]:
-        if node not in path:
-            newpaths = find_all_paths(graph, node, end, path)
-            for newpath in newpaths:
-                paths.append(newpath)
-    return paths
-
-
 def find_shortest_path(graph, start, end, path=[]):
     """
     返回最短路径
@@ -67,6 +44,29 @@ def find_shortest_path(graph, start, end, path=[]):
                 if not shortest or len(newpath) < len(shortest):
                     shortest = newpath
     return shortest
+
+
+def find_all_paths_dfs(graph, start, end, path=[]):
+    """
+    返回所有路径DFS
+    :param graph:
+    :param start:
+    :param end:
+    :param path:
+    :return:
+    """
+    path = path + [start]
+    if start == end:
+        return [path]
+    if start not in graph:
+        return []
+    paths = []
+    for node in graph[start]:
+        if node not in path:
+            newpaths = find_all_paths_dfs(graph, node, end, path)
+            for newpath in newpaths:
+                paths.append(newpath)
+    return paths
 
 
 def find_all_paths_bfs(graph, start, end):
@@ -160,8 +160,8 @@ if __name__ == '__main__':
     print("##" * 20)
 
     print('find_one_path: ', find_one_path(graph, 'A', 'E'))
-    print('find_all_paths: ', find_all_paths(graph, 'A', 'E'))
     print('find_shortest_path: ', find_shortest_path(graph, 'A', 'E'))
+    print('find_all_paths: ', find_all_paths_dfs(graph, 'A', 'E'))
 
     print("##" * 20)
 
