@@ -156,8 +156,6 @@ def mirrorTreeNode(root):
 """
 Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 
-According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
-
         _______6______
        /              \
     ___2__          ___8__
@@ -168,9 +166,10 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
 
 """
-"""注意这里是一个二叉搜索树，根结点的右子树上所有的点的值都比根结点大，左子树上所有点的值都比根结点的值小
+"""
+注意这里是一个二叉搜索树，根结点的右子树上所有的点的值都比根结点大，左子树上所有点的值都比根结点的值小
 因此分为四种情况，
-1、如果两个节点一个值比节点大，一个小，那么二者的公共节点肯定是根结点，
+1、如果两个节点一个值比根节点大，一个比根节点小，那么二者的公共节点肯定是根结点，
 2、如果两个节点中有一个与根结点的值同样大，那么二者的公共节点同样是根结点
 3、如果两个节点的值都比根结点小，那么二者的公共节点出现在根结点的左子树中，递归查询
 4、如果两个节点的值都比根结点大，那么二者的公共节点出现在根结点的右子树中，递归查询
@@ -194,6 +193,8 @@ def lowestCommonAncestor_BST(root, p, q):
 def lca(root, p, q):
     if p is None or q is None:
         return root
+
+    # dfs查找根节点到两个节点的路径
     def dfs(node, visited, res):
         if node is None:
             return
@@ -202,9 +203,12 @@ def lca(root, p, q):
             res.append(path)
         dfs(node.left, path, res)
         dfs(node.right, path, res)
+
     res = []
     visited = []
     dfs(root, visited, res)
+
+    # 得到两条路径 --> res[0] res[1], 找最近的公共父节点
     i = 0
     for i in range(min(len(res[0]), len(res[1]))):
         if res[0][i] == res[1][i]:
@@ -312,7 +316,7 @@ Traversal
 
 
 # 广度优先遍历算法
-def level_queue(root):
+def tree_level_traversal(root):
     if root is None:
         return
     my_queue = collections.deque()
@@ -321,20 +325,20 @@ def level_queue(root):
     while my_queue:
         node = my_queue.popleft()
         print(node.val)
-        if node.left is not None:
+        if node.left:
             my_queue.append(node.left)
-        if node.right is not None:
+        if node.right:
             my_queue.append(node.right)
 
 
 # 深度优先遍历算法
-def depth_tree(tree_node):
-    if tree_node is not None:
+def tree_dfs_traversal(tree_node):
+    if tree_node:
         print(tree_node.val)
-        if tree_node.left is not None:
-            depth_tree(tree_node.left)
-        if tree_node.right is not None:
-            depth_tree(tree_node.right)
+        if tree_node.left:
+            tree_dfs_traversal(tree_node.left)
+        if tree_node.right:
+            tree_dfs_traversal(tree_node.right)
 
 
 def inorderTraversal_recur(root):
@@ -432,15 +436,15 @@ def postorderTraversal(root):  ## 后序遍历
 
 
 # 前序 中序 构建树
-def getTreePreMid(pre, mid):
+def getTreeFromPreMid(pre, mid):
     if len(pre) == 0:
         return None
     if len(pre) == 1:
         return TreeNode(pre[0])
     root = TreeNode(pre[0])
     root_index = mid.index(pre[0])
-    root.left = getTreePreMid(pre[1:root_index + 1], mid[:root_index])
-    root.right = getTreePreMid(pre[root_index + 1:], mid[root_index + 1:])
+    root.left = getTreeFromPreMid(pre[1:root_index + 1], mid[:root_index])
+    root.right = getTreeFromPreMid(pre[root_index + 1:], mid[root_index + 1:])
     return root
 
 
@@ -501,7 +505,7 @@ if __name__ == '__main__':
     # print(getLastCommonParent(root, a, b))
     print("##" * 20)
     # level_queue(root)
-    print(depth_tree(root))
+    print(tree_dfs_traversal(root))
 
     array = [7, 1, 3, 10, 5, 2, 8, 9, 6]
     buildHeap(array)
@@ -516,7 +520,7 @@ if __name__ == '__main__':
     res = preorderTraversal(root)
     print(res)
 
-    head = getTreePreMid([1, 2, 4, 5, 8, 9, 11, 3, 6, 7, 10], [4, 2, 8, 5, 11, 9, 1, 6, 3, 10, 7])
+    head = getTreeFromPreMid([1, 2, 4, 5, 8, 9, 11, 3, 6, 7, 10], [4, 2, 8, 5, 11, 9, 1, 6, 3, 10, 7])
     res = getAfterFromPreMid([1, 2, 4, 5, 8, 9, 11, 3, 6, 7, 10], [4, 2, 8, 5, 11, 9, 1, 6, 3, 10, 7], [])
     print(res)
     print("hello")
