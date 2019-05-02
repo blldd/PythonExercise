@@ -335,7 +335,7 @@ def split_ways_dp(n):
 
 if __name__ == '__main__':
     s = "abacdgfdcaba"
-    print(palindrome_seq(s))
+    # print(palindrome_seq(s))
     s = [5, 2, 1, 4, 6, 9, 7, 8]
     # lis(s)
     # print(lis2(s))
@@ -343,9 +343,9 @@ if __name__ == '__main__':
     s = [-5, -3, 0, 1, 3, 5]
     # print(penguin_merge(s))
 
-    # print(coins_min_combine([1, 5, 11], 15))
-    # print(coin_ways([1, 5, 10], 27))
-    # print(coin_ways_dp_compress([1, 5, 10], 27))
+    print(coins_min_combine([1, 5, 11], 15))
+    print(coin_ways([1, 5, 10], 27))
+    print(coin_ways_dp_compress([1, 5, 10], 27))
 
-    for i in range(10):
-        print(split_ways(i), split_ways_dp(i))
+    # for i in range(10):
+    #     print(split_ways(i), split_ways_dp(i))

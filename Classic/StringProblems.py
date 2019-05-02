@@ -41,30 +41,30 @@ def partial_table(p):
     return ret
 
 
-def print_lcsequence(input_x, input_y, i, j, flag, lcs):
-    if (i == 0 or j == 0):
-        return
-    if flag[i][j] == 0:
-        print_lcsequence(input_x, input_y, i - 1, j - 1, flag, lcs)
-        lcs.append(input_x[i - 1])
-    elif (flag[i][j] == 1):
-        print_lcsequence(input_x, input_y, i - 1, j, flag, lcs)
-    else:
-        print_lcsequence(input_x, input_y, i, j - 1, flag, lcs)
-    return lcs
-
-
-def lcsequence(input_x, input_y):
-    lcsequence_mat, flag = lcsequence_dp(input_x, input_y)
+def longest_common_sequence(input_x, input_y):
+    lcsequence_mat, flag = longest_common_sequence_dp(input_x, input_y)
     i = len(input_x)
     j = len(input_y)
     lcs = []
-    lcs = print_lcsequence(input_x, input_y, i, j, flag, lcs)
+    get_lcs(input_x, input_y, i, j, flag, lcs)
     print((lcsequence_mat[-1][-1], lcs))
 
 
+def get_lcs(input_x, input_y, i, j, flag, lcs):
+    if (i == 0 or j == 0):
+        return
+    if flag[i][j] == 0:
+        get_lcs(input_x, input_y, i - 1, j - 1, flag, lcs)
+        lcs.append(input_x[i - 1])
+    elif (flag[i][j] == 1):
+        get_lcs(input_x, input_y, i - 1, j, flag, lcs)
+    else:
+        get_lcs(input_x, input_y, i, j - 1, flag, lcs)
+    return lcs
+
+
 # 最长公共子序列
-def lcsequence_dp(input_x, input_y):
+def longest_common_sequence_dp(input_x, input_y):
     # input_y as column, input_x as row
     dp = [([0] * (len(input_y) + 1)) for i in range(len(input_x) + 1)]
     flag = [([0] * (len(input_y) + 1)) for i in range(len(input_x) + 1)]
@@ -85,10 +85,10 @@ def lcsequence_dp(input_x, input_y):
 
 
 # 最长公共子串
-def getNumofCommonSubstr(str1, str2):
+def longest_common_substr_dp(str1, str2):
     lstr1 = len(str1)
     lstr2 = len(str2)
-    record = [[0 for i in range(lstr2 + 1)] for j in range(lstr1 + 1)]  # 多一位
+    record = [[0 for i in range(lstr2 + 1)] for j in range(lstr1 + 1)]
     maxNum = 0  # 最长匹配长度
     p = 0  # 匹配的起始位
 
@@ -108,11 +108,12 @@ def getNumofCommonSubstr(str1, str2):
 
 
 # 编辑距离
-def _levenshtein_distance(input_x, input_y):
-    xlen = len(input_x) + 1  # 此处需要多开辟一个元素存储最后一轮的计算结果
-    ylen = len(input_y) + 1
+def levenshtein_distance_dp(input_x, input_y):
+    xlen = len(input_x)
+    ylen = len(input_y)
 
-    dp = np.zeros(shape=(xlen, ylen), dtype=int)
+    # 此处需要多开辟一个元素存储最后一轮的计算结果
+    dp = [[0 for i in range(xlen + 1)] for j in range(ylen + 1)]
     for i in range(0, xlen):
         dp[i][0] = i
     for j in range(0, ylen):
@@ -135,5 +136,5 @@ if __name__ == '__main__':
     x = "beauty"
     y = "batyu"
 
-    print(lcsequence(x, y))
-    print(getNumofCommonSubstr(x, y))
+    print(longest_common_sequence(x, y))
+    print(longest_common_substr_dp(x, y))
