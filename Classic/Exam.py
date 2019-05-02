@@ -254,35 +254,67 @@ def palindrome_seq(s):
 
 
 
-def print_lcsequence(input_x, input_y, i, j, flag, lcs):
-    if (i == 0 or j == 0):
-        return
-    if flag[i][j] == 0:
-        print_lcsequence(input_x, input_y, i - 1, j - 1, flag, lcs)
-        lcs.append(input_x[i - 1])
-    elif (flag[i][j] == 1):
-        print_lcsequence(input_x, input_y, i - 1, j, flag, lcs)
-    else:
-        print_lcsequence(input_x, input_y, i, j - 1, flag, lcs)
-    return lcs
+# 编辑距离
+def levenshtein_distance_dp(input_x, input_y):
+    xlen = len(input_x) + 1
+    ylen = len(input_y) + 1
+
+    # 此处需要多开辟一个元素存储最后一轮的计算结果
+    dp = [[0 for i in range(xlen)] for j in range(ylen)]
+    for i in range(xlen):
+        dp[i][0] = i
+    for j in range(ylen):
+        dp[0][j] = j
+
+    for i in range(1, xlen):
+        for j in range(1, ylen):
+            if input_x[i - 1] == input_y[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1]
+            else:
+                dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
+    return dp[xlen - 1][ylen - 1]
 
 
-def lcsequence(input_x, input_y):
-    lcsequence_mat, flag = lcsequence_dp(input_x, input_y)
-    i = len(input_x)
-    j = len(input_y)
-    lcs = []
-    lcs = print_lcsequence(input_x, input_y, i, j, flag, lcs)
-    print((lcsequence_mat[-1][-1], lcs))
+# 最长公共子串
+def longest_common_substr_dp(str1, str2):
+    xlen = len(str1) + 1
+    ylen = len(str2) + 1
+    record = [[0 for i in range(ylen)] for j in range(xlen)]
+    maxNum = 0  # 最长匹配长度
+    p = 0  # 匹配的起始位
+
+    for i in range(1, xlen):
+        for j in range(1, ylen):
+            if str1[i - 1] == str2[j - 1]:
+                # 相同则累加
+                record[i][j] = record[i - 1][j - 1] + 1
+                if record[i][j] > maxNum:
+                    # 获取最大匹配长度
+                    maxNum = record[i][j]
+                    # 记录最大匹配长度的终止位置
+                    p = i
+    for i in record:
+        print(i)
+    return str1[p - maxNum:p], maxNum
 
 
 # 最长公共子序列
-def lcsequence_dp(input_x, input_y):
-    # input_y as column, input_x as row
-    dp = [([0] * (len(input_y) + 1)) for i in range(len(input_x) + 1)]
-    flag = [([0] * (len(input_y) + 1)) for i in range(len(input_x) + 1)]
-    for i in range(1, len(input_x) + 1):
-        for j in range(1, len(input_y) + 1):
+def longest_common_sequence(input_x, input_y):
+    lcsequence_mat, flag = longest_common_sequence_dp(input_x, input_y)
+    i = len(input_x)
+    j = len(input_y)
+    lcs = []
+    get_lcs(input_x, input_y, i, j, flag, lcs)
+    print((lcsequence_mat[-1][-1], lcs))
+
+
+def longest_common_sequence_dp(input_x, input_y):
+    xlen = len(input_x) + 1
+    ylen = len(input_y) + 1
+    dp = [([0] * ylen) for i in range(xlen)]
+    flag = [([0] * ylen) for i in range(xlen)]
+    for i in range(1, xlen):
+        for j in range(1, ylen):
             if input_x[i - 1] == input_y[j - 1]:  # 不在边界上，相等就加一
                 dp[i][j] = dp[i - 1][j - 1] + 1
                 flag[i][j] = 0
@@ -297,48 +329,17 @@ def lcsequence_dp(input_x, input_y):
     return dp, flag
 
 
-# 最长公共子串
-def getNumofCommonSubstr(str1, str2):
-    lstr1 = len(str1)
-    lstr2 = len(str2)
-    record = [[0 for i in range(lstr2 + 1)] for j in range(lstr1 + 1)]  # 多一位
-    maxNum = 0  # 最长匹配长度
-    p = 0  # 匹配的起始位
-
-    for i in range(lstr1):
-        for j in range(lstr2):
-            if str1[i] == str2[j]:
-                # 相同则累加
-                record[i + 1][j + 1] = record[i][j] + 1
-                if record[i + 1][j + 1] > maxNum:
-                    # 获取最大匹配长度
-                    maxNum = record[i + 1][j + 1]
-                    # 记录最大匹配长度的终止位置
-                    p = i + 1
-    for i in record:
-        print(i)
-    return str1[p - maxNum:p], maxNum
-
-
-# 编辑距离
-def _levenshtein_distance(input_x, input_y):
-    xlen = len(input_x) + 1  # 此处需要多开辟一个元素存储最后一轮的计算结果
-    ylen = len(input_y) + 1
-
-    dp = np.zeros(shape=(xlen, ylen), dtype=int)
-    for i in range(0, xlen):
-        dp[i][0] = i
-    for j in range(0, ylen):
-        dp[0][j] = j
-
-    for i in range(1, xlen):
-        for j in range(1, ylen):
-            if input_x[i - 1] == input_y[j - 1]:
-                dp[i][j] = dp[i - 1][j - 1]
-            else:
-                dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
-    return dp[xlen - 1][ylen - 1]
-
+def get_lcs(input_x, input_y, i, j, flag, lcs):
+    if (i == 0 or j == 0):
+        return
+    if flag[i][j] == 0:
+        get_lcs(input_x, input_y, i - 1, j - 1, flag, lcs)
+        lcs.append(input_x[i - 1])
+    elif (flag[i][j] == 1):
+        get_lcs(input_x, input_y, i - 1, j, flag, lcs)
+    else:
+        get_lcs(input_x, input_y, i, j - 1, flag, lcs)
+    return lcs
 
 
 """
@@ -402,3 +403,8 @@ class Solution:
             return self.find(matrix, rows, cols, path[1:], i - 1, j)
         else:
             return False
+if __name__ == '__main__':
+    x = "beauty"
+    y = "batyu"
+
+    print(longest_common_substr_dp(x, y))
