@@ -113,6 +113,7 @@ def palindrome_seq(s):
     length = len(s)
     if length < 2:
         return 0
+
     rs = s[::-1]
     dp = [[0 for i in range(length + 1)] for j in range(length + 1)]
     for i in range(1, length + 1):
@@ -425,7 +426,8 @@ def split_ways_dp(n):
 
 if __name__ == '__main__':
     s = "abacdgfdcaba"
-    # print(palindrome_seq(s))
+    print(palindrome_seq(s))
+    print("**" * 10)
     s = [5, 2, 1, 4, 6, 9, 7, 8]
     # lis(s)
     # print(lis2(s))

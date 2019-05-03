@@ -44,7 +44,7 @@ def process(in_file, sheet_names):
     writer.save()
     print("Done!")
 
-def intensity(in_file, sheet_names):
+def get_intensity(in_file, sheet_names):
     rows = []
     last = [0, 0, 0, 0]
     cnt = 0
