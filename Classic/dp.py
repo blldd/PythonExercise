@@ -16,8 +16,10 @@
 """
 import sys
 
-
 # 编辑距离
+import pysnooper
+
+
 def levenshtein_distance_dp(input_x, input_y):
     xlen = len(input_x) + 1
     ylen = len(input_y) + 1
@@ -323,6 +325,7 @@ def coin_ways(arr, target):
     return process(arr, 0, target)
 
 
+# @pysnooper.snoop()
 def process(arr, index, target):
     res = 0
     if index == len(arr):
@@ -335,6 +338,7 @@ def process(arr, index, target):
     return res
 
 
+# @pysnooper.snoop()
 def coin_ways_dp_compress(arr, target):
     """
     给定一个正数数组arr，arr[i]表示第i种货币的面值，可以使用任意张。
@@ -375,20 +379,17 @@ def split_ways(n):
         return 0
     return _split_process(1, n)
 
-
-# def split_ways_dp(n):
-#     if n < 1:
-#         return 0
-#     dp = [[0 for j in range(n + 1)] for i in range(n + 1)]
-#     for i in range(1, n + 1):
-#         dp[i][0] = 1
-#     for pre in range(1, n + 1)[::-1]:
-#         for rest in range(pre, n + 1):
-#             for i in range(pre, rest + 1):
-#                 dp[pre][rest] += dp[i][rest - i]
-#     return dp[1][n]
-
 def split_ways_dp(n):
+    """
+    给定一个正数1，裂开的方法有一种，(1)
+    给定一个正数2，裂开的方法有两种，(1和1)、(2)
+    给定一个正数3，裂开的方法有三种，(1、1、1)、(1、2)、(3)
+    给定一个正数4，裂开的方法有五种，(1、1、1、1)、(1、1、2)、(1、3)、(2、2)、 (4)
+    给定一个正数n，求裂开的方法数。
+    动态规划优化状态依赖的技巧
+    :param n:
+    :return:
+    """
     if n < 1:
         return 0
     dp = [[0 for j in range(n + 1)] for i in range(n + 1)]
@@ -399,45 +400,33 @@ def split_ways_dp(n):
     for pre in range(1, n)[::-1]:
         for rest in range(pre + 1, n + 1):
             dp[pre][rest] = dp[pre + 1][rest] + dp[pre][rest - pre]
-
+    for i in dp:
+        print(i)
     return dp[1][n]
 
 
-"""
-	public static int ways3(int n) {
-		if (n < 1) {
-			return 0;
-		}
-		int[][] dp = new int[n + 1][n + 1];
-		for (int pre = 1; pre < dp.length; pre++) {
-			dp[pre][0] = 1;
-		}
-		for (int pre = 1; pre < dp.length; pre++) {
-			dp[pre][pre] = 1;
-		}
-		for (int pre = n - 1; pre > 0; pre--) {
-			for (int rest = pre + 1; rest <= n; rest++) {
-				dp[pre][rest] = dp[pre + 1][rest] + dp[pre][rest - pre];
-			}
-		}
-		return dp[1][n];
-	}
-"""
-
 if __name__ == '__main__':
-    s = "abacdgfdcaba"
-    print(palindrome_seq(s))
-    print("**" * 10)
+    # s = "abacdgfdcaba"
+    # print(palindrome_seq(s))
+    # print("**" * 10)
     s = [5, 2, 1, 4, 6, 9, 7, 8]
     # lis(s)
+    # print()
     # print(lis2(s))
+    # print("**" * 10)
     # print(maxProductAfterCutting(16))
-    s = [-5, -3, 0, 1, 3, 5]
+    # print("**" * 10)
+    s = [-5, -3, 0, 1, 0, 3, 5]
     # print(penguin_merge(s))
+
+    print(most_eor(s))
+    print("**" * 10)
 
     print(coins_min_combine([1, 5, 11], 15))
     print(coin_ways([1, 5, 10], 27))
     print(coin_ways_dp_compress([1, 5, 10], 27))
 
+    print("**" * 10)
     # for i in range(10):
     #     print(split_ways(i), split_ways_dp(i))
+    print(split_ways_dp(5))

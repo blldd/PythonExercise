@@ -5,7 +5,6 @@ import itertools as it
 
 import sys
 
-
 if __name__ == "__main__":
     pass
     # # 读取第一行的n
@@ -20,10 +19,11 @@ if __name__ == "__main__":
     #         ans += v
     # print(ans)
 
-
 """
 堆排序
 """
+
+
 def down_adjust_min(array, parentIndex, length):
     temp = array[parentIndex]
     childIndex = 2 * parentIndex + 1
@@ -57,9 +57,12 @@ def heap_sort(array):
         down_adjust_min(array, 0, i)
     print(array)
 
+
 """
 快排
 """
+
+
 def quick_sort(array, left, right):
     if left >= right:
         return
@@ -76,6 +79,7 @@ def quick_sort(array, left, right):
     quick_sort(array, low, left - 1)
     quick_sort(array, left + 1, high)
 
+
 quick_sort_lam = lambda array: array if len(array) <= 1 else \
     quick_sort_lam([item for item in array[1:] if item <= array[0]]) \
     + [array[0]] + \
@@ -84,6 +88,8 @@ quick_sort_lam = lambda array: array if len(array) <= 1 else \
 """
 
 """
+
+
 def quick_sort_stack(array, l, r):
     if l >= r:
         return
@@ -111,9 +117,10 @@ def bubble_sort(arr):
         return arr
     for i in range(length)[::-1]:
         for j in range(i - 1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
+
 
 # 广度优先遍历算法
 def level_queue(root):
@@ -194,6 +201,7 @@ def preorderTraversal(root):  ## 前序遍历
             curr = stack.pop()
     return res
 
+
 """
 代码的主体部分基本就是.right和.left交换了顺序，
 且后序遍历在最后输出的时候进行了反向（因为要从 中右左 变为 左右中 ）
@@ -213,11 +221,13 @@ def postorderTraversal(root):  ## 后序遍历
             curr = stack.pop()
     return res[::-1]
 
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
 
 # 前序 中序 构建树
 def getTreePreMid(pre, mid):
@@ -231,9 +241,11 @@ def getTreePreMid(pre, mid):
     root.right = getTreePreMid(pre[root_index + 1:], mid[root_index + 1:])
     return root
 
+
 """
 动态规划
 """
+
 
 def palindrome_seq(s):
     """
@@ -247,11 +259,10 @@ def palindrome_seq(s):
     dp = [[0 for i in range(length + 1)] for j in range(length + 1)]
     for i in range(1, length + 1):
         for j in range(1, length + 1):
-            dp[i][j] = dp[i - 1][j - 1] + 1 if s[i-1] == rs[j-1] else max(dp[i][j - 1], dp[i - 1][j])
+            dp[i][j] = dp[i - 1][j - 1] + 1 if s[i - 1] == rs[j - 1] else max(dp[i][j - 1], dp[i - 1][j])
     for i in dp:
         print(i)
     return length - dp[length][length]
-
 
 
 # 编辑距离
@@ -342,23 +353,6 @@ def get_lcs(input_x, input_y, i, j, flag, lcs):
     return lcs
 
 
-"""
-permutation
-"""
-
-def perm_arr(arr):
-    perm = it.permutations(arr, 3)
-    return list(perm)
-
-def perm_str(s=''):
-    if len(s) <= 1:
-        return [s]
-    str_list = []
-    for i in range(len(s)):
-        for j in perm_str(s[0:i] + s[i + 1:]):
-            str_list.append(s[i] + j)
-    return str_list
-
 def sqrt(x):
     if x < 2:
         return x
@@ -368,7 +362,7 @@ def sqrt(x):
         if mid * mid < x:
             # left=mid
             left = mid + 1
-            lstmid = mid  # 关键步骤啊，对于5这种情况啊
+            lstmid = mid  # 关键步骤
         elif mid * mid > x:
             # right=x
             right = mid - 1
@@ -376,9 +370,12 @@ def sqrt(x):
             return mid
     return lstmid
 
+
 """
 haspath
 """
+
+
 class Solution:
     def hasPath(self, matrix, rows, cols, path):
         # write code here
@@ -403,8 +400,31 @@ class Solution:
             return self.find(matrix, rows, cols, path[1:], i - 1, j)
         else:
             return False
+
+
+"""
+permutation
+"""
+
+
+def perm_arr(arr):
+    perm = it.permutations(arr)
+    return list(perm)
+
+
+def perm_str(s=''):
+    if len(s) <= 1:
+        return [s]
+    str_list = []
+    for i in range(len(s)):
+        for j in perm_str(s[0:i] + s[i + 1:]):
+            str_list.append(s[i] + j)
+    return str_list
+
+
 if __name__ == '__main__':
     x = "beauty"
     y = "batyu"
 
-    print(longest_common_substr_dp(x, y))
+    x = "abc"
+    print(sqrt(5))
