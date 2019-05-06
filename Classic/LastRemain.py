@@ -40,7 +40,5 @@ def last_remain_2(length, step):
 
 
 if __name__ == '__main__':
-    arr = [i for i in range(5)]
-    # print(arr)
-    last = last_remain(len(arr), 3)
-    print(last)
+    for i in range(5,10):
+        print(last_remain(i, 3), last_remain_2(i, 3))

@@ -21,3 +21,13 @@ class Solution:
             self.lis.append(char)
         elif self.dic[char]:
             self.dic[char] = 2
+
+if __name__ == '__main__':
+    sl = Solution()
+    sl.Insert('a')
+    sl.Insert('b')
+    sl.Insert('c')
+    sl.Insert('d')
+    sl.Insert('a')
+
+    print(sl.FirstAppearingOnce())

@@ -4,10 +4,10 @@
 找到数组中第一个不重复出现的整数 python
 """
 
-# 组中不重复的数只有一个，初始值为0，然后直接遍历数组，让每个值与初始值进行异或，得出的最终值就是要找的结果：
 import collections
 
 
+# 组中不重复的数只有一个，初始值为0，然后直接遍历数组，让每个值与初始值进行异或，得出的最终值就是要找的结果：
 def findNoDupOnlyOne(data):
     single = 0
     for v in data:
@@ -32,19 +32,6 @@ def findNoDupMany(data):
     return single
 
 
-# 找到第一个重复的数字
-def findFirstDup(numbers, duplication):
-    # write code here
-    numbers_set = set()
-    for i in numbers:
-        if i not in numbers_set:
-            numbers_set.add(i)
-        else:
-            duplication[0] = i
-            return True
-    return False
-
-
 # 找到第一个不重复的数字  ordereddict
 def findFirstNoDupMany(data):
     single = 0
@@ -60,6 +47,19 @@ def findFirstNoDupMany(data):
             single = key
             break
     return single
+
+
+# 找到第一个重复的数字
+def findFirstDup(numbers, duplication):
+    # write code here
+    numbers_set = set()
+    for i in numbers:
+        if i not in numbers_set:
+            numbers_set.add(i)
+        else:
+            duplication[0] = i
+            return True
+    return False
 
 
 list = [2, 3, 3, 1, 0, 2, 5, 3]

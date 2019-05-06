@@ -210,68 +210,6 @@ def maxProductAfterCutting(n):
     return max_list[n]
 
 
-def penguin_merge_near(arr):
-    """
-    企鹅合体，只能合体一次，只能和左右其中的一个合体，合体即乘积，有可能为负数
-    :param arr:
-    :return:
-    """
-    length = len(arr)
-    if length < 1:
-        return 0
-    elif length == 1:
-        return arr[0]
-    elif length == 2:
-        return max(arr[0] + arr[1], arr[0] * arr[1])
-
-    dp = [0 for i in range(length + 1)]
-    dp[1] = arr[0]
-    dp[2] = max(arr[0] + arr[1], arr[0] * arr[1])
-    if length > 2:
-        for i in range(3, length + 1):
-            dp[i] = max(dp[i - 1] + arr[i - 1], dp[i - 2] + arr[i - 1] * arr[i - 2])
-    return dp[-1]
-
-
-def penguin_merge(arr):
-    """
-    企鹅合体，只能合体一次，合体即乘积，有可能为负数
-    由于不指定顺序，因此可以先排序，-5, -3, 0, 1, 3, 5
-    :param arr:
-    :return:
-    """
-    length = len(arr)
-
-    arr = sorted(arr)
-    if length < 1:
-        return 0
-    elif length == 1:
-        return arr[0]
-    elif length == 2:
-        return max(arr[0] + arr[1], arr[0] * arr[1])
-
-    ans = 0
-    if length > 2:
-        l = 0
-        r = length - 1
-        while r > 0:
-            if arr[r - 1] > 1:
-                ans += arr[r] * arr[r - 1]
-                r -= 2
-            else:
-                break
-        while l < r:
-            if arr[l + 1] <= 0:
-                ans += arr[l] * arr[l + 1]
-                l += 2
-            else:
-                break
-        while l <= r:
-            ans += arr[l]
-            l += 1
-    return ans
-
-
 def most_eor(arr):
     """
 	给出n个数字 a_1,...,a_n，问最多有多少不重叠的非空区间，使得每个区间内数字的 xor都等于0。
@@ -379,6 +317,7 @@ def split_ways(n):
         return 0
     return _split_process(1, n)
 
+
 def split_ways_dp(n):
     """
     给定一个正数1，裂开的方法有一种，(1)
@@ -405,6 +344,68 @@ def split_ways_dp(n):
     return dp[1][n]
 
 
+def penguin_merge_near(arr):
+    """
+    企鹅合体，只能合体一次，只能和左右其中的一个合体，合体即乘积，有可能为负数，求最大值
+    :param arr:
+    :return:
+    """
+    length = len(arr)
+    if length < 1:
+        return 0
+    elif length == 1:
+        return arr[0]
+    elif length == 2:
+        return max(arr[0] + arr[1], arr[0] * arr[1])
+
+    dp = [0 for i in range(length + 1)]
+    dp[1] = arr[0]
+    dp[2] = max(arr[0] + arr[1], arr[0] * arr[1])
+    if length > 2:
+        for i in range(3, length + 1):
+            dp[i] = max(dp[i - 1] + arr[i - 1], dp[i - 2] + arr[i - 1] * arr[i - 2])
+    return dp[-1]
+
+
+def penguin_merge(arr):
+    """
+    企鹅合体，只能合体一次，合体即乘积，有可能为负数，求最大值
+    由于不指定顺序，因此可以先排序，-5, -3, 0, 1, 3, 5
+    :param arr:
+    :return:
+    """
+    length = len(arr)
+
+    arr = sorted(arr)
+    if length < 1:
+        return 0
+    elif length == 1:
+        return arr[0]
+    elif length == 2:
+        return max(arr[0] + arr[1], arr[0] * arr[1])
+
+    ans = 0
+    if length > 2:
+        l = 0
+        r = length - 1
+        while r > 0:
+            if arr[r - 1] > 1:
+                ans += arr[r] * arr[r - 1]
+                r -= 2
+            else:
+                break
+        while l < r:
+            if arr[l + 1] <= 0:
+                ans += arr[l] * arr[l + 1]
+                l += 2
+            else:
+                break
+        while l <= r:
+            ans += arr[l]
+            l += 1
+    return ans
+
+
 if __name__ == '__main__':
     # s = "abacdgfdcaba"
     # print(palindrome_seq(s))
@@ -416,10 +417,11 @@ if __name__ == '__main__':
     # print("**" * 10)
     # print(maxProductAfterCutting(16))
     # print("**" * 10)
-    s = [-5, -3, 0, 1, 0, 3, 5]
-    # print(penguin_merge(s))
+    s = [-5, -1, -3, 1, 0, 1, 0, 3, 5]
+    print(penguin_merge_near(s))
+    print(penguin_merge(s))
 
-    print(most_eor(s))
+    # print(most_eor(s))
     print("**" * 10)
 
     print(coins_min_combine([1, 5, 11], 15))
@@ -429,4 +431,4 @@ if __name__ == '__main__':
     print("**" * 10)
     # for i in range(10):
     #     print(split_ways(i), split_ways_dp(i))
-    print(split_ways_dp(5))
+    # print(split_ways_dp(5))
