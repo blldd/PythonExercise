@@ -5,6 +5,7 @@ The ... file.
 Authors: dedong (ddlecnu@gmail.com)
 """
 
+
 def sum_2(arr, target):
     hash_table = {}
     res = []
@@ -47,6 +48,7 @@ def sum_3_2(arr, target):  # 3sum问题 解 2
                 res.append((minV, midV, maxV))
     print(list(set(res)))
 
+
 def continuous_pos_sum(target):
     res = []
     if target < 1:
@@ -54,7 +56,7 @@ def continuous_pos_sum(target):
     small = 1
     big = 2
     cur_sum = small + big
-    mid = (1+target)/2
+    mid = (1 + target) / 2
     while small < mid:
         if cur_sum < target:
             big += 1
@@ -63,18 +65,140 @@ def continuous_pos_sum(target):
             cur_sum -= small
             small += 1
         else:
-            res.append([i for i in range(small, big+1)])
+            res.append([i for i in range(small, big + 1)])
             cur_sum -= small
             small += 1
     return res
+
+
+def combinationSum(candidates, target):
+    """
+    不限次数
+    :type candidates: List[int]
+    :type target: int
+    :rtype: List[List[int]]
+    """
+
+    def helper(remain, combi, idx):
+        if remain < 0:
+            return
+        if remain == 0:
+            res.append(combi)
+            return
+        if idx >= len(candidates):
+            return
+        helper(remain, combi, idx + 1)
+        helper(remain - candidates[idx], combi + [candidates[idx]], idx)
+
+    res = []
+    helper(target, [], 0)
+    return res
+
+
+def combinationSum2(candidates, target):
+    """
+    :type candidates: List[int]
+    :type target: int
+    :rtype: List[List[int]]
+    """
+
+    def helper(remain, combi, idx):
+        if remain < 0:
+            return
+        if remain == 0 and combi not in res:
+            res.append(combi)
+            return
+        if idx >= len(candidates):
+            return
+        helper(remain, combi, idx + 1)
+        helper(remain - candidates[idx], combi + [candidates[idx]], idx + 1)
+
+    res = []
+    candidates.sort()
+    helper(target, [], 0)
+    return res
+
+
+class Solution:
+    """
+    leetcode 40
+    给定一个数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
+
+    candidates 中的每个数字在每个组合中只能使用一次。
+    """
+
+    def combinationSum2(self, candidates, target):
+        # 下面有一个目标值小于某一元素就break，所以先排序
+        candidates.sort()
+        # 储存返回的二维列表
+        res, length = [], len(candidates)
+
+        # 递归，目标值，起始位置，当前组合
+        def dfs(target, start, vlist):
+            # 目标值为0，表明当前递归完成，把当前递归结果加入res并返回
+            if target == 0:
+                return res.append(vlist)
+            # 从开始下标循环
+            for i in range(start, length):
+                # candidates有序，只要当前大于目标后面都大于，直接break
+                if target < candidates[i]:
+                    break
+                # 这个判断保证不重复例如1，1，2，5，6，7，10，第二个1就会被跳过
+                if i > start and candidates[i] == candidates[i - 1]:
+                    continue
+                # 否则目标值减当前值，i+1为新的起始位置（不用重复数字），把当前值加入当前组合
+                else:
+                    dfs(target - candidates[i], i + 1, vlist + [candidates[i]])
+
+        dfs(target, 0, [])
+        return res
+
+    """
+    leetcode 39
+    给定一个数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
+
+    candidates 中的每个数字在每个组合中次数不限。
+    """
+
+    def combinationSum(self, candidates, target):
+        # 下面有一个目标值小于某一元素就break，所以先排序
+        candidates.sort()
+        # 储存返回的二维列表
+        res, length = [], len(candidates)
+
+        # 递归，目标值，起始位置，当前组合
+        def dfs(target, start, vlist):
+            # 目标值为0，表明当前递归完成，把当前递归结果加入res并返回
+            if target == 0:
+                return res.append(vlist)
+            # 从开始下标循环
+            for i in range(start, length):
+                # candidates有序，只要当前大于目标后面都大于，直接break
+                if target < candidates[i]: break
+                # 这个判断保证不重复例如1，1，2，5，6，7，10，第二个1就会被跳过
+                if i > start and candidates[i] == candidates[i - 1]:
+                    continue
+                # 否则目标值减当前值，i为用重复数字，把当前值加入当前组合
+                else:
+                    dfs(target - candidates[i], i, vlist + [candidates[i]])
+
+        dfs(target, 0, [])
+        return res
 
 
 if __name__ == '__main__':
     nums = [1, 4, 3, 2, 6, 5]
     target = 6
 
-    # print(sum_2(nums, target))
-    # sum_3(nums, target)
-    # sum_3_2(nums, target)
+    print(sum_2(nums, target))
+    sum_3(nums, target)
+    sum_3_2(nums, target)
 
     print(continuous_pos_sum(15))
+
+    print(combinationSum([2, 3, 6, 7], 7))
+    print(combinationSum2([2, 3, 6, 7], 7))
+
+    # print(Solution().combinationSum2([2, 3, 6, 7], 7))
+    print(Solution().combinationSum2(candidates=[10, 1, 2, 7, 6, 1, 5], target=8))  # 提交时请删除该行
+    print(Solution().combinationSum(candidates=[10, 1, 2, 7, 6, 1, 5], target=8))  # 提交时请删除该行

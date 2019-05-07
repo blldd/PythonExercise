@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classic/NoDup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/NoDup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classic/dp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/dp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awesome-algorithm-master/docs/剑指offer/Python/54-字符流中第一个不重复的字符.py" beforeDir="false" afterPath="$PROJECT_DIR$/awesome-algorithm-master/docs/剑指offer/Python/54-字符流中第一个不重复的字符.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classic/LastRemain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/LastRemain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classic/kSum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/kSum.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +126,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$Tree.coverage" NAME="Tree Coverage Results" MODIFIED="1556205762827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$FirstApearOnce.coverage" NAME="FirstApearOnce Coverage Results" MODIFIED="1533025126092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$10reg.coverage" NAME="10reg Coverage Results" MODIFIED="1553995177978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
-    <SUITE FILE_PATH="coverage/PythonExercise$kSum.coverage" NAME="kSum Coverage Results" MODIFIED="1543889264236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$kSum.coverage" NAME="kSum Coverage Results" MODIFIED="1557190389862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$TreeLevel.coverage" NAME="TreeLevel Coverage Results" MODIFIED="1532766526122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$30BTRight.coverage" NAME="30BTRight Coverage Results" MODIFIED="1524127095977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$17SumRootLeaf.coverage" NAME="17SumRootLeaf Coverage Results" MODIFIED="1524018436026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
@@ -139,7 +137,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$form.coverage" NAME="form Coverage Results" MODIFIED="1524292838569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/PythonExercise$Path.coverage" NAME="Path Coverage Results" MODIFIED="1542681163437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$max_sum_path.coverage" NAME="max_sum_path Coverage Results" MODIFIED="1553526600628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0zuo_training/class3" />
-    <SUITE FILE_PATH="coverage/PythonExercise$LastRemain.coverage" NAME="LastRemain Coverage Results" MODIFIED="1557149772331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$LastRemain.coverage" NAME="LastRemain Coverage Results" MODIFIED="1557150042143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$multiply.coverage" NAME="multiply Coverage Results" MODIFIED="1533025670804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$zigzag.coverage" NAME="zigzag Coverage Results" MODIFIED="1532765808202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$SortMethods.coverage" NAME="SortMethods Coverage Results" MODIFIED="1556457858589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
@@ -300,7 +298,7 @@
           <entry key="dummy" value="162" />
           <entry key="gitignore" value="19" />
           <entry key="md" value="29" />
-          <entry key="py" value="58656" />
+          <entry key="py" value="58812" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
@@ -308,7 +306,7 @@
         <counts>
           <entry key="Markdown" value="29" />
           <entry key="PLAIN_TEXT" value="206" />
-          <entry key="Python" value="58648" />
+          <entry key="Python" value="58804" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -321,9 +319,9 @@
           <entry key="gitignore" value="3" />
           <entry key="iml" value="1" />
           <entry key="ipynb" value="2" />
-          <entry key="md" value="5" />
+          <entry key="md" value="9" />
           <entry key="png" value="3" />
-          <entry key="py" value="686" />
+          <entry key="py" value="688" />
           <entry key="pyi" value="5" />
           <entry key="test_set" value="4" />
           <entry key="train_set" value="1" />
@@ -337,9 +335,9 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="IPNB" value="2" />
           <entry key="Image" value="3" />
-          <entry key="Markdown" value="5" />
+          <entry key="Markdown" value="9" />
           <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="680" />
+          <entry key="Python" value="682" />
           <entry key="PythonStub" value="5" />
           <entry key="XML" value="4" />
           <entry key="YouTrack" value="5" />
@@ -350,19 +348,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classic/NextNode.py">
+        <entry file="file://$PROJECT_DIR$/Classic/LinkList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+            <state relative-caret-position="339">
+              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Classic/LinkList.py">
+        <entry file="file://$PROJECT_DIR$/Classic/kSum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+            <state relative-caret-position="379">
+              <caret line="166" selection-start-line="166" selection-end-line="166" />
+              <folding>
+                <marker date="1557190966516" expanded="true" signature="3004:3381" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0040._combination_sum_ii.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0039._combination_sum.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -426,8 +447,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/leetcode1/416partitionEqual.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/leetcode1/archer.py" />
         <option value="$PROJECT_DIR$/Classic/DFSBFS.py" />
         <option value="$PROJECT_DIR$/CodeOffer/TreeLevel.py" />
@@ -477,6 +496,8 @@
         <option value="$PROJECT_DIR$/awesome-algorithm-master/docs/剑指offer/Python/54-字符流中第一个不重复的字符.py" />
         <option value="$PROJECT_DIR$/Classic/Permutation.py" />
         <option value="$PROJECT_DIR$/Classic/NoDup.py" />
+        <option value="$PROJECT_DIR$/Classic/LastRemain.py" />
+        <option value="$PROJECT_DIR$/Classic/kSum.py" />
       </list>
     </option>
   </component>
@@ -519,14 +540,14 @@
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
               <item name="awesome-algorithm-master" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="剑指offer" type="462c0819:PsiDirectoryNode" />
+              <item name="Leetcode_Solutions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
               <item name="awesome-algorithm-master" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="剑指offer" type="462c0819:PsiDirectoryNode" />
+              <item name="Leetcode_Solutions" type="462c0819:PsiDirectoryNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -596,7 +617,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LastRemain">
+  <component name="RunManager" selected="Python.kSum">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -659,28 +680,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="54-字符流中第一个不重复的字符" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonExercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/awesome-algorithm-master/docs/剑指offer/Python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/awesome-algorithm-master/docs/剑指offer/Python/54-字符流中第一个不重复的字符.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="LastRemain" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -763,6 +762,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/SecondLargest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kSum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonExercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/kSum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -866,19 +887,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.PythonExercise" />
-      <item itemvalue="Python.54-字符流中第一个不重复的字符" />
       <item itemvalue="Python.SecondLargest" />
       <item itemvalue="Python.Permutation" />
       <item itemvalue="Python.NextNode" />
       <item itemvalue="Python.LastRemain" />
+      <item itemvalue="Python.kSum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.kSum" />
         <item itemvalue="Python.LastRemain" />
         <item itemvalue="Python.NextNode" />
         <item itemvalue="Python.Permutation" />
         <item itemvalue="Python.SecondLargest" />
-        <item itemvalue="Python.54-字符流中第一个不重复的字符" />
       </list>
     </recent_temporary>
   </component>
@@ -934,13 +955,13 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.27710843" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.32771084" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.14337349" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" visible="true" weight="0.16626506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
@@ -1259,11 +1280,6 @@
           <url>file://$PROJECT_DIR$/KAP/Pre/Vectorize.py</url>
           <line>47</line>
           <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Classic/kSum.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CodeOffer/1sumN.py</url>
@@ -1649,6 +1665,11 @@
           <line>9</line>
           <option name="timeStamp" value="253" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Classic/kSum.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1663,31 +1684,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classic/DFSBFS.py" />
-    <entry file="file://$PROJECT_DIR$/Classic/Tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="434" column="20" selection-start-line="434" selection-start-column="20" selection-end-line="434" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/0423test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/0424test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="e#102#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Students/fund/hedging_ratio_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -1933,20 +1929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/kSum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/LastRemain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classic/topk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -2004,17 +1986,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classic/LastRemain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classic/NextNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classic/LinkList.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
-          <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0015._3sum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0018._4sum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0039._combination_sum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0040._combination_sum_ii.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classic/kSum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+          <folding>
+            <marker date="1557190966516" expanded="true" signature="3004:3381" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
