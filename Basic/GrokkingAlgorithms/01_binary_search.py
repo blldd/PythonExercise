@@ -5,6 +5,7 @@ def binary_search(list, item):
 
   # While you haven't narrowed it down to one element ...
   while low <= high:
+  # while low < high:
     # ... check the middle element
     mid = (low + high) // 2
     guess = list[mid]
@@ -20,9 +21,10 @@ def binary_search(list, item):
 
   # Item doesn't exist
   return None
+  # return low if list[low] == item else None
 
 my_list = [1, 3, 5, 7, 9]
-print(binary_search(my_list, 3)) # => 1
+print(binary_search(my_list, 5)) # => 1
 
 # 'None' means nil in Python. We use to indicate that the item wasn't found.
 print(binary_search(my_list, -1)) # => None
