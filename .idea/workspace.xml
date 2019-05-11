@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
+      <change afterPath="$PROJECT_DIR$/Students/fund/section_4_final_strategy_0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/863distanceK.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/GrokkingAlgorithms/01_binary_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/GrokkingAlgorithms/01_binary_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classic/dp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classic/dp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Students/fund/hedging_ratio_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Students/fund/section_2_hedging_ratio_0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Students/fund/hedging_ratio_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Students/fund/section_2_hedging_ratio_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Students/fund/hedging_ratio_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Students/fund/section_2_hedging_ratio_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Students/fund/multi_factor_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Students/fund/section_1_multi_factor_0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Students/fund/multi_factor_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Students/fund/section_1_multi_factor_6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Students/fund/profit_loss_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Students/fund/section_3_profit_loss_0.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +47,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$multithread.coverage" NAME="multithread Coverage Results" MODIFIED="1539238824972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multiprocess" />
     <SUITE FILE_PATH="coverage/PythonExercise$01_binary_search.coverage" NAME="01_binary_search Coverage Results" MODIFIED="1557305054105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic/GrokkingAlgorithms" />
     <SUITE FILE_PATH="coverage/PythonTools$BubbleSort.coverage" NAME="BubbleSort Coverage Results" MODIFIED="1531794752015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xiaohui" />
-    <SUITE FILE_PATH="coverage/PythonExercise$dp.coverage" NAME="dp Coverage Results" MODIFIED="1557453381866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$dp.coverage" NAME="dp Coverage Results" MODIFIED="1557454188672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$study_time.coverage" NAME="study_time Coverage Results" MODIFIED="1550582675788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0zuo_training" />
     <SUITE FILE_PATH="coverage/PythonExercise$0424test.coverage" NAME="0424test Coverage Results" MODIFIED="1556110623857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
     <SUITE FILE_PATH="coverage/PythonTools$plotAccuCurve__1_.coverage" NAME="plotAccuCurve (1) Coverage Results" MODIFIED="1523583666522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plot" />
@@ -93,6 +99,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$39DuplicatesII.coverage" NAME="39DuplicatesII Coverage Results" MODIFIED="1524237585044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$FindMat.coverage" NAME="FindMat Coverage Results" MODIFIED="1532049330726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$1twist_data__1_.coverage" NAME="1twist_data (1) Coverage Results" MODIFIED="1551365821156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fund" />
+    <SUITE FILE_PATH="coverage/PythonExercise$863distanceK.coverage" NAME="863distanceK Coverage Results" MODIFIED="1557542510200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$06convert.coverage" NAME="06convert Coverage Results" MODIFIED="1553869494190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$duplicate_nums.coverage" NAME="duplicate_nums Coverage Results" MODIFIED="1533024756769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$MaxDepth.coverage" NAME="MaxDepth Coverage Results" MODIFIED="1523946118252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
@@ -132,6 +139,7 @@
     <SUITE FILE_PATH="coverage/PythonTools$TreeLevel.coverage" NAME="TreeLevel Coverage Results" MODIFIED="1532766526122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$30BTRight.coverage" NAME="30BTRight Coverage Results" MODIFIED="1524127095977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonTools$17SumRootLeaf.coverage" NAME="17SumRootLeaf Coverage Results" MODIFIED="1524018436026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
+    <SUITE FILE_PATH="coverage/PythonExercise$section_4_final_strategy_0.coverage" NAME="section_4_final_strategy_0 Coverage Results" MODIFIED="1557554107038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Students/fund" />
     <SUITE FILE_PATH="coverage/PythonTools$37Duplicates.coverage" NAME="37Duplicates Coverage Results" MODIFIED="1524237236511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonExercise$1twist_data.coverage" NAME="1twist_data Coverage Results" MODIFIED="1552228588939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fund" />
     <SUITE FILE_PATH="coverage/PythonExercise$05longestPalindrome.coverage" NAME="05longestPalindrome Coverage Results" MODIFIED="1553699799029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
@@ -240,7 +248,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$Permutation.coverage" NAME="Permutation Coverage Results" MODIFIED="1557149296093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonExercise$max_gap.coverage" NAME="max_gap Coverage Results" MODIFIED="1551533656494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0zuo_training/class1" />
     <SUITE FILE_PATH="coverage/PythonExercise$470rand10.coverage" NAME="470rand10 Coverage Results" MODIFIED="1555939259125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
-    <SUITE FILE_PATH="coverage/PythonExercise$Graph.coverage" NAME="Graph Coverage Results" MODIFIED="1556152511156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
+    <SUITE FILE_PATH="coverage/PythonExercise$Graph.coverage" NAME="Graph Coverage Results" MODIFIED="1557542752307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classic" />
     <SUITE FILE_PATH="coverage/PythonTools$1GetMedian.coverage" NAME="1GetMedian Coverage Results" MODIFIED="1535270280911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$spider.coverage" NAME="spider Coverage Results" MODIFIED="1535529056750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider" />
     <SUITE FILE_PATH="coverage/PythonTools$maxWindow.coverage" NAME="maxWindow Coverage Results" MODIFIED="1532786299479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
@@ -272,7 +280,7 @@
     <session id="1206640456">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="97" />
+          <entry key="project.closed" value="98" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="40" />
           <entry key="project.open.time.10" value="3" />
@@ -291,24 +299,24 @@
           <entry key="project.open.time.7" value="11" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.8" value="7" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="109" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="162" />
+          <entry key="dummy" value="212" />
           <entry key="gitignore" value="19" />
           <entry key="md" value="29" />
-          <entry key="py" value="59946" />
+          <entry key="py" value="61213" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="29" />
-          <entry key="PLAIN_TEXT" value="206" />
-          <entry key="Python" value="59938" />
+          <entry key="PLAIN_TEXT" value="256" />
+          <entry key="Python" value="61205" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -323,7 +331,7 @@
           <entry key="ipynb" value="2" />
           <entry key="md" value="10" />
           <entry key="png" value="3" />
-          <entry key="py" value="691" />
+          <entry key="py" value="702" />
           <entry key="pyi" value="5" />
           <entry key="test_set" value="4" />
           <entry key="train_set" value="1" />
@@ -339,7 +347,7 @@
           <entry key="Image" value="3" />
           <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="685" />
+          <entry key="Python" value="696" />
           <entry key="PythonStub" value="5" />
           <entry key="XML" value="4" />
           <entry key="YouTrack" value="5" />
@@ -350,18 +358,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classic/LinkList.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classic/kSum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
+            <state>
               <caret line="191" selection-start-line="191" selection-end-line="191" />
             </state>
           </provider>
@@ -370,8 +369,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classic/Tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="349" column="17" lean-forward="true" selection-start-line="349" selection-start-column="17" selection-end-line="349" selection-end-column="17" />
+            <state relative-caret-position="6631">
+              <caret line="349" column="17" selection-start-line="349" selection-start-column="17" selection-end-line="349" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -386,16 +385,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classic/dp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="451" column="29" lean-forward="true" selection-start-line="451" selection-start-column="29" selection-end-line="451" selection-end-column="29" />
+            <state relative-caret-position="-217">
+              <caret line="420" column="25" selection-start-line="420" selection-start-column="25" selection-end-line="420" selection-end-column="25" />
               <folding>
                 <element signature="e#275#285#0" expanded="true" />
-                <marker date="1557453381859" expanded="true" signature="10336:10881" ph="..." />
-                <marker date="1557453381859" expanded="true" signature="11068:11071" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode1/863distanceK.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+              <folding>
+                <marker date="1557542746677" expanded="true" signature="506:1014" ph="..." />
+                <marker date="1557542746677" expanded="true" signature="1037:1064" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-267">
+              <caret line="119" column="25" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -469,10 +488,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Classic/DFSBFS.py" />
-        <option value="$PROJECT_DIR$/CodeOffer/TreeLevel.py" />
-        <option value="$PROJECT_DIR$/ML/nb.py" />
-        <option value="$PROJECT_DIR$/ML/svd.py" />
         <option value="$PROJECT_DIR$/leetcode1/circle_paths.py" />
         <option value="$PROJECT_DIR$/leetcode1/archer_dp.py" />
         <option value="$PROJECT_DIR$/KAP/L5/iris.py" />
@@ -508,7 +523,6 @@
         <option value="$PROJECT_DIR$/Classic/StringProblems.py" />
         <option value="$PROJECT_DIR$/Students/fund/1_multi_factor_0.py" />
         <option value="$PROJECT_DIR$/Students/fund/3_profit_loss_0.py" />
-        <option value="$PROJECT_DIR$/Students/fund/profit_loss_0.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Basic/te.py" />
         <option value="$PROJECT_DIR$/Classic/find_median_in_data_stream.py" />
@@ -520,6 +534,11 @@
         <option value="$PROJECT_DIR$/Classic/kSum.py" />
         <option value="$PROJECT_DIR$/Basic/GrokkingAlgorithms/01_binary_search.py" />
         <option value="$PROJECT_DIR$/Classic/dp.py" />
+        <option value="$PROJECT_DIR$/leetcode1/863distanceK.py" />
+        <option value="$PROJECT_DIR$/Students/fund/profit_loss_0.py" />
+        <option value="$PROJECT_DIR$/Students/fund/section_4_0.py" />
+        <option value="$PROJECT_DIR$/Students/fund/section_4_final_strategy_0.py" />
+        <option value="$PROJECT_DIR$/Students/fund/section_3_profit_loss_0.py" />
       </list>
     </option>
   </component>
@@ -546,47 +565,6 @@
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="awesome-algorithm-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="awesome-algorithm-master" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="awesome-algorithm-master" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="Leetcode_Solutions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="awesome-algorithm-master" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="Leetcode_Solutions" type="462c0819:PsiDirectoryNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="Basic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="Classic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
@@ -640,7 +618,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dp">
+  <component name="RunManager" selected="Python.section_4_final_strategy_0">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -727,7 +705,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="LastRemain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="863distanceK" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -735,12 +713,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/LastRemain.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/863distanceK.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -749,7 +727,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NextNode" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -762,7 +740,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/NextNode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/Graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -793,7 +771,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="kSum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="section_4_final_strategy_0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -801,12 +779,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Students/fund" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classic/kSum.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Students/fund/section_4_final_strategy_0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -910,19 +888,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.PythonExercise" />
-      <item itemvalue="Python.NextNode" />
-      <item itemvalue="Python.LastRemain" />
-      <item itemvalue="Python.kSum" />
       <item itemvalue="Python.01_binary_search" />
       <item itemvalue="Python.dp" />
+      <item itemvalue="Python.863distanceK" />
+      <item itemvalue="Python.Graph" />
+      <item itemvalue="Python.section_4_final_strategy_0" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.section_4_final_strategy_0" />
+        <item itemvalue="Python.Graph" />
+        <item itemvalue="Python.863distanceK" />
         <item itemvalue="Python.dp" />
         <item itemvalue="Python.01_binary_search" />
-        <item itemvalue="Python.kSum" />
-        <item itemvalue="Python.LastRemain" />
-        <item itemvalue="Python.NextNode" />
       </list>
     </recent_temporary>
   </component>
@@ -976,20 +954,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20028612" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.29036143" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.2879518" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.29638556" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.28674698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5164521" side_tool="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.15783133" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.23253012" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.12650603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1648,13 +1627,8 @@
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Students/fund/profit_loss_0.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="244" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Students/fund/profit_loss_0.py</url>
-          <line>135</line>
+          <url>file://$PROJECT_DIR$/Students/fund/section_3_profit_loss_0.py</url>
+          <line>130</line>
           <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1702,6 +1676,11 @@
           <line>9</line>
           <option name="timeStamp" value="263" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Classic/dp.py</url>
+          <line>456</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1716,25 +1695,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pysnooper/pysnooper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pysnooper/tracer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4090" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pysnooper/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PyTorch-BigGraph/examples/fb15k.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1761,7 +1721,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Students/fund/hedging_ratio_1.py">
+    <entry file="file://$PROJECT_DIR$/Students/fund/section_2_hedging_ratio_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
@@ -1775,13 +1735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="2115" column="23" selection-start-line="2115" selection-start-column="23" selection-end-line="2115" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1789,27 +1742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Students/fund/profit_loss_0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <marker date="1556871782747" expanded="true" signature="840:5546" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Students/fund/hedging_ratio_0.py">
+    <entry file="file://$PROJECT_DIR$/Students/fund/section_2_hedging_ratio_0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1465">
           <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Students/fund/multi_factor_0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
@@ -1845,13 +1781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="134" column="18" lean-forward="true" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1540">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -2001,13 +1930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classic/LinkList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0015._3sum.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
@@ -2017,22 +1939,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0018._4sum.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0039._combination_sum.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0040._combination_sum_ii.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
           <first_editor />
@@ -2057,28 +1963,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classic/LinkList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classic/kSum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state>
           <caret line="191" selection-start-line="191" selection-end-line="191" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classic/Tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="349" column="17" lean-forward="true" selection-start-line="349" selection-start-column="17" selection-end-line="349" selection-end-column="17" />
+        <state relative-caret-position="6631">
+          <caret line="349" column="17" selection-start-line="349" selection-start-column="17" selection-end-line="349" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0040._combination_sum_ii.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-algorithm-master/docs/Leetcode_Solutions/Python/0039._combination_sum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classic/dp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="451" column="29" lean-forward="true" selection-start-line="451" selection-start-column="29" selection-end-line="451" selection-end-column="29" />
+        <state relative-caret-position="-217">
+          <caret line="420" column="25" selection-start-line="420" selection-start-column="25" selection-end-line="420" selection-end-column="25" />
           <folding>
             <element signature="e#275#285#0" expanded="true" />
-            <marker date="1557453381859" expanded="true" signature="10336:10881" ph="..." />
-            <marker date="1557453381859" expanded="true" signature="11068:11071" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1872408764/_collections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="194" column="8" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classic/Graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="119" column="25" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1636">
+          <caret line="2129" column="33" selection-start-line="2129" selection-start-column="22" selection-end-line="2129" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Students/fund/section_1_multi_factor_0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Students/fund/section_3_profit_loss_0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1437">
+          <caret line="129" column="37" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="37" />
+          <folding>
+            <marker date="1557554219062" expanded="true" signature="841:8375" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Students/fund/section_4_final_strategy_0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="194" column="38" lean-forward="true" selection-start-line="194" selection-end-line="195" />
+          <folding>
+            <element signature="e#1059#1068#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/863distanceK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <marker date="1557542746677" expanded="true" signature="506:1014" ph="..." />
+            <marker date="1557542746677" expanded="true" signature="1037:1064" ph="..." />
           </folding>
         </state>
       </provider>

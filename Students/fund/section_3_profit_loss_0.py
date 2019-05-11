@@ -2,7 +2,7 @@
 """
 @Time    : 2019/4/28 11:28 AM
 @Author  : ddlee
-@File    : profit_loss_0.py
+@File    : section_3_profit_loss_0.py
 """
 import os
 import time
@@ -10,9 +10,8 @@ import time
 from util_tools import *
 from xlrd import xldate_as_tuple
 from conf import tmp_dir
-from Students.fund.multi_factor_0 import get_intensity
-from Students.fund.hedging_ratio_0 import get_hands_num
-from pandas import DataFrame
+from Students.fund.section_1_multi_factor_0 import get_intensity
+from Students.fund.section_2_hedging_ratio_0 import get_hands_num
 import pandas as pd
 
 datesuffix = time.strftime("%Y-%m-%d", time.localtime())
@@ -29,10 +28,6 @@ def prepare_data(in_file, sheet_names):
 
 
 def process(in_file, sheet_names):
-    to_file = in_file.strip(".xlsx") + "_" + sheet_names[0] + datesuffix + ".xlsx"
-    writer = pd.ExcelWriter(to_file)
-    rows = []
-
     raw_rows = prepare_data(in_file, sheet_names)
     df = pd.DataFrame(raw_rows, columns=["_date", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"])
 
@@ -45,7 +40,6 @@ def process(in_file, sheet_names):
     right = pd.DataFrame({'L': pd.Series(L_list), 'M': pd.Series(M_list),
                           'N': pd.Series(N_list), 'O': pd.Series(O_list)})
     df = df.join(right)
-    # print(df)
 
     P_list, Q_list, R_list, S_list, T_list, U_list, V_list, W_list, X_list, Y_list, Z_list, \
     AA_list, AB_list, AC_list = [], [], [], [], [], [], [], [], [], [], [], [], [], []
@@ -133,10 +127,83 @@ def process(in_file, sheet_names):
                   "止损反向盈亏（当天收盘价）", "反向重开仓盈亏", "", "反向重开仓止损盈亏",
                   "反向盈亏（第二天开盘价），考虑盘中止损重开仓"]
     to_file = "逻辑3：因子的当日盈亏_当天开盘与收盘2019-05-03.xlsx"
+    to_file = in_file.strip(".xlsx") + datesuffix + ".xlsx"
     df.to_excel(to_file, index=False, sheet_name="当天开盘与收盘")
 
     print("Save path:", to_file)
     print("Done!")
+
+
+def get_positive_profit(in_file, sheet_names):
+    raw_rows = prepare_data(in_file, sheet_names)
+    df = pd.DataFrame(raw_rows, columns=["_date", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"])
+
+    L_list, M_list = get_intensity(in_file, sheet_names)
+
+    # hands_num = get_hands_num(in_file, sheet_names)
+    # N_list, O_list = [hands_num] * len(L_list), [hands_num] * len(L_list)
+    N_list, O_list = [1] * len(L_list), [1] * len(L_list)
+
+    right = pd.DataFrame({'L': pd.Series(L_list), 'M': pd.Series(M_list),
+                          'N': pd.Series(N_list), 'O': pd.Series(O_list)})
+    df = df.join(right)
+
+    P_list, Q_list, R_list, S_list, T_list, U_list, V_list, W_list, X_list, Y_list, Z_list, \
+    AA_list, AB_list, AC_list = [], [], [], [], [], [], [], [], [], [], [], [], [], []
+
+    for i in range(len(L_list)):
+        if i == 0:
+            P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC = "", "", "", "", "", "", "", "", "", "", "", "", "", ""
+            P_list.append(P)
+            Q_list.append(Q)
+            R_list.append(R)
+            S_list.append(S)
+            T_list.append(T)
+            U_list.append(U)
+            V_list.append(V)
+            W_list.append(W)
+            X_list.append(X)
+            Y_list.append(Y)
+            Z_list.append(Z)
+            AA_list.append(AA)
+            AB_list.append(AB)
+            AC_list.append(AC)
+        else:
+            P = df['L'][i] * ((df['B'][i + 1] - df['B'][i]) * 200 * df['N'][i] -
+                              (df['G'][i + 1] - df['G'][i]) * 300 * df['O'][i])
+            Q = df['L'][i] * ((df['C'][i] - df['B'][i]) * 200 * df['N'][i] -
+                              (df['H'][i] - df['G'][i]) * 300 * df['O'][i])
+            R = -20000 if Q < -20000 else Q
+            S = R - P if R == -20000 else 0
+            T = R - Q if R == -20000 else 0
+            U = -20000 if T < -20000 else S
+            V = -20000 + U if R == -20000 else P
+            W = df['M'][i] * ((df['B'][i + 1] - df['B'][i]) * 200 * df['N'][i] -
+                              (df['G'][i + 1] - df['G'][i]) * 300 * df['O'][i])
+            X = df['M'][i] * ((df['C'][i] - df['B'][i]) * 200 * df['N'][i] -
+                              (df['H'][i] - df['G'][i]) * 300 * df['O'][i])
+            Y = -20000 if X < -20000 else X
+            Z = Y - W if Y == -20000 else 0
+            AA = Y - X if Y == -20000 else 0
+            AB = -20000 if AA < -20000 else Z
+            AC = -20000 + AB if Y == -20000 else W
+
+            P_list.append(P)
+            Q_list.append(Q)
+            R_list.append(R)
+            S_list.append(S)
+            T_list.append(T)
+            U_list.append(U)
+            V_list.append(V)
+            W_list.append(W)
+            X_list.append(X)
+            Y_list.append(Y)
+            Z_list.append(Z)
+            AA_list.append(AA)
+            AB_list.append(AB)
+            AC_list.append(AC)
+
+    return V_list, AC_list
 
 
 if __name__ == '__main__':

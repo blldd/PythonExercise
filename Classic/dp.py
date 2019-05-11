@@ -441,25 +441,6 @@ def longestMountain(arr):
     lds_dp = lds(arr)
     print(lds_dp)
 
-    # def lis_lds_dp(arr):
-    #     length = len(arr)
-    #     lis_dp = [0 for i in range(length + 1)]
-    #     lds_dp = [0 for i in range(length + 1)]
-    #     for i in range(1, length + 1):
-    #         # j结尾的递增序列
-    #         for j in range(i, length + 1):
-    #             if arr[j - 1] > arr[i - 1]:
-    #                 lis_dp[j] = max(lis_dp[i] + 1, lis_dp[j])
-    #
-    #         # j开头的递减序列
-    #         for j in range(i, length+1)[::-1]:
-    #             if j < i and arr[j - 1] > arr[i - 1]:
-    #                 lds_dp[j] = max(lds_dp[i] + 1, lds_dp[j])
-    #     return lis_dp, lds_dp
-
-    # lis_dp, lds_dp = lis_lds_dp(arr)
-    # print(lis_dp)
-    # print(lds_dp)
     res = []
     for i in range(len(lis_dp)):
         if lis_dp[i] and lds_dp[i]:
