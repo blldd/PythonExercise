@@ -108,7 +108,7 @@ class Solution:
 if __name__ == '__main__':
     m = 11
     n = 11
-    k = 81
+    k = 77
     print(Solution().findKthNumber2(m, n, k))
     print("**" * 10)
     print(Solution().findKthNumber(m, n, k))
