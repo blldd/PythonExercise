@@ -37,6 +37,8 @@ def levenshtein_distance_dp(input_x, input_y):
                 dp[i][j] = dp[i - 1][j - 1]
             else:
                 dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
+    for i in dp:
+        print(i)
     return dp[xlen - 1][ylen - 1]
 
 
@@ -434,5 +436,12 @@ if __name__ == '__main__':
     # for i in range(10):
     #     print(split_ways(i), split_ways_dp(i))
     # print(split_ways_dp(5))
+
+    a = "abc"
+    b = "acd"
+
+    print(levenshtein_distance_dp(a, b))
+    print(longest_common_substr_dp(a, b))
+    print(longest_common_sequence(a, b))
 
 
