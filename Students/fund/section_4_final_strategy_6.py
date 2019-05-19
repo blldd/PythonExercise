@@ -11,9 +11,9 @@ import time
 from util_tools import *
 from xlrd import xldate_as_tuple
 from conf import tmp_dir
-from Students.fund.section_1_multi_factor_0 import get_intensity
+from Students.fund.section_1_multi_factor_6 import get_intensity
 from Students.fund.section_2_hedging_ratio_0 import get_hands_num
-from Students.fund.section_3_profit_loss_0 import get_positive_profit
+from Students.fund.section_3_profit_loss_6 import get_positive_profit
 import pandas as pd
 
 datesuffix = time.strftime("%Y-%m-%d", time.localtime())
@@ -54,7 +54,7 @@ def process(in_file, sheet_names):
         = [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []
 
     for i in range(len(L_list)):
-        if i == 0:
+        if i < 3:
             _, Q, R, S, T, U, V, W, X, Y, Z, _, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK \
                 = "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
 
@@ -193,7 +193,7 @@ def process(in_file, sheet_names):
                   "反向当天最低价回撤", "反向当天最低价回撤止损", "反向，最高价、最低价，当日盈亏", "",
                   "反向，最高价、最低价止损后，当日盈亏", "反向，排除盘中止损，但实际未止损情况的，当天盈亏"]
     to_file = in_file.strip(".xlsx") + datesuffix + ".xlsx"
-    df.to_excel(to_file, index=False, sheet_name="当天开盘与收盘")
+    df.to_excel(to_file, index=False, sheet_name="当天收盘与前三天开盘")
 
     print("Save path:", to_file)
     print("Done!")
@@ -201,6 +201,6 @@ def process(in_file, sheet_names):
 
 if __name__ == '__main__':
     in_file = os.path.join(tmp_dir, "逻辑4：盘中已止损，但实际未止损.xlsx")
-    sheet_names = ["当天开盘与收盘"]  # 要处理的sheet下标，可以是多个
+    sheet_names = ["当天收盘与前三天开盘"]  # 要处理的sheet下标，可以是多个
 
     process(in_file, sheet_names)
