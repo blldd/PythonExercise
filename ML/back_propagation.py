@@ -72,8 +72,8 @@ class NeuralNetwork:
         pd_errors_wrt_output_neuron_total_net_input = [0] * len(self.output_layer.neurons)
         for o in range(len(self.output_layer.neurons)):
             # ∂E/∂zⱼ
-            pd_errors_wrt_output_neuron_total_net_input[o] = self.output_layer.neurons[
-                o].calculate_pd_error_wrt_total_net_input(training_outputs[o])
+            pd_errors_wrt_output_neuron_total_net_input[o] = self.output_layer.neurons[o]\
+                .calculate_pd_error_wrt_total_net_input(training_outputs[o])
 
         # 2. 隐含层神经元的值
         pd_errors_wrt_hidden_neuron_total_net_input = [0] * len(self.hidden_layer.neurons)
@@ -195,6 +195,9 @@ nn = NeuralNetwork(2, 2, 2, hidden_layer_weights=[0.15, 0.2, 0.25, 0.3], hidden_
 for i in range(10000):
     nn.train([0.05, 0.1], [0.01, 0.09])
     print(i, round(nn.calculate_total_error([[[0.05, 0.1], [0.01, 0.09]]]), 9))
+
+# nn.inspect()
+
 
 # 另外一个例子，可以把上面的例子注释掉再运行一下:
 
