@@ -28,88 +28,27 @@ class Solution:
     组合 1 和 1，得到 0，所以数组转化为 [1]，这就是最优值。
     """
 
-    def longestDupSubstring(self, string):
-        if not string:
-            return None, None
+    def lastStoneWeightII(self, stones):
+        '''动态规划 背包问题'''
+        l = len(stones)
+        if l < 1:
+            return 0
 
-        suffix_array = []
-        length = len(string)
-        for i in range(length):
-            suffix_array.append(string[i:])
+        half = sum(stones) // 2  # 背包最大放的重量
+        dp = [[0 for j in range(half + 1)] for i in range(l + 1)]
+        for i in range(1, l + 1):
+            for j in range(1, half + 1):
+                if stones[i - 1] > j:
+                    dp[i][j] = dp[i - 1][j]
+                else:
+                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - stones[i - 1]] + stones[i - 1])
 
-        # second, sort suffix array
-        start, end = 0, len(suffix_array) - 1
-        quick_sort(suffix_array, start, end)
-        # third, get the longest repeating substring
-        print(suffix_array)
-        max_length, repeat_substring = 0, ''
-        for i in range(len(suffix_array) - 1):
-            common_len, common_substring = find_common_string(suffix_array[i], suffix_array[i + 1])
-            if common_len > max_length:
-                max_length, repeat_substring = common_len, common_substring
-        return max_length, repeat_substring
-
-
-def quick_sort(suffix_array, start, end):
-    if end <= start:
-        return
-
-    index1, index2 = start, end
-    base = suffix_array[start]
-    while index1 < index2:
-        while index1 < index2 and suffix_array[index2] >= base:
-            index2 -= 1
-        suffix_array[index1], suffix_array[index2] = suffix_array[index2], suffix_array[index1]
-        while index1 < index2 and suffix_array[index1] <= base:
-            index1 += 1
-        suffix_array[index2], suffix_array[index1] = suffix_array[index1], suffix_array[index2]
-
-    # suffix_array[index1] = base
-    quick_sort(suffix_array, start, index1 - 1)
-    quick_sort(suffix_array, index1 + 1, end)
-
-
-def find_common_string(str1, str2):
-    if not str1 or not str2:
-        return 0, ''
-    index1, index2 = 0, 0
-    length, comm_substr = 0, ''
-    while index1 < len(str1) and index2 < len(str2):
-        if str1[index1] == str2[index2]:
-            length += 1
-            comm_substr += str1[index1]
-        else:
-            break
-        index1 += 1
-        index2 += 1
-    return length, comm_substr
-
-
-def find_longest_repeating_strings(string):
-    if not string:
-        return None, None
-
-    suffix_array = []
-    length = len(string)
-    for i in range(length):
-        suffix_array.append(string[i:])
-
-    # second, sort suffix array
-    start, end = 0, len(suffix_array) - 1
-    quick_sort(suffix_array, start, end)
-    print(suffix_array)
-
-    # third, get the longest repeating substring
-    max_length, repeat_substring = 0, ''
-    for i in range(len(suffix_array) - 1):
-        common_len, common_substring = find_common_string(suffix_array[i], suffix_array[i + 1])
-        if common_len > max_length:
-            max_length, repeat_substring = common_len, common_substring
-    return max_length, repeat_substring
+        for i in dp:
+            print(i)
+        return sum(stones) - (2 * dp[-1][-1])
 
 
 if __name__ == "__main__":
     # string = "Ask not what your country can do for you, but what you can do for your country"
-    string = "banana"
-    length, substr = find_longest_repeating_strings(string)
-    print(length, substr)
+    stones = [2, 7, 4, 1, 8, 1]
+    print(Solution().lastStoneWeightII(stones))
