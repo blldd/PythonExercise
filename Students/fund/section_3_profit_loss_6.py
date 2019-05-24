@@ -198,5 +198,5 @@ if __name__ == '__main__':
     in_file = os.path.join(tmp_dir, "逻辑3：因子的当日盈亏.xlsx")
     sheet_names = ["当天收盘与前三天开盘"]  # 要处理的sheet下标，可以是多个
 
-    # process(in_file, sheet_names)
-    print(get_positive_profit(in_file, sheet_names))
+    process(in_file, sheet_names)
+    # print(get_positive_profit(in_file, sheet_names))
