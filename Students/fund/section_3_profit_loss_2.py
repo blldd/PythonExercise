@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-@Time    : 2019/5/18 14:28 AM
+@Time    : 2019/5/28 20:28 AM
 @Author  : ddlee
-@File    : section_3_profit_loss_6.py
+@File    : section_3_profit_loss_2.py
 """
 import os
 import time
@@ -12,7 +12,7 @@ from tqdm import tqdm
 from util_tools import *
 from xlrd import xldate_as_tuple
 from conf import tmp_dir
-from Students.fund.section_1_multi_factor_6 import get_intensity
+from Students.fund.section_1_multi_factor_2 import get_intensity
 from Students.fund.section_2_hedging_ratio_0 import get_hands_num
 import pandas as pd
 
@@ -46,8 +46,8 @@ def process(in_file, sheet_names):
     P_list, Q_list, R_list, S_list, T_list, U_list, V_list, W_list, X_list, Y_list, Z_list, \
     AA_list, AB_list, AC_list = [], [], [], [], [], [], [], [], [], [], [], [], [], []
 
-    for i in range(len(raw_rows) - 1):
-        if i < 3:
+    for i in tqdm(range(len(raw_rows) - 1)):
+        if i == 0:
             P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC = "", "", "", "", "", "", "", "", "", "", "", "", "", ""
             P_list.append(P)
             Q_list.append(Q)
@@ -98,7 +98,19 @@ def process(in_file, sheet_names):
             AB_list.append(AB)
             AC_list.append(AC)
 
-
+            """
+            S=IF(R3=-20000, R3 - P3, 0)
+            T=IF(R3=-20000,R3-Q3,0)
+            U=IF(T3<-20000,-20000,S3)
+            V=IF(R3=-20000,-20000+U3,P3)
+            W=M3*((B4-B3)*200*N3-(G4-G3)*300*O3)
+            X=M3*((C3-B3)*200*N3-(H3-G3)*300*O3)
+            Y=IF(X3<-20000,-20000,X3)
+            Z=IF(Y3=-20000,Y3-W3,0)
+            AA=IF(Y3=-20000,Y3-X3,0)
+            AB=IF(AA3<-20000,-20000,Z3)
+            AC=IF(Y3=-20000,-20000+AB3,W3)
+            """
     right = pd.DataFrame({'P': pd.Series(P_list), 'Q': pd.Series(Q_list),
                           'R': pd.Series(R_list), 'S': pd.Series(S_list),
                           'T': pd.Series(T_list), 'U': pd.Series(U_list),
@@ -141,7 +153,7 @@ def get_positive_profit(in_file, sheet_names):
     AA_list, AB_list, AC_list = [], [], [], [], [], [], [], [], [], [], [], [], [], []
 
     for i in tqdm(range(len(raw_rows) - 1)):
-        if i < 3:
+        if i == 0:
             P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC = "", "", "", "", "", "", "", "", "", "", "", "", "", ""
             P_list.append(P)
             Q_list.append(Q)
@@ -197,7 +209,7 @@ def get_positive_profit(in_file, sheet_names):
 
 if __name__ == '__main__':
     in_file = os.path.join(tmp_dir, "逻辑3：因子的当日盈亏.xlsx")
-    sheet_names = ["当天收盘与前三天开盘"]  # 要处理的sheet下标，可以是多个
+    sheet_names = ["当天开盘与下日开盘"]  # 要处理的sheet下标，可以是多个
 
     process(in_file, sheet_names)
     # print(get_positive_profit(in_file, sheet_names))

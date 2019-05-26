@@ -7,6 +7,12 @@
 
 
 class Solution:
+    """
+    输入：[3,6,9,12]
+    输出：4
+    解释：
+    整个数组是公差为 3 的等差数列。
+    """
     '''加缓存'''
     def longestArithSeqLength(self, A) -> int:
         if A == None or A == []:

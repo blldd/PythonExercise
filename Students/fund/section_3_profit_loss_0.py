@@ -44,7 +44,7 @@ def process(in_file, sheet_names):
     P_list, Q_list, R_list, S_list, T_list, U_list, V_list, W_list, X_list, Y_list, Z_list, \
     AA_list, AB_list, AC_list = [], [], [], [], [], [], [], [], [], [], [], [], [], []
 
-    for i in range(len(L_list)):
+    for i in range(len(raw_rows) - 1):
         if i == 0:
             P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC = "", "", "", "", "", "", "", "", "", "", "", "", "", ""
             P_list.append(P)
@@ -126,9 +126,8 @@ def process(in_file, sheet_names):
                   "反向盈亏(第二天开盘价）", "反向盈亏（当天收盘价）",
                   "止损反向盈亏（当天收盘价）", "反向重开仓盈亏", "", "反向重开仓止损盈亏",
                   "反向盈亏（第二天开盘价），考虑盘中止损重开仓"]
-    to_file = "逻辑3：因子的当日盈亏_当天开盘与收盘2019-05-03.xlsx"
-    to_file = in_file.strip(".xlsx") + datesuffix + ".xlsx"
-    df.to_excel(to_file, index=False, sheet_name="当天开盘与收盘")
+    to_file = in_file.strip(".xlsx") + "_" + sheet_names[0] + "_" + datesuffix + ".xlsx"
+    df.to_excel(to_file, index=False, sheet_name=sheet_names[0])
 
     print("Save path:", to_file)
     print("Done!")
@@ -151,7 +150,7 @@ def get_positive_profit(in_file, sheet_names):
     P_list, Q_list, R_list, S_list, T_list, U_list, V_list, W_list, X_list, Y_list, Z_list, \
     AA_list, AB_list, AC_list = [], [], [], [], [], [], [], [], [], [], [], [], [], []
 
-    for i in range(len(L_list)):
+    for i in range(len(raw_rows) - 1):
         if i == 0:
             P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC = "", "", "", "", "", "", "", "", "", "", "", "", "", ""
             P_list.append(P)
@@ -211,3 +210,4 @@ if __name__ == '__main__':
     sheet_names = ["当天开盘与收盘"]  # 要处理的sheet下标，可以是多个
 
     process(in_file, sheet_names)
+    # print(get_positive_profit(in_file, sheet_names))

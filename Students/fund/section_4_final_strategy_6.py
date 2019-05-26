@@ -8,6 +8,8 @@
 import os
 import time
 
+from tqdm import tqdm
+
 from util_tools import *
 from xlrd import xldate_as_tuple
 from conf import tmp_dir
@@ -53,7 +55,7 @@ def process(in_file, sheet_names):
     _, AB_list, AC_list, AD_list, AE_list, AF_list, AG_list, AH_list, AI_list, AJ_list, AK_list \
         = [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []
 
-    for i in range(len(L_list)):
+    for i in tqdm(range(len(raw_rows) - 1)):
         if i < 3:
             _, Q, R, S, T, U, V, W, X, Y, Z, _, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK \
                 = "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
@@ -192,8 +194,8 @@ def process(in_file, sheet_names):
                   "反向，收盘当日盈利", "反向，收盘当日盈利可以止损", "反向当天最高价回撤", "反向当天最高价回撤止损",
                   "反向当天最低价回撤", "反向当天最低价回撤止损", "反向，最高价、最低价，当日盈亏", "",
                   "反向，最高价、最低价止损后，当日盈亏", "反向，排除盘中止损，但实际未止损情况的，当天盈亏"]
-    to_file = in_file.strip(".xlsx") + datesuffix + ".xlsx"
-    df.to_excel(to_file, index=False, sheet_name="当天收盘与前三天开盘")
+    to_file = in_file.strip(".xlsx") + "_" + sheet_names[0] + "_" + datesuffix + ".xlsx"
+    df.to_excel(to_file, index=False, sheet_name=sheet_names[0])
 
     print("Save path:", to_file)
     print("Done!")

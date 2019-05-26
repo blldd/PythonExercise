@@ -1,19 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-@Time    : 2019/5/11 10:59 AM
+@Time    : 2019/5/28 20:59 AM
 @Author  : ddlee
-@File    : section_4_final_strategy_0.py
+@File    : section_4_final_strategy_2.py
 """
 
 import os
 import time
 
+from tqdm import tqdm
+
 from util_tools import *
 from xlrd import xldate_as_tuple
 from conf import tmp_dir
-from Students.fund.section_1_multi_factor_0 import get_intensity
+from Students.fund.section_1_multi_factor_2 import get_intensity
 from Students.fund.section_2_hedging_ratio_0 import get_hands_num
-from Students.fund.section_3_profit_loss_0 import get_positive_profit
+from Students.fund.section_3_profit_loss_2 import get_positive_profit
 import pandas as pd
 
 datesuffix = time.strftime("%Y-%m-%d", time.localtime())
@@ -53,7 +55,7 @@ def process(in_file, sheet_names):
     _, AB_list, AC_list, AD_list, AE_list, AF_list, AG_list, AH_list, AI_list, AJ_list, AK_list \
         = [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []
 
-    for i in range(len(raw_rows) - 1):
+    for i in tqdm(range(len(raw_rows) - 1)):
         if i == 0:
             _, Q, R, S, T, U, V, W, X, Y, Z, _, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK \
                 = "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
@@ -201,6 +203,6 @@ def process(in_file, sheet_names):
 
 if __name__ == '__main__':
     in_file = os.path.join(tmp_dir, "逻辑4：盘中已止损，但实际未止损.xlsx")
-    sheet_names = ["当天开盘与收盘"]  # 要处理的sheet下标，可以是多个
+    sheet_names = ["当天开盘与下日开盘"]  # 要处理的sheet下标，可以是多个
 
     process(in_file, sheet_names)

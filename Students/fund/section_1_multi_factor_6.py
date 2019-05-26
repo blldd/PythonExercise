@@ -1,6 +1,9 @@
 # -*- coding:UTF-8 -*-
 import os
 import time
+
+from tqdm import tqdm
+
 from util_tools import *
 from xlrd import xldate_as_tuple
 from conf import tmp_dir
@@ -9,7 +12,7 @@ datesuffix = time.strftime("%Y-%m-%d", time.localtime())
 
 
 def process(in_file, sheet_names):
-    to_file = in_file.strip(".xlsx") + datesuffix + ".xlsx"
+    to_file = in_file.strip(".xlsx") + "_" + sheet_names[0] + "_" + datesuffix + ".xlsx"
     writer = pd.ExcelWriter(to_file)
 
     B_list = []
@@ -53,7 +56,7 @@ def process(in_file, sheet_names):
                              "IH收盘价(元)", "IH结算价", "最高价(元)", "最低价(元)",
                              "IC(当天收盘-前三天开盘）/前三天开盘", "IH(当天收盘-前三天开盘）/前三天开盘", "IC（前三天开盘-当天收盘）/当天收盘",
                              "IH（前三天开盘-当天收盘）/当天收盘",
-                             "LM相比", "NO相比"], sheet_name="当天收盘与前三天开盘")
+                             "LM相比", "NO相比"], sheet_name=sheet_names[0])
     writer.save()
     print("Save path:", to_file)
     print("Done!")
@@ -67,7 +70,7 @@ def get_intensity(in_file, sheet_names):
 
     P_list = []
     Q_list = []
-    for (_date, B, C, D, E, F, G, H, I, J, K) in read_excel_row_by_sheet(in_file, sheet_names, range(11)):
+    for (_date, B, C, D, E, F, G, H, I, J, K) in tqdm(read_excel_row_by_sheet(in_file, sheet_names, range(11))):
         B_list.append(B)
         G_list.append(G)
         cnt += 1
