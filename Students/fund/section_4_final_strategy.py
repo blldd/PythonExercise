@@ -32,7 +32,7 @@ def prepare_data(in_file, sheet_names):
     return raw_rows
 
 
-def get_positive_profit(in_file, sheet_names):
+def get_positive_profit(in_file, sheet_names, last=1):
     raw_rows = prepare_data(in_file, sheet_names)
     df = pd.DataFrame(raw_rows, columns=["_date", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"])
 
@@ -50,7 +50,7 @@ def get_positive_profit(in_file, sheet_names):
     AA_list, AB_list, AC_list = [], [], [], [], [], [], [], [], [], [], [], [], [], []
 
     for i in tqdm(range(len(raw_rows) - 1)):
-        if i == 0:
+        if i < last:
             P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC = "", "", "", "", "", "", "", "", "", "", "", "", "", ""
             P_list.append(P)
             Q_list.append(Q)
@@ -74,7 +74,7 @@ def get_positive_profit(in_file, sheet_names):
             R = -20000 if Q < -20000 else Q
             S = R - P if R == -20000 else 0
             T = R - Q if R == -20000 else 0
-            U = -20000 if T < -20000 else S
+            U = -20000 if S < -20000 else S
             V = -20000 + U if R == -20000 else P
             W = df['M'][i] * ((df['B'][i + 1] - df['B'][i]) * 200 * df['N'][i] -
                               (df['G'][i + 1] - df['G'][i]) * 300 * df['O'][i])
@@ -117,7 +117,7 @@ def final_strategy(in_file, sheet_names):
     N_list, O_list = [1] * len(L_list), [1] * len(L_list)
 
     # 调用逻辑3获取，
-    P_list, AA_list = get_positive_profit(in_file, sheet_names)
+    P_list, AA_list = get_positive_profit(in_file, sheet_names, last=3)
 
     right = pd.DataFrame({'L': pd.Series(L_list), 'M': pd.Series(M_list),
                           'N': pd.Series(N_list), 'O': pd.Series(O_list),
