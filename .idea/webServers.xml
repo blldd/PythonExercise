@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="84fd0d25-abd9-41ad-b6dd-30d674156f49" name="49.52.10.232" url="http://49.52.10.232">
-        <fileTransfer host="49.52.10.232" port="22" rootFolder="/home/dedong" accessType="SFTP">
+      <webServer id="84fd0d25-abd9-41ad-b6dd-30d674156f49" name="49.52.10.175" url="http://49.52.10.175">
+        <fileTransfer host="49.52.10.175" port="22" rootFolder="/home/dedong" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>

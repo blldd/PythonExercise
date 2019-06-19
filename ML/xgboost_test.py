@@ -14,7 +14,7 @@ tests = pd.read_csv(test_file)
 train['time_stamp'] = pd.to_datetime(pd.Series(train['time_stamp']))
 tests['time_stamp'] = pd.to_datetime(pd.Series(tests['time_stamp']))
 
-print(train.info())
+# print(train.info())
 
 train['Year'] = train['time_stamp'].apply(lambda x: x.year)
 train['Month'] = train['time_stamp'].apply(lambda x: x.month)
@@ -36,12 +36,12 @@ tests = tests.fillna(method='pad')
 for f in train.columns:
     if train[f].dtype == 'object':
         if f != 'shop_id':
-            print(f)
+            # print(f)
             lbl = preprocessing.LabelEncoder()
             train[f] = lbl.fit_transform(list(train[f].values))
 for f in tests.columns:
     if tests[f].dtype == 'object':
-        print(f)
+        # print(f)
         lbl = preprocessing.LabelEncoder()
         lbl.fit(list(tests[f].values))
         tests[f] = lbl.transform(list(tests[f].values))
