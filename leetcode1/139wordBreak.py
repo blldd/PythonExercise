@@ -30,10 +30,33 @@ class Solution(object):
                 p -= 1
 
         print(res)
-        return res[-1]
+        return res[-1] == 1
+
+    def word(self, s, wordDict):
+        l = len(s)
+        dp = [0 for _ in range(l)]
+
+        if not wordDict:
+            return False
+        max_len = max(list(map(len, wordDict)))
+
+        for i in range(l):
+            p = i
+            while p >= 0 and i - p <= max_len:
+                if (dp[p] == 1 and s[p + 1:i + 1] in wordDict) or (p == 0 and s[p:i + 1] in wordDict):
+                    dp[i] = 1
+                    break
+                p -= 1
+
+        print(dp)
+        return dp[-1] == 1
 
 
 if __name__ == '__main__':
     s = "leetcode"
     wordDict = ["leet", "code"]
-    print(Solution().wordBreak(s, wordDict))
+    s = 'a'
+    wordDict = []
+    s  = "dcacbcadcad"
+    wordDict = ["cbd", "dca", "bcdc", "dcac", "ad"]
+    print(Solution().word(s, wordDict))
