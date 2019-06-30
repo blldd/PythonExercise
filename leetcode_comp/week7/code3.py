@@ -123,7 +123,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    array = [3,5,3,2,0]
+    array = [3, 5, 3, 2, 0]
 
     mountain_arr = MountainArray(array)
     target = 0
