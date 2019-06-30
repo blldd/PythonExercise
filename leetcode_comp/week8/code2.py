@@ -25,8 +25,21 @@ import sys
 
 
 class Solution:
+
     def pathInZigZagTree(self, label):
-        pass
+        def convert(n):
+            x = 1
+            while 2 * x <= n:
+                x *= 2
+            return x + (2 * x - n - 1)
+
+        res = []
+        while label != 1:
+            res.append(label)
+            label = convert(label // 2)
+        res.append(1)
+        return sorted(res)
+
 
 if __name__ == '__main__':
     label = 14

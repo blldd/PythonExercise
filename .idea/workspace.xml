@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
-      <change afterPath="$PROJECT_DIR$/leetcode_comp/week8/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode_comp/week8/code1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode_comp/week8/code2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode_comp/week8/code3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode_comp/week8/code4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch-BigGraph" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch-BigGraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch-BigGraph/torchbiggraph/fileio.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch-BigGraph/torchbiggraph/fileio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode_comp/week7/code3.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode_comp/week7/code3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode_comp/week8/code2.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode_comp/week8/code2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +113,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$06convert.coverage" NAME="06convert Coverage Results" MODIFIED="1553869494190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$duplicate_nums.coverage" NAME="duplicate_nums Coverage Results" MODIFIED="1533024756769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$MaxDepth.coverage" NAME="MaxDepth Coverage Results" MODIFIED="1523946118252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
-    <SUITE FILE_PATH="coverage/PythonExercise$code2__1_.coverage" NAME="code2 (1) Coverage Results" MODIFIED="1561862535644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode_comp/week8" />
+    <SUITE FILE_PATH="coverage/PythonExercise$code2__1_.coverage" NAME="code2 (1) Coverage Results" MODIFIED="1561892609721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode_comp/week8" />
     <SUITE FILE_PATH="coverage/PythonTools$mathc.coverage" NAME="mathc Coverage Results" MODIFIED="1532001559335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$1maxWindow.coverage" NAME="1maxWindow Coverage Results" MODIFIED="1535273666508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$coin_ways.coverage" NAME="coin_ways Coverage Results" MODIFIED="1552660947024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0zuo_training/class5" />
@@ -458,11 +452,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="28" column="12" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="12" />
+            <state relative-caret-position="320">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -470,23 +464,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="-566">
+              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
               <folding>
                 <marker date="1561865382440" expanded="true" signature="675:2439" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-              <folding>
-                <element signature="e#99#117#0" expanded="true" />
-                <marker date="1561866966682" expanded="true" signature="792:1303" ph="..." />
               </folding>
             </state>
           </provider>
@@ -600,9 +581,9 @@
         <option value="$PROJECT_DIR$/leetcode1/1039minScoreTriangulation.py" />
         <option value="$PROJECT_DIR$/leetcode_comp/week7/code3.py" />
         <option value="$PROJECT_DIR$/leetcode_comp/week8/code1.py" />
-        <option value="$PROJECT_DIR$/leetcode_comp/week8/code2.py" />
         <option value="$PROJECT_DIR$/leetcode_comp/week8/code3.py" />
         <option value="$PROJECT_DIR$/leetcode_comp/week8/code4.py" />
+        <option value="$PROJECT_DIR$/leetcode_comp/week8/code2.py" />
       </list>
     </option>
   </component>
@@ -699,7 +680,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.code4">
+  <component name="RunManager" selected="Python.code2 (1)">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -977,9 +958,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.code2 (1)" />
         <item itemvalue="Python.code4" />
         <item itemvalue="Python.code3 (1)" />
-        <item itemvalue="Python.code2 (1)" />
         <item itemvalue="Python.code1 (1)" />
         <item itemvalue="Python.code3" />
       </list>
@@ -1955,7 +1936,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/leetcode_comp/week8/code4.py</url>
-          <line>76</line>
+          <line>74</line>
           <option name="timeStamp" value="358" />
         </line-breakpoint>
       </breakpoints>
@@ -2353,13 +2334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -2374,24 +2348,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+          <folding>
+            <element signature="e#99#117#0" expanded="true" />
+            <marker date="1561892207389" expanded="true" signature="727:1238" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="-566">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding>
             <marker date="1561865382440" expanded="true" signature="675:2439" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code4.py">
+    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-          <folding>
-            <element signature="e#99#117#0" expanded="true" />
-            <marker date="1561866966682" expanded="true" signature="792:1303" ph="..." />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
         </state>
       </provider>
     </entry>
