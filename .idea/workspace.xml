@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
-      <change afterPath="$PROJECT_DIR$/leetcode1/213rob.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/287findDuplicate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch-BigGraph" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch-BigGraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch-BigGraph/torchbiggraph/fileio.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch-BigGraph/torchbiggraph/fileio.py" afterDir="false" />
@@ -220,6 +220,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$te.coverage" NAME="te Coverage Results" MODIFIED="1557030883814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic" />
     <SUITE FILE_PATH="coverage/PythonExercise$Joseph.coverage" NAME="Joseph Coverage Results" MODIFIED="1544446967932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$merge.coverage" NAME="merge Coverage Results" MODIFIED="1553680643962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Students/fund" />
+    <SUITE FILE_PATH="coverage/PythonExercise$287findDuplicate.coverage" NAME="287findDuplicate Coverage Results" MODIFIED="1561990316957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1536538374728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonExercise$Composition.coverage" NAME="Composition Coverage Results" MODIFIED="1540715201567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DesignPatterns" />
     <SUITE FILE_PATH="coverage/PythonExercise$section_4_final_strategy_6.coverage" NAME="section_4_final_strategy_6 Coverage Results" MODIFIED="1558757783669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Students/fund" />
@@ -321,9 +322,9 @@
     <session id="1206640456">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="136" />
+          <entry key="project.closed" value="138" />
           <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="61" />
+          <entry key="project.open.time.1" value="62" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
@@ -342,7 +343,7 @@
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="151" />
+          <entry key="project.opened" value="152" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -350,7 +351,7 @@
           <entry key="dummy" value="213" />
           <entry key="gitignore" value="19" />
           <entry key="md" value="29" />
-          <entry key="py" value="82877" />
+          <entry key="py" value="83580" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
@@ -358,7 +359,7 @@
         <counts>
           <entry key="Markdown" value="29" />
           <entry key="PLAIN_TEXT" value="257" />
-          <entry key="Python" value="82869" />
+          <entry key="Python" value="83572" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -374,7 +375,7 @@
           <entry key="md" value="12" />
           <entry key="part-00000" value="1" />
           <entry key="png" value="3" />
-          <entry key="py" value="888" />
+          <entry key="py" value="889" />
           <entry key="pyi" value="6" />
           <entry key="test_set" value="4" />
           <entry key="train_set" value="1" />
@@ -390,7 +391,7 @@
           <entry key="Image" value="3" />
           <entry key="Markdown" value="12" />
           <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Python" value="882" />
+          <entry key="Python" value="883" />
           <entry key="PythonStub" value="6" />
           <entry key="XML" value="4" />
           <entry key="YouTrack" value="5" />
@@ -403,7 +404,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classic/NextNode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="418">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
@@ -457,8 +458,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="475">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
                 <marker date="1561865382440" expanded="true" signature="675:2439" ph="..." />
               </folding>
@@ -467,10 +468,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/leetcode1/213rob.py">
+        <entry file="file://$PROJECT_DIR$/leetcode1/287findDuplicate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="343">
+              <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -535,7 +536,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ML/paddle_test.py" />
         <option value="$PROJECT_DIR$/Students/fund/section_1_multi_factor_1.py" />
         <option value="$PROJECT_DIR$/Students/fund/section_4_final_strategy_0.py" />
         <option value="$PROJECT_DIR$/Students/fund/section_4_final_strategy_6.py" />
@@ -586,6 +586,7 @@
         <option value="$PROJECT_DIR$/leetcode_comp/week8/code4.py" />
         <option value="$PROJECT_DIR$/leetcode_comp/week8/code2.py" />
         <option value="$PROJECT_DIR$/leetcode1/213rob.py" />
+        <option value="$PROJECT_DIR$/leetcode1/287findDuplicate.py" />
       </list>
     </option>
   </component>
@@ -595,10 +596,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="height" value="826" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -606,29 +607,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="0zuo_training" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="0zuo_training" type="462c0819:PsiDirectoryNode" />
-              <item name="class3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonExercise" type="462c0819:PsiDirectoryNode" />
-              <item name="0zuo_training" type="462c0819:PsiDirectoryNode" />
-              <item name="class5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonExercise" type="b2602c69:ProjectViewProjectNode" />
@@ -644,7 +629,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -681,7 +665,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.213rob">
+  <component name="RunManager" selected="Python.287findDuplicate">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -768,7 +752,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="code1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="287findDuplicate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -776,12 +760,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode_comp/week8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode_comp/week8/code1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/287findDuplicate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -951,19 +935,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.PythonExercise" />
-      <item itemvalue="Python.code1 (1)" />
       <item itemvalue="Python.code2 (1)" />
       <item itemvalue="Python.code3 (1)" />
       <item itemvalue="Python.code4" />
       <item itemvalue="Python.213rob" />
+      <item itemvalue="Python.287findDuplicate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.287findDuplicate" />
         <item itemvalue="Python.213rob" />
         <item itemvalue="Python.code2 (1)" />
         <item itemvalue="Python.code4" />
         <item itemvalue="Python.code3 (1)" />
-        <item itemvalue="Python.code1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1016,22 +1000,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48354793" visible="true" weight="0.1879518" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.1879518" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49284694" weight="0.3060241" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5164521" side_tool="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.15662651" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2626506" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.12650603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1993,13 +1977,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LeetCode/1TwoSum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Students/0602/3sum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -2297,9 +2274,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+          <folding>
+            <element signature="e#99#117#0" expanded="true" />
+            <marker date="1561892207389" expanded="true" signature="727:1238" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/213rob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <marker date="1561894901854" expanded="true" signature="583:919" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classic/NextNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="418">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
@@ -2332,31 +2344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-          <folding>
-            <element signature="e#99#117#0" expanded="true" />
-            <marker date="1561892207389" expanded="true" signature="727:1238" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode1/1039minScoreTriangulation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -2366,18 +2353,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode_comp/week8/code3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="475">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
             <marker date="1561865382440" expanded="true" signature="675:2439" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode1/213rob.py">
+    <entry file="file://$PROJECT_DIR$/leetcode1/287findDuplicate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="343">
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
         </state>
       </provider>
     </entry>
