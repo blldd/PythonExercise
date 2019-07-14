@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7436e024-c8ce-49d3-b42d-17a0e03f32f8" name="Default" comment="multiprocess">
-      <change afterPath="$PROJECT_DIR$/leetcode1/376wiggleMaxLength.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode1/91numDecodings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode1/304sumRegion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch-BigGraph" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch-BigGraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch-BigGraph/torchbiggraph/fileio.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch-BigGraph/torchbiggraph/fileio.py" afterDir="false" />
@@ -22,7 +21,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$53maxSubArr.coverage" NAME="53maxSubArr Coverage Results" MODIFIED="1554174087063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1542591185044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/scipy/weave/examples" />
     <SUITE FILE_PATH="coverage/PythonExercise$1039minScoreTriangulation.coverage" NAME="1039minScoreTriangulation Coverage Results" MODIFIED="1561797064156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
-    <SUITE FILE_PATH="coverage/PythonExercise$91numDecodings.coverage" NAME="91numDecodings Coverage Results" MODIFIED="1563070102180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
+    <SUITE FILE_PATH="coverage/PythonExercise$91numDecodings.coverage" NAME="91numDecodings Coverage Results" MODIFIED="1563070246007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonTools$Joseph.coverage" NAME="Joseph Coverage Results" MODIFIED="1527303223624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
     <SUITE FILE_PATH="coverage/PythonTools$pandas.coverage" NAME="pandas Coverage Results" MODIFIED="1537095295573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0Tools" />
     <SUITE FILE_PATH="coverage/PythonExercise$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1554445600679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML" />
@@ -243,6 +242,7 @@
     <SUITE FILE_PATH="coverage/PythonExercise$building_outline.coverage" NAME="building_outline Coverage Results" MODIFIED="1552830457185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0zuo_training/class2" />
     <SUITE FILE_PATH="coverage/PythonExercise$nb.coverage" NAME="nb Coverage Results" MODIFIED="1554730466262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML" />
     <SUITE FILE_PATH="coverage/PythonTools$36Combination.coverage" NAME="36Combination Coverage Results" MODIFIED="1524236479217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode" />
+    <SUITE FILE_PATH="coverage/PythonExercise$304sumRegion.coverage" NAME="304sumRegion Coverage Results" MODIFIED="1563071757215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode1" />
     <SUITE FILE_PATH="coverage/PythonExercise$ExtractDocs.coverage" NAME="ExtractDocs Coverage Results" MODIFIED="1543568803930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KAP/Pre" />
     <SUITE FILE_PATH="coverage/PythonExercise$k_min_num.coverage" NAME="k_min_num Coverage Results" MODIFIED="1552660642094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0zuo_training/class1" />
     <SUITE FILE_PATH="coverage/PythonExercise$KthNode.coverage" NAME="KthNode Coverage Results" MODIFIED="1543130505688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CodeOffer" />
@@ -354,7 +354,7 @@
           <entry key="dummy" value="213" />
           <entry key="gitignore" value="19" />
           <entry key="md" value="29" />
-          <entry key="py" value="84907" />
+          <entry key="py" value="85227" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
@@ -362,7 +362,7 @@
         <counts>
           <entry key="Markdown" value="29" />
           <entry key="PLAIN_TEXT" value="257" />
-          <entry key="Python" value="84899" />
+          <entry key="Python" value="85219" />
           <entry key="YouTrack" value="8" />
         </counts>
       </usages-collector>
@@ -378,7 +378,7 @@
           <entry key="md" value="12" />
           <entry key="part-00000" value="1" />
           <entry key="png" value="3" />
-          <entry key="py" value="894" />
+          <entry key="py" value="895" />
           <entry key="pyi" value="6" />
           <entry key="test_set" value="4" />
           <entry key="train_set" value="1" />
@@ -394,7 +394,7 @@
           <entry key="Image" value="3" />
           <entry key="Markdown" value="12" />
           <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Python" value="888" />
+          <entry key="Python" value="889" />
           <entry key="PythonStub" value="6" />
           <entry key="XML" value="4" />
           <entry key="YouTrack" value="5" />
@@ -449,23 +449,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ML/xgboost_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/leetcode1/91numDecodings.py">
+        <entry file="file://$PROJECT_DIR$/leetcode1/304sumRegion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="40" selection-start-line="40" selection-end-line="66" selection-end-column="21" />
+            <state relative-caret-position="112">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding>
+                <marker date="1563072197757" expanded="true" signature="518:523" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -548,7 +539,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Students/fund/section_4_final_strategy_6.py" />
         <option value="$PROJECT_DIR$/Students/fund/section_3_profit_loss_6.py" />
         <option value="$PROJECT_DIR$/Students/fund/section_4_final_strategy_2.py" />
         <option value="$PROJECT_DIR$/Students/fund/section_3_profit_loss_2.py" />
@@ -599,6 +589,7 @@
         <option value="$PROJECT_DIR$/leetcode1/287findDuplicate.py" />
         <option value="$PROJECT_DIR$/leetcode1/376wiggleMaxLength.py" />
         <option value="$PROJECT_DIR$/leetcode1/91numDecodings.py" />
+        <option value="$PROJECT_DIR$/leetcode1/304sumRegion.py" />
       </list>
     </option>
   </component>
@@ -681,7 +672,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.91numDecodings">
+  <component name="RunManager" selected="Python.304sumRegion">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="PythonTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -790,6 +781,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="304sumRegion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonExercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/304sumRegion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="376wiggleMaxLength" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonExercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -826,28 +839,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode1/91numDecodings.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="code2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonExercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode_comp/week8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode_comp/week8/code2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -951,19 +942,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.PythonExercise" />
-      <item itemvalue="Python.code2 (1)" />
       <item itemvalue="Python.213rob" />
       <item itemvalue="Python.287findDuplicate" />
       <item itemvalue="Python.376wiggleMaxLength" />
       <item itemvalue="Python.91numDecodings" />
+      <item itemvalue="Python.304sumRegion" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.304sumRegion" />
         <item itemvalue="Python.91numDecodings" />
         <item itemvalue="Python.376wiggleMaxLength" />
         <item itemvalue="Python.287findDuplicate" />
         <item itemvalue="Python.213rob" />
-        <item itemvalue="Python.code2 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1031,7 +1022,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5164521" side_tool="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2253012" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.18192771" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.12650603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1942,12 +1933,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/leetcode1/91numDecodings.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="359" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/leetcode1/91numDecodings.py</url>
-          <line>49</line>
+          <line>29</line>
           <option name="timeStamp" value="361" />
         </line-breakpoint>
       </breakpoints>
@@ -2003,13 +1989,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ML/submission.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/tmp/train.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="418">
@@ -2346,13 +2325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode1/376wiggleMaxLength.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2014">
-          <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode1/213rob.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
@@ -2367,20 +2339,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/91numDecodings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ML/xgboost_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="439">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode1/91numDecodings.py">
+    <entry file="file://$PROJECT_DIR$/leetcode1/376wiggleMaxLength.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="40" selection-start-line="40" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="2014">
+          <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode1/304sumRegion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <marker date="1563072197757" expanded="true" signature="518:523" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
