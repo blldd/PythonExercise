@@ -8,7 +8,7 @@
 
 class Solution:
     # 超时
-    def checkSubarraySum1(self, arr, target: int) -> bool:
+    def checkSubarraySum1(self, arr, target):
         l = len(arr)
         if l < 1:
             return False
@@ -25,7 +25,7 @@ class Solution:
         return False
 
     #
-    def checkSubarraySum(self, arr, target: int) -> bool:
+    def checkSubarraySum(self, arr, target):
         l = len(arr)
         if l < 1:
             return False
@@ -37,8 +37,20 @@ class Solution:
 
         return dp[-1][-1] == 1
 
+Solution {
+    public boolean checkSubarraySum(int[] nums, int k) { if(nums.length<=1){ return false; }else{ if(k==0){ int len=nums.length-1; int[][] dp=new int[len][len]; dp[0][0]=nums[0]+nums[1]; if(dp[0][0]==0){ return true; } for(int i=0;i<len;i++){ for(int j=0;j<=i;j++){ if(i!=j){ dp[i][j]=dp[i-1][j]+nums[i+1];
+}else{ dp[i][j]=nums[i]+nums[i+1]; } if(dp[i][j]==0){ return true; } }
+} return false; }else{ int len=nums.length-1; int[][] dp=new int[len][len]; dp[0][0]=nums[0]+nums[1]; if(dp[0][0]%k==0){ return true; } for(int i=0;i<len;i++){ for(int j=0;j<=i;j++){ if(i!=j){ dp[i][j]=dp[i-1][j]+nums[i+1];
+}else{ dp[i][j]=nums[i]+nums[i+1]; } if(dp[i][j]%k==0){ return true; } }
+} return false; } }
+} }
+
+
+
+
+
 
 if __name__ == '__main__':
     arr = [23, 2, 4, 6, 7]
-    target = 6
-    print(Solution().checkSubarraySum(arr, target))
+target = 6
+print(Solution().checkSubarraySum(arr, target))
