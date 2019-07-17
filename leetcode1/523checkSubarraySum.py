@@ -24,33 +24,36 @@ class Solution:
 
         return False
 
-    #
+    # 超时
     def checkSubarraySum(self, arr, target):
         l = len(arr)
-        if l < 1:
+        if l <= 1:
             return False
 
-        dp = [[0 for _ in range(l + 1)] for _ in range(l + 1)]
-        for i in range(1, l + 1):
-            for j in range(1, l + 1):
-                pass
+        l = l - 1
+        dp = [[0 for _ in range(l)] for _ in range(l)]
+        dp[0][0] = arr[0] + arr[1]
 
-        return dp[-1][-1] == 1
+        if (target == 0 and dp[0][0] == 0) or (target != 0 and (dp[0][0] % target) == 0):
+            return True
 
-Solution {
-    public boolean checkSubarraySum(int[] nums, int k) { if(nums.length<=1){ return false; }else{ if(k==0){ int len=nums.length-1; int[][] dp=new int[len][len]; dp[0][0]=nums[0]+nums[1]; if(dp[0][0]==0){ return true; } for(int i=0;i<len;i++){ for(int j=0;j<=i;j++){ if(i!=j){ dp[i][j]=dp[i-1][j]+nums[i+1];
-}else{ dp[i][j]=nums[i]+nums[i+1]; } if(dp[i][j]==0){ return true; } }
-} return false; }else{ int len=nums.length-1; int[][] dp=new int[len][len]; dp[0][0]=nums[0]+nums[1]; if(dp[0][0]%k==0){ return true; } for(int i=0;i<len;i++){ for(int j=0;j<=i;j++){ if(i!=j){ dp[i][j]=dp[i-1][j]+nums[i+1];
-}else{ dp[i][j]=nums[i]+nums[i+1]; } if(dp[i][j]%k==0){ return true; } }
-} return false; } }
-} }
-
-
-
-
+        for i in range(l):
+            for j in range(i + 1):
+                if i != j:
+                    dp[i][j] = dp[i - 1][j] + arr[i + 1]
+                else:
+                    dp[i][j] = arr[i] + arr[i + 1]
+                if (target == 0 and dp[i][j] == 0) or (target != 0 and (dp[i][j] % target) == 0):
+                    return True
+        return False
+        # for i in dp:
+        #     print i
 
 
 if __name__ == '__main__':
     arr = [23, 2, 4, 6, 7]
-target = 6
-print(Solution().checkSubarraySum(arr, target))
+    target = 6
+    arr = [23, 2, 6, 4, 7]
+    target = 0
+    print(Solution().checkSubarraySum(arr, target))
+    print(Solution().checkSubarraySum1(arr, target))
