@@ -25,7 +25,7 @@ class Solution:
         return False
 
     # 超时
-    def checkSubarraySum(self, arr, target):
+    def checkSubarraySum2(self, arr, target):
         l = len(arr)
         if l <= 1:
             return False
@@ -49,11 +49,49 @@ class Solution:
         # for i in dp:
         #     print i
 
+    # 同余法
+    # Sa - Sb  = n*k
+    # Sa = Sb mod k
+    def checkSubarraySum(self, arr, target):
+        l = len(arr)
+        if l <= 1:
+            return False
+
+        target = abs(target)
+        if target == 0:
+            for i in range(1, l):
+                if ((arr[i] == 0) & (arr[i - 1] == 0)):
+                    return True
+            return False
+
+        # 字典存储余数
+        d = set()
+        sum = arr[0]
+        d.add(sum % target)
+        # case [1,1] k=2
+        d.add(0)
+
+        for i in range(1, l):
+            sum += arr[i]
+            tmp = sum % target
+            # 0 0 这种
+            if ((arr[i] % target == 0) & (arr[i - 1] % target == 0)):
+                return True
+            # 1 0 这种 case
+            if arr[i] % target == 0:
+                continue
+            if tmp not in d:
+                d.add(tmp)
+            else:
+                return True
+        return False
+
 
 if __name__ == '__main__':
     arr = [23, 2, 4, 6, 7]
     target = 6
-    arr = [23, 2, 6, 4, 7]
-    target = 0
+    arr = [1, 1]
+    target = 2
+
     print(Solution().checkSubarraySum(arr, target))
     print(Solution().checkSubarraySum1(arr, target))
