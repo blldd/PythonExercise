@@ -76,7 +76,7 @@ def get_intensity(in_file, sheet_names):
 
 
 if __name__ == '__main__':
-    in_file = os.path.join(tmp_dir, "逻辑1：多因子排列.xlsx")
+    in_file = os.path.join("data", "逻辑1：多因子排列(3).xlsx")
     sheet_names = ["当天开盘与收盘"]  # 要处理的sheet下标，可以是多个
 
     process(in_file, sheet_names)

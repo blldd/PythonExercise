@@ -11,7 +11,7 @@ from conf import tmp_dir
 datesuffix = time.strftime("%Y-%m-%d", time.localtime())
 
 
-def process(in_file, sheet_names):
+def process(in_file, sheet_names, last=3):
     to_file = in_file.strip(".xlsx") + "_" + sheet_names[0] + "_" + datesuffix + ".xlsx"
     writer = pd.ExcelWriter(to_file)
 
@@ -19,12 +19,12 @@ def process(in_file, sheet_names):
     G_list = []
     cnt = 0
     rows = []
-    last = [0, 0, 0, 0]
+    last_row = [0, 0, 0, 0]
     for (_date, B, C, D, E, F, G, H, I, J, K) in read_excel_row_by_sheet(in_file, sheet_names, range(11)):
         B_list.append(B)
         G_list.append(G)
         cnt += 1
-        if cnt < 3:
+        if cnt < last:
             _date = datetime(*xldate_as_tuple(_date, 0))
             _date = _date.strftime('%Y-%m-%d %H:%M:%S')
             row = [_date, B, C, D, E, F, G, H, I, J, K, "", "", "", "", "", ""]
@@ -37,12 +37,12 @@ def process(in_file, sheet_names):
             N = (B_list[-3] - C) / C
             O = (G_list[-3] - H) / H
 
-            if cnt == 3:
+            if cnt == last:
                 P, Q = "", ""
             else:
-                P = 1 if last[0] > last[1] else -1
-                Q = 1 if last[2] > last[3] else -1
-            last = [L, M, N, O]
+                P = 1 if last_row[0] > last_row[1] else -1
+                Q = 1 if last_row[2] > last_row[3] else -1
+            last_row = [L, M, N, O]
 
             _date = datetime(*xldate_as_tuple(_date, 0))
             _date = _date.strftime('%Y-%m-%d %H:%M:%S')
@@ -61,12 +61,12 @@ def process(in_file, sheet_names):
     print("Save path:", to_file)
     print("Done!")
 
-def get_intensity(in_file, sheet_names):
+def get_intensity(in_file, sheet_names, last=3):
     B_list = []
     G_list = []
     cnt = 0
     rows = []
-    last = [0, 0, 0, 0]
+    last_row = [0, 0, 0, 0]
 
     P_list = []
     Q_list = []
@@ -74,7 +74,7 @@ def get_intensity(in_file, sheet_names):
         B_list.append(B)
         G_list.append(G)
         cnt += 1
-        if cnt < 3:
+        if cnt < last:
             _date = datetime(*xldate_as_tuple(_date, 0))
             _date = _date.strftime('%Y-%m-%d %H:%M:%S')
 
@@ -91,12 +91,12 @@ def get_intensity(in_file, sheet_names):
             N = (B_list[-3] - C) / C
             O = (G_list[-3] - H) / H
 
-            if cnt == 3:
+            if cnt == last:
                 P, Q = "", ""
             else:
-                P = 1 if last[0] > last[1] else -1
-                Q = 1 if last[2] > last[3] else -1
-            last = [L, M, N, O]
+                P = 1 if last_row[0] > last_row[1] else -1
+                Q = 1 if last_row[2] > last_row[3] else -1
+            last_row = [L, M, N, O]
 
             _date = datetime(*xldate_as_tuple(_date, 0))
             _date = _date.strftime('%Y-%m-%d %H:%M:%S')
