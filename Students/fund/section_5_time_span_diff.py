@@ -31,7 +31,7 @@ def get_raw_df(in_file, sheet_names):
     raw_rows = prepare_data(in_file, sheet_names)
     raw_df = pd.DataFrame(raw_rows, columns=["_date", "B", "C", "D", "E"])
     # 因为和填充到下一行，为避免最后一行数据未计算，补充一行数据
-    raw_df.loc[raw_df.shape[0] + 1] = 0
+    # raw_df.loc[raw_df.shape[0] + 1] = 0
 
     return raw_df
 
@@ -40,23 +40,23 @@ def time_span_diff(in_file, sheet_names, time_span):
     raw_df = get_raw_df(in_file, sheet_names)
 
     F_list, G_list, H_list, I_list, J_list, K_list = [], [], [], [], [], []
-    for i in tqdm(range(raw_df.shape[0] + 1)):
-        if i <= time_span:
+    for i in tqdm(range(raw_df.shape[0])):
+        if i < time_span:
             F, G, H, I, J, K = "", "", "", "", "", ""
 
         else:
-            F = raw_df['B'][i - 6:i - 1].sum()
-            G = raw_df['C'][i - 6:i - 1].sum()
-            H = raw_df['D'][i - 6:i - 1].sum()
-            I = raw_df['E'][i - 6:i - 1].sum()
+            F = raw_df['B'][i - 5:i].sum()
+            G = raw_df['C'][i - 5:i].sum()
+            H = raw_df['D'][i - 5:i].sum()
+            I = raw_df['E'][i - 5:i].sum()
             vals = [F, G, H, I]
             # 值排序，返回最大的下标
             sort_idx = np.argsort(vals)
             # 值最大的下标
             idx = sort_idx[-1]
             J = factors[idx]
-            # 最大的值
-            K = vals[idx]
+            # 对应的值
+            K = raw_df[cols[idx]][i]
 
         F_list.append(F)
         G_list.append(G)
@@ -97,5 +97,7 @@ if __name__ == '__main__':
     in_file = os.path.join("data", "四因子盈亏数据.xlsx")
     sheet_names = ["因子盈亏"]  # 要处理的sheet下标，可以是多个
     factors = ["反转最后一小时", "反转前两天", "前三天", "前两天"]
+    cols = ["B", "C", "D", "E"]
+
 
     summary(in_file, sheet_names)
