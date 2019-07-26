@@ -30,21 +30,26 @@ n >= 3
 
 
 class Solution:
+    # non dp
     def lenLongestFibSubseq(self, A):
         l = len(A)
         if l < 3:
             return l
 
-        dp = [[2 for _ in range(l + 1)] for _ in range(l + 1)]
-        for i in range(1, l + 1):
-            for j in range(i + 2, l + 1):
-                for k in range(i + 1, j-1):
-                    if A[j - 1] == A[k - 1] + A[i - 1]:
-                        dp[i][j] = max(dp[i][j], dp[i][k] + 1)
-                    # else:
-                    #     dp[i][j] = dp[i][k]
-        for i in dp:
-            print(i)
+        S = A
+        ans = 0
+        for i in range(l):
+            for j in range(i + 1, l):
+                x = A[j]
+                y = A[i] + A[j]
+                length = 2
+                while y in S:
+                    z = x + y
+                    x = y
+                    y = z
+                    length += 1
+                    ans = max(ans, length)
+        return ans if ans >= 3 else 0
 
 
 if __name__ == '__main__':
