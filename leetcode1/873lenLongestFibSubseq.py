@@ -4,6 +4,8 @@
 @Author  : ddlee
 @File    : 873lenLongestFibSubseq.py
 """
+import collections
+
 """
 873. 最长的斐波那契子序列的长度
 如果序列 X_1, X_2, ..., X_n 满足下列条件，就说它是 斐波那契式 的：
@@ -48,10 +50,31 @@ class Solution:
                     x = y
                     y = z
                     length += 1
-                    ans = max(ans, length)
+                ans = max(ans, length)
+        return ans if ans >= 3 else 0
+
+    # dp
+    def lenLongestFibSubseq_dp(self, A):
+        l = len(A)
+        if l < 3:
+            return l
+
+        index = {x: i for i, x in enumerate(A)}
+        longest = collections.defaultdict(lambda: 2)
+
+        ans = 0
+        for k, z in enumerate(A):
+            for j in range(k):
+                i = index.get(z - A[j], None)
+                if i is not None and i < j:
+                    cand = longest[j, k] = longest[i, j] + 1
+                    ans = max(ans, cand)
+
+
         return ans if ans >= 3 else 0
 
 
 if __name__ == '__main__':
     A = [1, 2, 3, 4, 5, 6, 7, 8]
     print(Solution().lenLongestFibSubseq(A))
+    print(Solution().lenLongestFibSubseq_dp(A))
