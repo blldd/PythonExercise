@@ -20,7 +20,7 @@
 
 class BSTIterator:
 
-    def __init__(self, root: TreeNode):
+    def __init__(self, root):
         self.root = root
         self.arr = []
         stack = []
