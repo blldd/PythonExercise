@@ -19,8 +19,8 @@
 输出: 3
 
 说明：
-不能更改原数组（假设数组是只读的）。
-只能使用额外的 O(1) 的空间。
+不能更改原数组（假设数组是只读的）。!!!
+只能使用额外的 O(1) 的空间。!!!
 时间复杂度小于 O(n2) 。
 数组中只有一个重复的数字，但它可能不止重复出现一次。
 """
@@ -45,7 +45,7 @@ class Solution:
 
         return (sum(nums) - (_max + _min) * n // 2) // (l - n)
 
-    def findDuplicate(self, nums):
+    def findDuplicate2(self, nums):
         l = len(nums)
         _max = 0
         _min = float('inf')
@@ -70,7 +70,7 @@ class Solution:
         right = _max
 
         while left <= right:
-            mid = (left +  right) // 2
+            mid = (left + right) // 2
 
             res = get_num_btw_mn(nums, left, mid)
             if res == mid - left + 1:
@@ -80,7 +80,24 @@ class Solution:
             elif res < mid - left + 1:
                 pass
 
+    def findDuplicate(self, nums):
+        # l = len(nums)
+        _max = max(nums)
 
+        left = 0
+        right = _max
+        while left < right:
+            mid = (left + right) // 2
+
+            cnt = 0
+            for i in nums:
+                if i <= mid:
+                    cnt += 1
+            if cnt <= mid:
+                left = mid + 1
+            else:
+                right = mid
+        return left
 
 
 if __name__ == '__main__':
