@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="49.52.10.175">
+  <component name="PublishConfigData" serverName="dedong@172.30.221.96:22">
     <serverData>
       <paths name="49.52.10.175">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/pycharmProjects/PythonExercise" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="dedong@172.30.221.96:22">
         <serverdata>
           <mappings>
             <mapping deploy="/pycharmProjects/PythonExercise" local="$PROJECT_DIR$" web="/" />
