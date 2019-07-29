@@ -9,51 +9,25 @@ import sys
 import collections
 
 
-def process(values, depend_dict, sequen_dict, arr):
-    l = len(values)
+def topologicalSort(values, sequen_dict, indegrees):
+    print(sequen_dict)
 
-    time_dict = {}
-    for i in range(l):
-        time_dict[i+1] = values[i]
-    time_dict = sorted(time_dict.items(), key=lambda x: x[1])
-    print(time_dict)
+    queue = []
+    for idx, i in enumerate(indegrees):
+        if i == 0:
+            queue.append((idx + 1, values[idx]))
+    queue = sorted(queue, key=lambda x: (x[1], x[0]), reverse=True)
 
     ans = []
-
-    keys = set(depend_dict.keys())
-    pres = set(values).difference(keys)
-    print(pres)
-
-    tmp = {}
-    for idx, item in enumerate(arr):
-        if item[1] == 0:
-            tmp[idx+1] = item
-            arr.pop(idx)
-    print(arr)
-
-    tmp = sorted(tmp.items(), key=lambda x:x[1])
-
-    for i in tmp:
-        ans.append(i[0])
-
-    used_set = set(ans)
-    print(used_set)
-
-    tmp = []
-    todo = []
-    for i in used_set:
-        if i in sequen_dict:
-            todo.extend(sequen_dict[i])
-    for i in todo:
-        tmp.append(arr[i-1])
-        arr.pop(i-1)
-
-    print(arr)
-
-
-
-    for key, val in time_dict:
-        ans.append(key)
+    while queue:
+        queue = sorted(queue, key=lambda x: (x[1], x[0]), reverse=True)
+        node = queue.pop()
+        ans.append(node[0])
+        for i in sequen_dict[node[0]]:
+            indegrees[i - 1] -= 1
+            if indegrees[i - 1] == 0:
+                queue.append((i, values[i - 1]))
+    return ans
 
 
 if __name__ == "__main__":
@@ -63,24 +37,29 @@ if __name__ == "__main__":
     line = sys.stdin.readline().strip()
     values = list(map(int, line.split()))
 
-    depend_dict = collections.defaultdict(list)
     sequen_dict = collections.defaultdict(list)
-    arr = [[[], 0] for _ in range(N)]
-    # print(arr)
+    indegrees = [0] * N
 
     for i in range(M):
         line = sys.stdin.readline().strip()
         a, b = list(map(int, line.split()))
-        depend_dict[b].append(a)
         sequen_dict[a].append(b)
 
-        arr[b-1][0].append(a)
-        arr[b-1][1] = values[b-1]
+        indegrees[b - 1] += 1
 
-    print(depend_dict)
     print(sequen_dict)
 
-    print(arr)
+    res = topologicalSort(values, sequen_dict, indegrees)
 
-    res = process(values, depend_dict, sequen_dict, arr)
     print(res)
+
+"""
+5 6
+1 2 1 1 1
+1 2
+1 3
+1 4
+2 5
+3 5
+4 5
+"""
