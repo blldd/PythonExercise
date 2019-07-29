@@ -9,6 +9,10 @@ import sys
 import collections
 
 
+"""
+借鉴leetcode207思路
+"""
+
 def topologicalSort(values, sequen_dict, indegrees):
     print(sequen_dict)
 
