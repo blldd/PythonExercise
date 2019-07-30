@@ -632,7 +632,7 @@ params = {'num_leaves': 256,
           'colsample_bytree': 0.9,
           #'categorical_feature': cat_cols
          }
-result_dict_lgb = train_model_classification(X=X, X_test=X_test, y=y, params=params, folds=folds, model_type='lgb', eval_metric='auc', plot_feature_importance=True,
+result_dict_lgb = train_model_classification(X=X, X_test=X_test, y=y, params=params, folds=folds, model_type='lgb', eval_metric='auc', plot_feature_importance=False,
                                                       verbose=500, early_stopping_rounds=200, n_estimators=5000, averaging='usual', n_jobs=-1)
 
 test = test.sort_values('TransactionDT')
