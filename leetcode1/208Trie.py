@@ -34,26 +34,34 @@ class Trie:
         """
         Initialize your data structure here.
         """
-        self.keys = set()
+        # self.keys = set()
         self.dict = {}
 
     def insert(self, word: str) -> None:
         """
         Inserts a word into the trie.
         """
-        self.keys.add(word)
+        # self.keys.add(word)
 
         tmp = self.dict
         for char in word:
             if char not in tmp:
                 tmp[char] = {}
             tmp = tmp[char]
+        tmp['end'] = True
 
     def search(self, word: str) -> bool:
         """
         Returns if the word is in the trie.
-        """
-        return word in self.keys
+        # """
+        # return word in self.keys
+        tmp = self.dict
+        for char in word:
+            if char not in tmp:
+                return False
+            else:
+                tmp = tmp[char]
+        return 'end' in tmp and tmp['end'] == True
 
     def startsWith(self, prefix: str) -> bool:
         """
