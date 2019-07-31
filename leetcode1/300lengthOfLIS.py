@@ -2,7 +2,7 @@
 """
 @Time    : 2019/6/17 9:11 AM
 @Author  : ddlee
-@File    : lengthOfLIS.py
+@File    : 300lengthOfLIS.py
 """
 import sys
 

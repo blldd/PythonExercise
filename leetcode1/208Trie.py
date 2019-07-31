@@ -76,8 +76,9 @@ class Trie:
         return True
 
 
+
 if __name__ == '__main__':
-    trie = Trie()
+    trie = Trie1()
     print(trie.insert("apple"))
     print(trie.search("apple"))
     print(trie.search("app"))
