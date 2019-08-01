@@ -4,6 +4,8 @@
 @Author  : ddlee
 @File    : 673findNumberOfLIS.py
 """
+import sys
+
 """
 673. 最长递增子序列的个数
 
@@ -24,10 +26,47 @@
 
 class Solution:
     def findNumberOfLIS(self, nums):
-        pass
+        l = len(nums)
+        if l < 2:
+            return l
+
+        cnt_arr = [0]
+        cnt = 0
+        idx = 0
+        tail = [sys.maxsize]
+        for num in nums:
+            # 找到大于等于 num 的第 1 个数
+            # 经典二分查找
+            le = 0
+            ri = len(tail)
+            while le < ri:
+                mid = le + (ri - le) // 2
+                if tail[mid] >= num:
+                    ri = mid
+                else:
+                    le = mid + 1
+
+            if le == len(tail):
+                tail.append(num)
+                cnt = 1
+                cnt_arr.append(cnt)
+                idx += 1
+            else:
+                tail[le] = num
+                cnt += 1
+                cnt_arr[idx] = cnt
+
+        print(tail)
+        print(cnt_arr)
+        res = 1
+        for i in cnt_arr:
+            res *= i
+
+        return res
 
 
 if __name__ == '__main__':
     nums = [1, 3, 5, 4, 7]
-    Solution().findNumberOfLIS(nums)
-
+    # nums = [2, 2, 2, 2, 2]
+    nums = [1, 2, 4, 3, 5, 4, 7, 2]
+    print(Solution().findNumberOfLIS(nums))
