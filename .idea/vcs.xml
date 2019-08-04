@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/PyTorch-BigGraph" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PythonTools" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/awesome-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kaggle/automated-feature-engineering" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pycon-2017-eda-tutorial" vcs="Git" />
   </component>
 </project>
