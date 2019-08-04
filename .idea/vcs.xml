@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2019offer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PyTorch-BigGraph" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PythonTools" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/awesome-algorithm" vcs="Git" />
