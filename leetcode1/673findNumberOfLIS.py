@@ -4,6 +4,7 @@
 @Author  : ddlee
 @File    : 673findNumberOfLIS.py
 """
+import collections
 import sys
 
 """
@@ -25,14 +26,18 @@ import sys
 
 
 class Solution:
+    """
+    记录每个位置 i 放数字num时的递增序列个数 dic[i][num]。
+    当数字 newnum 放在 i+1 位置时，dic[i+1][newnum] 的值为 dic[i] 中 小于newnum 的num 的序列个数之和。
+    """
+
     def findNumberOfLIS(self, nums):
         l = len(nums)
         if l < 2:
             return l
 
-        cnt_arr = [0]
-        cnt = 0
-        idx = 0
+        cnt_arr = [collections.defaultdict(int)]
+
         tail = [sys.maxsize]
         for num in nums:
             # 找到大于等于 num 的第 1 个数
@@ -48,25 +53,37 @@ class Solution:
 
             if le == len(tail):
                 tail.append(num)
-                cnt = 1
-                cnt_arr.append(cnt)
-                idx += 1
+
+                tmp_dict = cnt_arr[-1]
+                tmp = 0
+                for k, v in tmp_dict.items():
+                    if k < num:
+                        tmp += v
+                cnt_arr.append(collections.defaultdict(int))
+                cnt_arr[-1][num] = tmp
+
             else:
                 tail[le] = num
-                cnt += 1
-                cnt_arr[idx] = cnt
+
+                # 之前没有
+                if cnt_arr[le][num] == 0:
+                    cnt_arr[le][num] += 1
+                #
+                elif le == len(tail) - 1:
+                    cnt_arr[le][num] += 1
 
         print(tail)
         print(cnt_arr)
-        res = 1
-        for i in cnt_arr:
-            res *= i
+        last_sort = sorted(cnt_arr[-1].items(), key=lambda x: x[1], reverse=True)
 
-        return res
+        return max(last_sort[0][1], len(last_sort))
 
 
 if __name__ == '__main__':
     nums = [1, 3, 5, 4, 7]
-    # nums = [2, 2, 2, 2, 2]
-    nums = [1, 2, 4, 3, 5, 4, 7, 2]
+    nums = [2, 2, 2, 2, 2]
+    # nums = [1, 2, 4, 3, 5, 4, 7, 2]
+    # nums = [2, 1]
+    # nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 1, 1, 1, 1]
+    nums = [1, 1, 1, 2, 2, 2, 3, 3, 3]
     print(Solution().findNumberOfLIS(nums))
