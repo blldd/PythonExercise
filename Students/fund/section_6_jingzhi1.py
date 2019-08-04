@@ -152,7 +152,7 @@ def summary(in_file, left_border=5, right_border=11):
 
 
 if __name__ == '__main__':
-    in_file = os.path.join("data", "四因子盈亏数据_summary_2019-08-03.xlsx")
+    in_file = os.path.join("data", "四因子盈亏数据_summary_2019-08-04.xlsx")
     sheet_names = ["因子盈亏"]  # 要处理的sheet下标，可以是多个
     factors = ["反转最后一小时", "反转前两天", "前三天", "前两天"]
     cols = ["B", "C", "D", "E"]

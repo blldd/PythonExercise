@@ -149,4 +149,4 @@ if __name__ == '__main__':
     factors = ["反转最后一小时", "反转前两天", "前三天", "前两天"]
     cols = ["B", "C", "D", "E"]
 
-    summary(in_file, usecols=3)
+    summary(in_file, usecols=4)
