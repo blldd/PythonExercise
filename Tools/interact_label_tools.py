@@ -74,3 +74,17 @@ for file in fileList:
 
     else:
         print("other file {} {}".format(file, oth_cnt))
+
+
+#Recursively Remove Empty Directories, During do something like os.remove(file)
+# import os
+# for root, dirs, files in os.walk(path, topdown=False):
+#     # do something like os.remove(file)
+#     if not os.listdir(root):
+#         os.rmdir(root)
+
+#Recursively Remove Empty Directories
+# import os
+# for root, dirs, files in os.walk(path, topdown=False):
+#     if not files and not dirs:
+#         os.rmdir(root)
