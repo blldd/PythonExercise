@@ -47,34 +47,6 @@ class Solution:
                     right -= 1
         return res
 
-
-
-
-
-    def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
-        output = 0
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                if grid[i][j] == 1:
-                    output += 1
-                    self.dfs(grid, i, j)
-        return output
-
-    def dfs(self, grid, i, j):
-        grid[i][j] = 0
-        if i - 1 >= 0 and grid[i - 1][j] == 1:
-            self.dfs(grid, i - 1, j)
-        if i + 1 < len(grid) and grid[i + 1][j] == 1:
-            self.dfs(grid, i + 1, j)
-        if j - 1 >= 0 and grid[i][j - 1] == 1:
-            self.dfs(grid, i, j - 1)
-        if j + 1 < len(grid[0]) and grid[i][j + 1] == 1:
-            self.dfs(grid, i, j + 1)
-
     """
     旋转数组查找
     假设按照升序排序的数组在预先未知的某个点上进行了旋转。
@@ -294,97 +266,6 @@ class Solution:
                 res = max(res, m[i])
         return res
 
-    """
-    给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。
-    按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：
-    "123"
-    "132"
-    "213"
-    "231"
-    "312"
-    "321"
-    给定 n 和 k，返回第 k 个排列。
-    说明：
-    给定 n 的范围是 [1, 9]。
-    给定 k 的范围是[1,  n!]。
-    """
-
-    def getPermutation(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: str
-        """
-        ans = []
-        if n < 1 or k < 1:
-            return None
-        nums = list(range(1, n + 1))
-        nums = map(str, nums)
-        perm = self.permute(nums)
-        for i in perm:
-            ans.append("".join(list(i)))
-        return ans[k - 1]
-
-    def permute(self, nums):
-        if nums is None:
-            return []
-        if nums == []:
-            return [[]]
-        permutation = []
-        stack = [-1]
-        permutations = []
-        while len(stack):
-            index = stack.pop()
-            index += 1
-            while index < len(nums):
-                if nums[index] not in permutation:
-                    break
-                index += 1
-            else:
-                if len(permutation):
-                    permutation.pop()
-                continue
-
-            stack.append(index)
-            stack.append(-1)
-            permutation.append(nums[index])
-            if len(permutation) == len(nums):
-                permutations.append(list(permutation))
-        return permutations
-
-    def getPermutation(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: str
-        """
-        self.fac = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880]
-        # 找到对应的n应该对应的fac坐标,就是在第一项确定的情况一下，有(n-1)!种组合
-        i = n - 1
-        # 构建序列，这个num是用来储存我们当前可以添加的数的，也是为避免重复
-        num = list(range(1, n + 1))
-        ret = ""
-        while i >= 0:
-            # a用来获得我们要求的那一位在num里的下标
-            a, b = k // self.fac[i], k % self.fac[i]
-            # 如果刚好整除干净，证明还在上一层
-            if b == 0:
-                a -= 1
-
-            if a >= 0:
-                ret += str(num[a])
-                del num[a]
-                i -= 1
-            k = b
-            # 如果刚好整除完，则我们已经可以知道接下来的排序情况了，它一定是最大的
-            # 所以把剩下的可选的数字reverse来制造这种效果
-            if b == 0:
-                for i in reversed(num):
-                    ret += str(i)
-                break
-        return ret
-
-
 
 class Interval:
     def __init__(self, s=0, e=0):
@@ -477,19 +358,6 @@ if __name__ == '__main__':
     # nums = [-1, 0, 1, 2, -1, -4]
     # print(Solution().threeSum(nums))
 
-    grid = [[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
-            [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0],
-            [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]]
-
-    print(Solution().maxAreaOfIsland(grid))
-    #
-    # print(Solution().numIslands(grid))
-
     nums = [1, 3, 5, 4, 2, 3, 4, 5]
     target = 0
     # print(Solution().search(nums, target))
@@ -500,13 +368,6 @@ if __name__ == '__main__':
     # print(Solution().findKthLargest(nums, k))
 
     # print(Solution().longestConsecutive2(nums))
-
-    n = 3
-    # print(Solution().getPermutation(n, k))
-
-    # print(list(itertools.permutations([1, 2, 3, 4])))
-    # print(Solution().permute(list(range(1, 4))))
-
 
     # x = [1,5,3]
     # print(sorted(x))
