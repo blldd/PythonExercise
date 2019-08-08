@@ -23,6 +23,7 @@ class Solution(object):
     说明：已知学生0和学生1互为朋友，他们在一个朋友圈。
     第2个学生自己在一个朋友圈。所以返回2。
     """
+
     # 超时
     def findCircleNum1(self, M):
         """
@@ -56,6 +57,7 @@ class Solution(object):
     （3）直到不再有朋友入队，而且已经出队完成，说明现在已经组成了一个朋友圈。 
     （4）然后把剩下的没被分到朋友圈里面的，同学，再次入队，进行下一个朋友圈的计算，依次循环直到结束。
     """
+
     def findCircleNum(self, M):
         queue, cnt = [0], 0  # [0] 表示第一个人，题目已经给出至少一个人。 cnt 记录朋友圈的个数
         visited = [0] * len(M)  # 0 表示没有访问过，1 表示已经访问过了。
@@ -78,6 +80,54 @@ class Solution(object):
         return cnt
 
 
+class Solu:
+    def findCircleNum(self, M) -> int:
+
+        class UnionFind:
+
+            def __init__(self, n):
+                self.count = n
+                self.parent = [i for i in range(n)]
+                self.rank = [1 for _ in range(n)]
+
+            def get_count(self):
+                return self.count
+
+            def find(self, p):
+                while p != self.parent[p]:
+                    self.parent[p] = self.parent[self.parent[p]]
+                    p = self.parent[p]
+                return p
+
+            def is_connected(self, p, q):
+                return self.find(p) == self.find(q)
+
+            def union(self, p, q):
+                p_root = self.find(p)
+                q_root = self.find(q)
+                if p_root == q_root:
+                    return
+
+                if self.rank[p_root] > self.rank[q_root]:
+                    self.parent[q_root] = p_root
+                elif self.rank[p_root] < self.rank[q_root]:
+                    self.parent[p_root] = q_root
+                else:
+                    self.parent[q_root] = p_root
+                    self.rank[p_root] += 1
+
+                self.count -= 1
+
+        m = len(M)
+        union_find_set = UnionFind(m)
+        for i in range(m):
+            for j in range(i):
+                if M[i][j] == 1:
+                    union_find_set.union(j, i)
+
+        return union_find_set.get_count()
+
+
 if __name__ == '__main__':
     # grid = [[1, 0, 0],
     #         [0, 1, 0],
@@ -88,4 +138,4 @@ if __name__ == '__main__':
             [0, 1, 1, 1],
             [1, 0, 1, 1]]
     print(Solution().findCircleNum(grid))
-    print(Solution().findCircleNum1(grid))
+    print(Solu().findCircleNum(grid))
