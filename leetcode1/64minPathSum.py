@@ -5,7 +5,7 @@
 @File    : 64minPathSum.py
 """
 import sys
-
+import copy
 """
 64. 最小路径和
 给定一个包含非负整数的 m x n 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
@@ -124,6 +124,49 @@ class Solution:
 
         return grid[-1][-1]
 
+    def minPathSum_with_path_dp(self, grid):
+        m = len(grid)
+        if m < 1:
+            return 0
+        n = len(grid[0])
+        if n < 1:
+            return 0
+
+        # down -> 0
+        # right -> 1
+        flag = [[0 for _ in range(n)] for _ in range(m)]
+
+        tmp_grid = copy.deepcopy(grid)
+
+        for i in range(m):
+            for j in range(n):
+                if i == 0 and j == 0:
+                    continue
+                elif i == 0 and j != 0:
+                    flag[i][j] = 1
+                    grid[i][j] = grid[i][j - 1] + grid[i][j]
+                elif i != 0 and j == 0:
+                    flag[i][j] = 0
+                    grid[i][j] = grid[i - 1][j] + grid[i][j]
+                else:
+                    if grid[i - 1][j] < grid[i][j - 1]:
+                        flag[i][j] = 0
+                    else:
+                        flag[i][j] = 1
+                    grid[i][j] = min(grid[i - 1][j], grid[i][j - 1]) + grid[i][j]
+
+        i, j = m - 1, n - 1
+        path = []
+        while i >= 0 and j >= 0:
+            if flag[i][j] == 0:
+                path.append(tmp_grid[i][j])
+                i -= 1
+            elif flag[i][j] == 1:
+                path.append(tmp_grid[i][j])
+                j -= 1
+
+        return path
+
 
 if __name__ == '__main__':
     grid = [[1, 3, 1],
@@ -133,3 +176,10 @@ if __name__ == '__main__':
     print(Solution().minPathSum_dp_2d(grid))
     print(Solution().minPathSum_dp_1d(grid))
     print(Solution().minPathSum_dp_1(grid))
+
+    print("--" * 40)
+    # path
+    grid = [[1, 3, 1],
+            [1, 5, 1],
+            [4, 2, 1]]
+    print(Solution().minPathSum_with_path_dp(grid))
