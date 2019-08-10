@@ -41,7 +41,7 @@ class Solution:
 
         return int(res)
 
-    def uniquePaths(self, m: int, n: int) -> int:
+    def uniquePaths2(self, m: int, n: int) -> int:
         '''动态规划问题'''
         if m < 1 or n < 1:
             return 0
@@ -57,6 +57,21 @@ class Solution:
         for i in range(1, n):
             for j in range(1, m):
                 dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+        for i in dp:
+            print(i)
+        return dp[-1][-1]
+
+    def uniquePaths(self, m, n):
+        dp = [[0 for _ in range(n)] for _ in range(m)]
+        dp[0][0] = 1
+
+        for i in range(m):
+            for j in range(n):
+                if i - 1 >= 0:
+                    dp[i][j] += dp[i - 1][j]
+                if j - 1 >= 0:
+                    dp[i][j] += dp[i][j - 1]
+
         for i in dp:
             print(i)
         return dp[-1][-1]
@@ -94,7 +109,10 @@ class Solution:
 
 
 if __name__ == '__main__':
-    # print(Solution().uniquePaths(7, 3))
+    print(Solution().uniquePaths2(7, 3))
+    print(Solution().uniquePaths(7, 3))
+    # print(Solution().uniquePaths(3, 2))
+
     obstacleGrid = [[0, 0, 0],
                     [0, 1, 0],
                     [0, 0, 0]]
@@ -102,4 +120,4 @@ if __name__ == '__main__':
     #                 [1, 1],
     #                 [0, 0]]
     # obstacleGrid = [[0]]
-    print(Solution().uniquePathsWithObstacles(obstacleGrid))
+    # print(Solution().uniquePathsWithObstacles(obstacleGrid))
