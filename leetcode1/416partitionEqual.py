@@ -1,6 +1,6 @@
 import copy
 from math import ceil
-
+import numpy as np
 
 class Solution(object):
 
@@ -144,33 +144,47 @@ class Solution(object):
             dp[0][nums[0]] = nums[0]
 
         flag = [[0 for _ in range(target + 1)] for _ in range(l)]
+        flag[0][nums[0]] = -1
 
         for i in range(1, l):
             for j in range(target + 1):
                 if j >= nums[i]:
-                    if dp[i-1][j]  > dp[i-1][j-nums[i]] + nums[i]:
+                    if dp[i - 1][j] > dp[i - 1][j - nums[i]] + nums[i]:
                         dp[i][j] = dp[i - 1][j]
                         flag[i][j] = j
                     else:
                         dp[i][j] = dp[i - 1][j - nums[i]] + nums[i]
-                        flag[i][j] = j - nums[i]
+                        flag[i][j] = -1
                 else:
                     dp[i][j] = dp[i - 1][j]
                     flag[i][j] = j
 
-        for i in dp:
-            print(i)
-        print()
-        for i in flag:
-            print(i)
+        # for i in dp:
+        #     print(i)
+        # print()
+        # for i in flag:
+        #     print(i)
+
+        # 同 64
+        path = []
+        i, j = l - 1, np.argsort(dp[-1])[-1]
+        while i >= 0 and j >= 0:
+            if flag[i][j] == -1:
+                path.append(nums[i])
+                j -= nums[i]
+                i -= 1
+            else:
+                i -= 1
+
+        # print(path)
         return max(dp[-1])
 
 
 if __name__ == '__main__':
     nums = [5, 2, 3, 5, 5]
-    # nums = [1, 5, 11, 5]
-    # nums = [1, 2, 5]
-    # nums = [2, 2, 3, 5]
+    nums = [1, 5, 11, 5]
+    nums = [1, 2, 5]
+    nums = [2, 2, 3, 5]
 
     # print(Solution().canPartition_dp_2d(nums))
     # print(Solution().canPartition_dp_1d(nums))

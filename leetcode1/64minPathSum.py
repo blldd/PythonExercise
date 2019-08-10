@@ -155,6 +155,7 @@ class Solution:
                         flag[i][j] = 1
                     grid[i][j] = min(grid[i - 1][j], grid[i][j - 1]) + grid[i][j]
 
+        # 同 416
         i, j = m - 1, n - 1
         path = []
         while i >= 0 and j >= 0:
