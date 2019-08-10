@@ -8,19 +8,26 @@ import os
 from PIL import Image
 
 
-def GetFileList(dir, fileList):
-    if os.path.isfile(dir):
-        fileList.append(dir)
-    elif os.path.isdir(dir):
-        for s in os.listdir(dir):
-            newDir = os.path.join(dir, s)
-            GetFileList(newDir, fileList)
-    return fileList
+def get_file_list(path, file_list):
+    """
+    获取path下的所有文件列表
+    :param path:
+    :param file_list:
+    :return:
+    """
+    if os.path.isfile(path):
+        file_list.append(path)
+    elif os.path.isdir(path):
+        for s in os.listdir(path):
+            new_path = os.path.join(path, s)
+            get_file_list(new_path, file_list)
+    return file_list
+
 
 
 source_path = '/Users/lidedong/Desktop/3_lable/'
 
-fileList = GetFileList(source_path, [])
+fileList = get_file_list(source_path, [])
 affix = ['TIF', 'JPG', 'PNG']
 
 root_path = '/Users/lidedong/Desktop/'
