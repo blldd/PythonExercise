@@ -4,3 +4,7 @@
 @Author  : ddlee
 @File    : spark_test.py
 """
+import os
+os.environ["PYSPARK_PYTHON"]="python3"
+
+print("hello spark")
