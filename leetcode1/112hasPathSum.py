@@ -54,15 +54,17 @@ class Solution:
         if not root:
             return False
 
-        de = [(root, sum - root.val), ]
-        while de:
-            node, curr_sum = de.pop()
+        tmp = [(root, sum - root.val)]
+        while tmp:
+            node, curr_sum = tmp.pop()
             if not node.left and not node.right and curr_sum == 0:
                 return True
+
             if node.right:
-                de.append((node.right, curr_sum - node.right.val))
+                tmp.append((node.right, curr_sum - node.right.val))
             if node.left:
-                de.append((node.left, curr_sum - node.left.val))
+                tmp.append((node.left, curr_sum - node.left.val))
+
         return False
 
 
@@ -76,5 +78,9 @@ if __name__ == '__main__':
     root.right.left = TreeNode(13)
     root.right.right = TreeNode(4)
     root.right.right.right = TreeNode(1)
+
+    arr = [5, 4, 8, 11, None, 13, 4, 7, 2, None, None, None, 1]
+
+    target = 22
 
     print(Solution().hasPathSum(root, 22))
