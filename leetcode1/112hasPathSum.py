@@ -4,6 +4,8 @@
 @Author  : ddlee
 @File    : 112hasPathSum.py
 """
+import collections
+
 """
 112. 路径总和
 给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。
@@ -16,8 +18,8 @@
             4   8
            /   / \
           11  13  4
-         /  \      \
-        7    2      1
+         /  \   \
+        7    2   1
 返回 true, 因为存在目标和为 22 的根节点到叶子节点的路径 5->4->11->2。
 """
 
@@ -68,6 +70,70 @@ class Solution:
         return False
 
 
+def build_tree(arr):
+    if not arr:
+        return None
+
+    root = TreeNode(arr[0])
+
+    last = [root]
+    now = arr[1:]
+
+    while now:
+        tmp = []
+        for i in range(len(last)):
+            node = last[i]
+            if now:
+                new_node = TreeNode(now.pop(0))
+                node.left = new_node
+                tmp.append(new_node)
+            if now:
+                new_node = TreeNode(now.pop(0))
+                node.right = new_node
+                tmp.append(new_node)
+        last = tmp
+
+    return root
+
+
+def level_tree(root):
+    if root is None:
+        return []
+
+    arr = []
+    last = [root]
+    while last:
+        tmp = []
+        for i in range(len(last)):
+            node = last[i]
+            arr.append(node.val)
+            if node.left:
+                tmp.append(node.left)
+            if node.right:
+                tmp.append(node.right)
+        last = tmp
+    return arr
+
+
+# 广度优先遍历算法
+def tree_level_traversal(root):
+    if root is None:
+        return []
+
+    arr = []
+    my_queue = collections.deque()
+    node = root
+    my_queue.append(node)
+    while my_queue:
+        node = my_queue.popleft()
+        arr.append(node.val)
+        if node.left:
+            my_queue.append(node.left)
+        if node.right:
+            my_queue.append(node.right)
+    return arr
+
+
 if __name__ == '__main__':
     root = TreeNode(5)
     root.left = TreeNode(4)
@@ -77,10 +143,13 @@ if __name__ == '__main__':
     root.left.left.right = TreeNode(2)
     root.right.left = TreeNode(13)
     root.right.right = TreeNode(4)
-    root.right.right.right = TreeNode(1)
+    root.right.left.right = TreeNode(1)
 
-    arr = [5, 4, 8, 11, None, 13, 4, 7, 2, None, None, None, 1]
+    arr = [5, 4, 8, 11, "", 13, 4, 7, 2, "", "", "", 1]
 
-    target = 22
+    root = build_tree(arr)
+    print(level_tree(root))
+    print(tree_level_traversal(root))
 
-    print(Solution().hasPathSum(root, 22))
+    # target = 22
+    # print(Solution().hasPathSum(root, target))

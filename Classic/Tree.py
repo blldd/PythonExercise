@@ -441,6 +441,7 @@ def getTreeFromPreMid(pre, mid):
         return None
     if len(pre) == 1:
         return TreeNode(pre[0])
+
     root = TreeNode(pre[0])
     root_index = mid.index(pre[0])
     root.left = getTreeFromPreMid(pre[1:root_index + 1], mid[:root_index])
@@ -455,6 +456,7 @@ def getAfterFromPreMid(pre, mid, res):
     if len(pre) == 1:
         res.append(pre[0])
         return
+
     root = pre[0]
     root_index = mid.index(root)
     getAfterFromPreMid(pre[1:root_index + 1], mid[:root_index], res)

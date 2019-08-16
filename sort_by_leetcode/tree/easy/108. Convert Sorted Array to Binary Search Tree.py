@@ -11,11 +11,11 @@ AVL tree 是一种特殊的二叉查找树，，首先我们要在树中引入�
 """
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 class Solution(object):
     def sortedArrayToBST(self, nums):
