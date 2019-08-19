@@ -19,7 +19,7 @@ def min_heapify(arr, parent_idx):
     tmp = arr[parent_idx]
     child_idx = 2 * parent_idx + 1
     while child_idx < l:
-        if  child_idx + 1 < l and arr[child_idx + 1].val < arr[child_idx].val:
+        if child_idx + 1 < l and arr[child_idx + 1].val < arr[child_idx].val:
             child_idx += 1
         if tmp.val < arr[child_idx].val:
             break

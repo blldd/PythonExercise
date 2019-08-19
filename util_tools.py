@@ -56,6 +56,7 @@ def read_excel_row(in_file, col_idxs):
                 one_row.append(row[col_idx])
             yield tuple(one_row)
 
+
 def read_excel_row_by_sheet(in_file, sheet_names, col_idxs):
     """
     :param in_file: 待读取Excel文件路径
@@ -247,3 +248,40 @@ def save_json_file(instances, to_file):
     """
     with open(to_file, "w", encoding='utf-8') as fout:
         json.dump(instances, fout, ensure_ascii=False, indent=2)
+
+
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+
+def build_tree(arr):
+    if not arr:
+        return None
+
+    root = TreeNode(arr[0])
+
+    last = [root]
+    now = arr[1:]
+
+    while now:
+        tmp = []
+        for i in range(len(last)):
+            node = last[i]
+            if now:
+                val = now.pop(0)
+                if val:
+                    new_node = TreeNode(val)
+                    node.left = new_node
+                    tmp.append(new_node)
+            if now:
+                val = now.pop(0)
+                if val:
+                    new_node = TreeNode(val)
+                    node.right = new_node
+                    tmp.append(new_node)
+        last = tmp
+
+    return root
