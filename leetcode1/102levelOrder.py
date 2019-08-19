@@ -18,7 +18,27 @@ class TreeNode:
 
 class Solution:
     def levelOrder(self, root):
-        pass
+        if not root:
+            return []
+
+        last = [root]
+        ans = [[root.val]]
+        tmp = []
+        while last:
+            ans_tmp = []
+            for i in range(len(last)):
+                node = last.pop(0)
+                if node.left:
+                    tmp.append(node.left)
+                    ans_tmp.append(node.left.val)
+                if node.right:
+                    tmp.append(node.right)
+                    ans_tmp.append(node.right.val)
+
+            last = tmp
+            if ans_tmp:
+                ans.append(ans_tmp)
+        return ans
 
 
 if __name__ == '__main__':
