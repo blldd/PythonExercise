@@ -190,6 +190,7 @@ def lowestCommonAncestor_BST(root, p, q):
     if p.val > root.val and q.val > root.val:
         return lowestCommonAncestor_BST(root.right, p, q)
 
+
 def lca(root, p, q):
     if p is None or q is None:
         return root
@@ -214,9 +215,8 @@ def lca(root, p, q):
         if res[0][i] == res[1][i]:
             i += 1
         else:
-            return res[0][i-1]
-    return res[0][i-1]
-
+            return res[0][i - 1]
+    return res[0][i - 1]
 
 
 """
@@ -402,17 +402,30 @@ def inorderTraversal(root):
 
 
 def preorderTraversal(root):  ## 前序遍历
-    stack = []
-    res = []
-    curr = root
-    while stack or curr:
-        if curr:
-            res.append(curr.val)
-            stack.append(curr.right)
-            curr = curr.left
-        else:
-            curr = stack.pop()
-    return res
+    # stack = []
+    # res = []
+    # curr = root
+    # while stack or curr:
+    #     if curr:
+    #         res.append(curr.val)
+    #         stack.append(curr.right)
+    #         curr = curr.left
+    #     else:
+    #         curr = stack.pop()
+    # return res
+
+    stack, output = [root, ], []
+
+    while stack:
+        root = stack.pop()
+        if root is not None:
+            output.append(root.val)
+            if root.right is not None:
+                stack.append(root.right)
+            if root.left is not None:
+                stack.append(root.left)
+
+    return output
 
 
 """
@@ -421,17 +434,30 @@ def preorderTraversal(root):  ## 前序遍历
 """
 
 
-def postorderTraversal(root):  ## 后序遍历
-    stack = []
+# def postorderTraversal(root):  ## 后序遍历
+#     stack = []
+#     res = []
+#     curr = root
+#     while stack or curr:
+#         if curr:
+#             res.append(curr.val)
+#             stack.append(curr.left)
+#             curr = curr.right
+#         else:
+#             curr = stack.pop()
+#     return res[::-1]
+def postorderTraversal(root):
+    stack = [root]
     res = []
-    curr = root
-    while stack or curr:
+    while stack:
+        curr = stack.pop()
         if curr:
             res.append(curr.val)
-            stack.append(curr.left)
-            curr = curr.right
-        else:
-            curr = stack.pop()
+            if curr.left:
+                stack.append(curr.left)
+            if curr.right:
+                stack.append(curr.right)
+
     return res[::-1]
 
 
@@ -520,6 +546,9 @@ if __name__ == '__main__':
 
     print("--" * 20)
     res = preorderTraversal(root)
+    print(res)
+
+    res = postorderTraversal(root)
     print(res)
 
     head = getTreeFromPreMid([1, 2, 4, 5, 8, 9, 11, 3, 6, 7, 10], [4, 2, 8, 5, 11, 9, 1, 6, 3, 10, 7])
