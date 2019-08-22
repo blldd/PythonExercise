@@ -23,18 +23,65 @@ perm(arr, stack)
 print(res)
 
 
-def str_sort(s=''):
+def str_perm(s=''):
     if len(s) <= 1:
         return [s]
     str_list = []
     for i in range(len(s)):
-        for j in str_sort(s[0:i] + s[i + 1:]):
+        for j in str_perm(s[0:i] + s[i + 1:]):
             str_list.append(s[i] + j)
     return str_list
 
 
-str_list = str_sort("123")
+arr = "123"
+str_list = str_perm(arr)
 print(str_list)
+
+
+def arr_perm(s):
+    if len(s) <= 1:
+        return [s]
+    str_list = []
+    for i in range(len(s)):
+        for j in arr_perm(s[0:i] + s[i + 1:]):
+            str_list.append([s[i]] + j)
+    return str_list
+
+
+arr = [1, 2, 3]
+str_list = arr_perm(arr)
+print(str_list)
+
+
+def permute(nums):
+    """
+    :type nums: List[int]
+    :rtype: List[List[int]]
+    """
+
+    def backtrack(first=0):
+        # if all integers are used up
+        if first == n:
+            output.append(nums[:])
+        for i in range(first, n):
+            # place i-th integer first
+            # in the current permutation
+            nums[first], nums[i] = nums[i], nums[first]
+            # use next integers to complete the permutations
+            backtrack(first + 1)
+            # backtrack
+            nums[first], nums[i] = nums[i], nums[first]
+
+    n = len(nums)
+    output = []
+    backtrack()
+    return output
+
+arr = [1, 2, 3]
+str_list = permute(arr)
+print(str_list)
+
+print(list(itertools.permutations(arr)))
 
 """
 给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。
@@ -70,7 +117,6 @@ class Solution(object):
             ans.append("".join(list(i)))
         return ans[k - 1]
 
-
     def permute(self, nums):
         if nums is None:
             return []
@@ -97,7 +143,6 @@ class Solution(object):
             if len(permutation) == len(nums):
                 permutations.append(list(permutation))
         return permutations
-
 
     def getPermutation(self, n, k):
         """
@@ -131,7 +176,8 @@ class Solution(object):
                 break
         return ret
 
-print("**"*40)
+
+print("**" * 40)
 
 n = 3
 k = 3

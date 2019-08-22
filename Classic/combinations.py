@@ -4,8 +4,9 @@
 @Author  : ddlee
 @File    : combinations.py
 """
+import itertools
 
-
+# itertools.combinations()
 def combinations(iterable, r):
     pool = tuple(iterable)
     n = len(pool)
