@@ -27,6 +27,21 @@ class Solution(object):
             q = head.next
         return p
 
+    def reverseList_recur(self, head):
+        if not head or not head.next:
+            return head
+
+        # 递归返回头指针
+        p = self.reverseList_recur(head.next)
+
+        # 将还没倒置的最后一个的next指向自身，不让整个序列断掉
+        head.next.next = head
+        head.next = None
+
+        return p
+
+
+
     def EntryNodeOfLoop1(self, pHead):
         # write code here
         # 遍历链表，环的存在，遍历遇见的第一个重复的即为入口节点
@@ -86,7 +101,13 @@ if __name__ == '__main__':
     # while res.next:
     #     res = res.next
     #     print(res.val)
-    p = Solution().reverseList(head)
+    # p = Solution().reverseList(head)
+    # while p:
+    #     print(p.val)
+    #     p = p.next
+
+    p = Solution().reverseList_recur(head)
     while p:
         print(p.val)
         p = p.next
+
