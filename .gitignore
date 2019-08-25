@@ -8,3 +8,5 @@ data/
 
 *.eps
 *.png
+.DS_Store
+.gitignore
