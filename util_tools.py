@@ -285,3 +285,17 @@ def build_tree(arr):
         last = tmp
 
     return root
+
+
+def build_linklist(arr):
+    l = len(arr)
+    if l < 1:
+        return None
+
+    head = ListNode(arr[0])
+    p = head
+    for i in range(1, l):
+        node = ListNode(arr[i])
+        p.next = node
+        p = p.next
+    return head
