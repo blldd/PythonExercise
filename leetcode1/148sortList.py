@@ -58,29 +58,29 @@ class Solution:
     # iterative
     # O(nlogn) + O(1)
     def sortList_iter(self, head):
-        h, length, intv = head, 0, 1
+        h, length, size = head, 0, 1
         while h:
             h, length = h.next, length + 1
 
-        res = ListNode(0)
-        res.next = head
+        dummy = ListNode(0)
+        dummy.next = head
 
         # merge the list in different intv.
-        while intv < length:
-            pre, h = res, res.next
+        while size < length:
+            pre, h = dummy, dummy.next
             while h:
                 # get the two merge head `h1`, `h2`
-                h1, i = h, intv
+                h1, i = h, size
                 while i and h:
                     h, i = h.next, i - 1
                 if i:
                     break  # no need to merge because the `h2` is None.
 
-                h2, i = h, intv
+                h2, i = h, size
                 while i and h:
                     h, i = h.next, i - 1
 
-                c1, c2 = intv, intv - i  # the `c2`: length of `h2` can be small than the `intv`.
+                c1, c2 = size, size - i  # the `c2`: length of `h2` can be small than the `intv`.
 
                 # merge the `h1` and `h2`.
                 while c1 and c2:
@@ -93,7 +93,8 @@ class Solution:
                 while c1 > 0 or c2 > 0:
                     pre, c1, c2 = pre.next, c1 - 1, c2 - 1
                 pre.next = h
-            intv *= 2
+            size *= 2
+        return dummy.next
 
     def bottom_to_up_sort(self, head):
 
@@ -106,9 +107,9 @@ class Solution:
             if not p:
                 return None
 
-            next = p.next
+            right = p.next
             p.next = None
-            return next
+            return right
 
         def merge(left, right):
             dummy = ListNode(0)
@@ -159,6 +160,7 @@ if __name__ == '__main__':
     head.next = ListNode(2)
     head.next.next = ListNode(3)
     head.next.next.next = ListNode(1)
+    head.next.next.next.next = ListNode(0)
     head = Solution().bottom_to_up_sort(head)
 
     while head:
