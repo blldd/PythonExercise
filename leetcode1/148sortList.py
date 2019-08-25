@@ -113,6 +113,7 @@ class Solution:
 
         def merge(left, right):
             dummy = ListNode(0)
+
             p = dummy
             while left and right:
                 if left.val < right.val:
@@ -125,21 +126,24 @@ class Solution:
                     right = right.next
 
             p.next = left if left else right
+
             return dummy.next
 
         dummy = ListNode(0)
         dummy.next = head
+
+        # get length
         p = head
         length = 0
         while p:
             length += 1
             p = p.next
 
+        # bottom to up
         size = 1
         while size < length:
-            curr = dummy.next
-
             tail = dummy
+            curr = dummy.next
             while curr:
                 left = curr
                 right = cut(left, size)
