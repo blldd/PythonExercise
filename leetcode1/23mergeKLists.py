@@ -30,6 +30,7 @@ class Solution:
             p, node = p.next, node.next
             if node:  # 所取出的节点若还有后续，把它二分插入排序好的列表
                 _sorted.insert(bisect([v[0] for v in _sorted], node.val), (node.val, node))
+
         return dumb.next
 
     def mergeKLists(self, lists):
@@ -47,6 +48,7 @@ class Solution:
             if lists[idx]:
                 heapq.heappush(head, (lists[idx].val, idx))
                 lists[idx] = lists[idx].next
+
         return dummy.next
 
 
