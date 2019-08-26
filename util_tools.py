@@ -287,6 +287,12 @@ def build_tree(arr):
     return root
 
 
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
 def build_linklist(arr):
     l = len(arr)
     if l < 1:
