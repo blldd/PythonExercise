@@ -49,34 +49,34 @@ class GoCard:
                 print("{:15s} {:11.2f} {:11.2f}".format("Top up", r, balance))
         print("{:15s} {:11s} {:11.2f}".format("Final balance", "", balance))
 
-# 获取到账户初始值
-amount = float(raw_input("Creating account. Input initial balance:"))
-# 通过 GoCard（类） 生成一个 accout（对象），默认调用类中的__init__方法。
-# 从此 account对象 就拥有了GoCard类中所有的方法（即类中def后的都可以通过account.*来调用）
-account = GoCard(amount)
+# # 获取到账户初始值
+# amount = float(raw_input("Creating account. Input initial balance:"))
+# # 通过 GoCard（类） 生成一个 accout（对象），默认调用类中的__init__方法。
+# # 从此 account对象 就拥有了GoCard类中所有的方法（即类中def后的都可以通过account.*来调用）
+# account = GoCard(amount)
 
-command = raw_input("? ")
-
-while command.strip() != "q":
-    ws = command.split()
-    if len(ws) == 2 and ws[0] == 'r':
-        try:
-            dollars = float(ws[1])
-            account.trip(dollars)                               # 调用 account.trip()
-        except:
-            print("Bad command.")
-    elif len(ws) == 2 and ws[0] == 't':
-        try:
-            dollars = float(ws[1])
-            account.topUp(dollars)                              # 调用 account.topUp()
-        except:
-            print("Bad command.")
-    elif len(ws) == 1 and ws[0] == 'b':
-        print("Balance = ${:.2f}".format(account.getBalance())  # 调用 account.getBalance())
-    else:
-        print("Bad command.")
-    command = raw_input("? ")
-
-# 调用 account.printStatement()， 里面用到了很多符号，需要你去学习一下format函数，例如>是指右对齐
-# 3.3不用此函数
-account.printStatement()
+# command = raw_input("? ")
+#
+# while command.strip() != "q":
+#     ws = command.split()
+#     if len(ws) == 2 and ws[0] == 'r':
+#         try:
+#             dollars = float(ws[1])
+#             account.trip(dollars)                               # 调用 account.trip()
+#         except:
+#             print("Bad command.")
+#     elif len(ws) == 2 and ws[0] == 't':
+#         try:
+#             dollars = float(ws[1])
+#             account.topUp(dollars)                              # 调用 account.topUp()
+#         except:
+#             print("Bad command.")
+#     elif len(ws) == 1 and ws[0] == 'b':
+#         print("Balance = ${:.2f}".format(account.getBalance())  # 调用 account.getBalance())
+#     else:
+#         print("Bad command.")
+#     command = raw_input("? ")
+#
+# # 调用 account.printStatement()， 里面用到了很多符号，需要你去学习一下format函数，例如>是指右对齐
+# # 3.3不用此函数
+# account.printStatement()
