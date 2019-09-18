@@ -22,6 +22,7 @@ res = []
 perm(arr, stack)
 print(res)
 
+print("^^" * 10)
 
 def str_perm(s=''):
     if len(s) <= 1:

@@ -17,7 +17,7 @@ class HeapNode:
 
 def min_heap(heap):  # 构造一个堆，将堆中所有数据重新排序
     HeapSize = len(heap)  # 将堆的长度单独拿出来方便
-    for i in range((HeapSize - 2) // 2, -1, -1):  # 从后往前出数
+    for i in range(HeapSize // 2 - 1, -1, -1):  # 从后往前出数
         min_heapify_iter(heap, i)
 
 
@@ -51,12 +51,16 @@ def min_heapify_iter(array, parentIndex):
 
 
 def merge_k_array(nums):
+    k = len(nums)
+    if k <= 1:
+        return nums
+
     # 合并k个有序数组，每个数组长度都为k
     knums = []
     output = []
     for i in range(len(nums)):
-        subnums = nums[i]
-        knums.append(HeapNode(subnums[0], i, 1))
+        if len(nums[i]) > 0:
+            knums.append(HeapNode(nums[i][0], i, 1))
 
     # k个元素初始化最小堆
     min_heap(knums)
@@ -65,13 +69,16 @@ def merge_k_array(nums):
         # 取堆顶，存结果
         root = knums.pop(0)
         output.append(root.value)
+
         # 替换堆顶
         if root.j < len(nums[root.i]):
             root.value = nums[root.i][root.j]
             root.j += 1
             knums.append(root)
 
-        min_heapify(knums, 0)
+        # 防止空
+        if knums:
+            min_heapify_iter(knums, 0)
     return output
 
 
