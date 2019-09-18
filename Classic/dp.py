@@ -131,30 +131,10 @@ def palindrome_seq(s):
     return length - dp[length][length]
 
 
-def lis(s):
-    """
-    好像有bug
-    :param s:
-    :return:
-    """
-    length = len(s)
-    if length < 2:
-        return length
-    dp = [[1 for j in range(length + 1)] for i in range(length + 1)]
-    for i in range(1, length + 1):
-        for j in range(1, length + 1):
-            if s[i - 1] < s[j - 1] and i < j:
-                dp[i][j] = dp[i - 1][j - 1] + 1
-            else:
-                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
-    for i in dp:
-        print(i)
-    return dp
-
-
-def lis2(s):
+def lis1(s):
     """
     最长上升子序列，一维存储
+    O(N2)
     :param s:
     :return:
     """
@@ -171,20 +151,77 @@ def lis2(s):
     return dp
 
 
-def lis3(s):
+def lis2(nums):
     """
-    将原来的dp数组的存储由 数值 换成 该序列中，上升子序列长度为i的上升子序列，的最小末尾数值
-    这其实就是一种几近贪心的思想：
-    我们当前的上升子序列长度如果已经确定，那么如果这种长度的子序列的结尾元素越小，
-    后面的元素就可以更方便地加入到这条我们臆测的、可作为结果、的上升子序列中。
+    贪心算法 + 二分查找
+    O(NlogN)
     :param s:
     :return:
     """
-    length = len(s)
-    if length < 2:
-        return length
-    dp = [1 for i in range(length + 1)]
-    dp[0] = 0
+
+    size = len(nums)
+    # 特判
+    if size < 2:
+        return size
+
+    # 为了防止后序逻辑发生数组索引越界，先把第 1 个数放进去
+    tail = [nums[0]]
+    for i in range(1, size):
+        # 【逻辑 1】比 tail 数组实际有效的末尾的那个元素还大
+        # 先尝试是否可以接在末尾
+        if nums[i] > tail[-1]:
+            tail.append(nums[i])
+            continue
+
+        # 使用二分查找法，在有序数组 tail 中
+        # 找到第 1 个大于等于 nums[i] 的元素，尝试让那个元素更小
+        left = 0
+        right = len(tail) - 1
+        while left < right:
+            # 选左中位数不是偶然，而是有原因的，原因请见 LeetCode 第 35 题题解
+            # mid = left + (right - left) // 2
+            mid = (left + right) >> 1
+            if tail[mid] < nums[i]:
+                # 中位数肯定不是要找的数，把它写在分支的前面
+                left = mid + 1
+            else:
+                right = mid
+        # 走到这里是因为【逻辑 1】的反面，因此一定能找到第 1 个大于等于 nums[i] 的元素，因此无需再单独判断
+        tail[left] = nums[i]
+    return len(tail)
+
+def lis3(nums):
+    size = len(nums)
+    # 特判
+    if size < 2:
+        return size
+    # tail 数组的定义：长度为 i + 1 的上升子序列的末尾最小是几
+    # 遍历第 1 个数，直接放在有序数组 tail 的开头
+    tail = [nums[0]]
+
+    for i in range(1, size):
+        # 找到大于等于 num 的第 1 个数，试图让它变小
+        left = 0
+        # 因为有可能 num 比 tail 数组中的最后一个元素还要大，
+        # 【逻辑 1】所以右边界应该设置为 tail 数组的长度
+        right = len(tail)
+        while left < right:
+            # 选左中位数不是偶然，而是有原因的，原因请见 LeetCode 第 35 题题解
+            # mid = left + (right - left) // 2
+            mid = (left + right) >> 1
+
+            if tail[mid] < nums[i]:
+                # 中位数肯定不是要找的数，把它写在分支的前面
+                left = mid + 1
+            else:
+                right = mid
+        if left == len(tail):
+            tail.append(nums[i])
+        else:
+            # 因为【逻辑 1】，因此一定能找到第 1 个大于等于 nums[i] 的元素，因此无需再单独判断，直接更新即可
+            tail[left] = nums[i]
+    return len(tail)
+
 
 
 def maxProductAfterCutting(n):
@@ -415,9 +452,9 @@ if __name__ == '__main__':
     # print(palindrome_seq(s))
     # print("**" * 10)
     s = [5, 2, 1, 4, 6, 9, 7, 8]
-    # lis(s)
-    # print()
-    # print(lis2(s))
+
+    print(lis1(s))
+    print(lis2(s))
     # print("**" * 10)
     # print(maxProductAfterCutting(16))
     # print("**" * 10)
@@ -440,8 +477,8 @@ if __name__ == '__main__':
     a = "abc"
     b = "acd"
 
-    print(levenshtein_distance_dp(a, b))
-    print(longest_common_substr_dp(a, b))
-    print(longest_common_sequence(a, b))
+    # print(levenshtein_distance_dp(a, b))
+    # print(longest_common_substr_dp(a, b))
+    # print(longest_common_sequence(a, b))
 
 
