@@ -11,7 +11,7 @@ from tqdm import tqdm
 
 
 class KMEANS:
-    def __init__(self, n_clusters=20, max_iter=None, verbose=True, device=torch.device("cpu")):
+    def __init__(self, n_clusters=10, max_iter=None, verbose=True, device=torch.device("cpu")):
 
         self.n_clusters = n_clusters
         self.labels = None
@@ -29,7 +29,9 @@ class KMEANS:
         # 随机选择初始中心点，想更快的收敛速度可以借鉴sklearn中的kmeans++初始化方法
         init_row = torch.randint(0, x.shape[0], (self.n_clusters,)).type(torch.int64).to(self.device)
         init_points = x[init_row]
+
         self.centers = init_points
+
         while True:
             # 聚类标记
             self.nearest_center(x)

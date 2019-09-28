@@ -42,6 +42,7 @@ def NB_predict(test_data, p0vect, p1vect, pOut):
     for i in range(n):
         p1 += (test_data[i] * p1vect[i])
     p1 += math.log(pOut)
+
     p0 = 0.0
     for i in range(n):
         p0 += (test_data[i] * p0vect[i])
