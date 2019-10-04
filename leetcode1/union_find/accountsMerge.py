@@ -35,20 +35,20 @@ class Solution:
 
         lookup = {}
         n = len(accounts)
-        un = UnionFind(n)
+        uf = UnionFind(n)
         # 第一步，找到相关联的账户，并使用并查集记录
         for idx, account in enumerate(accounts):
             email = account[1:]
             for em in email:
                 if em in lookup:
-                    un.union(idx, lookup[em])
+                    uf.union(idx, lookup[em])
                 else:
                     lookup[em] = idx
 
         # 第二步，将相关联账户的邮箱地址合并起来
         joint_account = defaultdict(set)
         for i in range(n):
-            root = un.find(i)
+            root = uf.find(i)
             for em in accounts[i][1:]:
                 joint_account[root].add(em)
 

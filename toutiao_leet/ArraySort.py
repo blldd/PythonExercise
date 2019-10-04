@@ -247,23 +247,18 @@ class Solution:
     """
 
     def longestConsecutive2(self, nums):
-        # write your code here
-        if nums is None or len(nums) == 0:
-            return 0
-        m = {}
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        nums = set(nums)
         res = 0
-        for i in nums:
-            if i not in m:
-                l = 0
-                r = 0
-                if i - 1 in m:
-                    l = m[i - 1]
-                if i + 1 in m:
-                    r = m[i + 1]
-                m[i] = 1 + r + l
-                m[i + r] = 1 + r + l
-                m[i - l] = 1 + r + l
-                res = max(res, m[i])
+        for x in nums:
+            if x - 1 not in nums:
+                y = x + 1
+                while y in nums:
+                    y += 1
+                res = max(res, y - x)
         return res
 
 
