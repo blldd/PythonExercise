@@ -1,69 +1,71 @@
 # -*- coding:UTF-8 -*-
 import random
-import collections
-import d2lzh as d2l
-import math
-from mxnet import autograd, gluon, nd
-from mxnet.gluon import data as gdata, loss as gloss, nn
-import sys
-import time
-import zipfile
 
-# counter = collections.Counter("fadfadoihpeqws")
-# print(counter)
-# counter = dict(filter(lambda x: x[1] >= 2, counter.items()))
-# print(counter)
+import torch
+from transformers import *
 
-def get_centers_and_contexts(dataset, max_window_size):
-    centers, contexts = [], []
-    for st in dataset:
-        if len(st) < 2:  # 每个句子至少要有2个词才可能组成一对“中心词-背景词”
-            continue
-        centers += st
-        for center_i in range(len(st)):
-            window_size = random.randint(1, max_window_size)
-            indices = list(range(max(0, center_i - window_size),
-                                 min(len(st), center_i + 1 + window_size)))
-            indices.remove(center_i)  # 将中心词排除在背景词之外
-            contexts.append([st[idx] for idx in indices])
-    return centers, contexts
+# Transformers has a unified API
+# for 8 transformer architectures and 30 pretrained weights.
+#          Model          | Tokenizer          | Pretrained weights shortcut
+MODELS = [(BertModel, BertTokenizer, 'bert-base-uncased'),
+          # (OpenAIGPTModel, OpenAIGPTTokenizer, 'openai-gpt'),
+          # (GPT2Model, GPT2Tokenizer, 'gpt2'),
+          # (TransfoXLModel, TransfoXLTokenizer, 'transfo-xl-wt103'),
+          # (XLNetModel, XLNetTokenizer, 'xlnet-base-cased'),
+          # (XLMModel, XLMTokenizer, 'xlm-mlm-enfr-1024'),
+          # (DistilBertModel, DistilBertTokenizer, 'distilbert-base-uncased'),
+          # (RobertaModel, RobertaTokenizer, 'roberta-base')
+          ]
 
-tiny_dataset = [list(range(7)), list(range(7, 10))]
-print('dataset', tiny_dataset)
+# To use TensorFlow 2.0 versions of the models, simply prefix the class names with 'TF', e.g. `TFRobertaModel` is the TF 2.0 counterpart of the PyTorch model `RobertaModel`
 
-print(get_centers_and_contexts(tiny_dataset, 2))
-for center, context in zip(*get_centers_and_contexts(tiny_dataset, 2)):
-    print('center', center, 'has contexts', context)
+# Let's encode some text in a sequence of hidden-states using each model:
+for model_class, tokenizer_class, pretrained_weights in MODELS:
+    # Load pretrained model/tokenizer
+    tokenizer = tokenizer_class.from_pretrained(pretrained_weights)
+    model = model_class.from_pretrained(pretrained_weights)
 
-def get_negatives(all_contexts, sampling_weights, K):
-    all_negatives, neg_candidates, i = [], [], 0
-    population = list(range(len(sampling_weights)))
-    for contexts in all_contexts:
-        negatives = []
-        while len(negatives) < len(contexts) * K:
-            if i == len(neg_candidates):
-                # 根据每个词的权重（sampling_weights）随机生成k个词的索引作为噪声词。
-                # 为了高效计算，可以将k设得稍大一点
-                i, neg_candidates = 0, random.choices(
-                    population, sampling_weights, k=int(1e5))
-            neg, i = neg_candidates[i], i + 1
-            # 噪声词不能是背景词
-            if neg not in set(contexts):
-                negatives.append(neg)
-        all_negatives.append(negatives)
-    return all_negatives
+    # Encode text
+    input_ids = torch.tensor([tokenizer.encode("Here is some text to encode",
+                                               add_special_tokens=True)])  # Add special tokens takes care of adding [CLS], [SEP], <s>... tokens in the right way for each model.
+    # with torch.no_grad():
+    #     last_hidden_states = model(input_ids)[0]  # Models outputs are now tuples
 
-# sampling_weights = [counter[w]**0.75 for w in idx_to_token]
-# all_negatives = get_negatives(all_contexts, sampling_weights, 5)
+# Each architecture is provided with several class for fine-tuning on down-stream tasks, e.g.
+BERT_MODEL_CLASSES = [BertModel,
+                      # BertForPreTraining,
+                      # BertForMaskedLM,
+                      # BertForNextSentencePrediction,
+                      # BertForSequenceClassification,
+                      # BertForMultipleChoice,
+                      # BertForTokenClassification,
+                      # BertForQuestionAnswering
+                      ]
 
-def batchify(data):
-    max_len = max(len(c) + len(n) for _, c, n in data)
-    centers, contexts_negatives, masks, labels = [], [], [], []
-    for center, context, negative in data:
-        cur_len = len(context) + len(negative)
-        centers += [center]
-        contexts_negatives += [context + negative + [0] * (max_len - cur_len)]
-        masks += [[1] * cur_len + [0] * (max_len - cur_len)]
-        labels += [[1] * len(context) + [0] * (max_len - len(context))]
-    return (nd.array(centers).reshape((-1, 1)), nd.array(contexts_negatives),
-            nd.array(masks), nd.array(labels))
+# All the classes for an architecture can be initiated from pretrained weights for this architecture
+# Note that additional weights added for fine-tuning are only initialized
+# and need to be trained on the down-stream task
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+for model_class in BERT_MODEL_CLASSES:
+    # Load pretrained model/tokenizer
+    model = model_class.from_pretrained('bert-base-uncased')
+
+# Models can return full list of hidden-states & attentions weights at each layer
+model = model_class.from_pretrained(pretrained_weights,
+                                    output_hidden_states=True,
+                                    output_attentions=True)
+
+input_ids = torch.tensor([tokenizer.encode("Let's see all hidden-states and attentions on this text")])
+all_hidden_states, all_attentions = model(input_ids)[-2:]
+
+# Models are compatible with Torchscript
+model = model_class.from_pretrained(pretrained_weights, torchscript=True)
+traced_model = torch.jit.trace(model, (input_ids,))
+
+# Simple serialization for models and tokenizers
+model.save_pretrained('./directory/to/save/')  # save
+model = model_class.from_pretrained('./directory/to/save/')  # re-load
+tokenizer.save_pretrained('./directory/to/save/')  # save
+tokenizer = tokenizer_class.from_pretrained('./directory/to/save/')  # re-load
+
+# SOTA examples for GLUE, SQUAD, text generation...
