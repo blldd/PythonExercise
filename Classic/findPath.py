@@ -21,6 +21,8 @@ class Solution:
 """
 
 import sys
+
+
 class Solution():
     """
     O(N^3)
@@ -40,28 +42,33 @@ class Solution():
     不能解决带负权的图
     """
 
-    def dijkstra(self, nodes, distances):
-        current = 'A'
+    def dijkstra(self, nodes, distances, current):
         candidates = distances[current]
 
+        # init U set
         unvisited = {}
         for node in nodes:
             if node in candidates:
                 unvisited[node] = candidates[node]
             else:
                 unvisited[node] = sys.maxsize
+
+        # S set
         visited = unvisited.copy()
         visited[current] = 0
         del unvisited[current]
+
         while unvisited:
             sort_candidates = sorted(candidates.items(), key=lambda x: x[1])
             current, current_dist = sort_candidates[0]
             visited[current] = current_dist
             del unvisited[current]
+
             for (neighbour, distance) in distances[current].items():
                 new_dist = current_dist + distance
                 if visited[neighbour] > new_dist:
                     visited[neighbour] = new_dist
+
             candidates = {node: visited[node] for node in unvisited}
         return visited
 
@@ -125,7 +132,7 @@ if __name__ == '__main__':
             [999, 999, 999, 999, 999, 999],
             [999, 999, 1, 999, 999, 999],
             [999, 999, 999, 999, 999, 999]]
-    # print(Solution().floyed(vertex, dist))
+    print(Solution().floyed(vertex, dist))
 
     nodes = ('A', 'B', 'C', 'D', 'E', 'F')
     distances = {
@@ -136,7 +143,7 @@ if __name__ == '__main__':
         'E': {'A': 2, 'D': 3},
         'F': {'B': 3, 'C': 4, 'E': 4}}
 
-    # print(Solution().dijkstra(nodes, distances))
+    print(Solution().dijkstra(nodes, distances, 'A'))
 
     G = {"s": {"a": 10, "e": 8},
          "a": {"c": 2},

@@ -10,3 +10,6 @@ data/
 *.png
 .DS_Store
 .gitignore
+
+DSIN/
+DeepCTR/
