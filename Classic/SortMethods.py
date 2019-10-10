@@ -1,5 +1,5 @@
 # -*- coding:UTF-8 -*-
-import pysnooper
+# import pysnooper
 
 from util_tools import *
 
@@ -10,7 +10,7 @@ quick_sort_lam = lambda array: array if len(array) <= 1 else \
 
 
 # @excute_time_log
-@pysnooper.snoop()
+# @pysnooper.snoop()
 def quick_sort(array, left, right):
     if left >= right:
         return
@@ -98,9 +98,31 @@ def bubble_sort(arr):
     return arr
 
 
+def countingSort(arr):  # the elements in the array are all integers
+    maximum, minimum = max(arr), min(arr)
+    countArr = [0] * (maximum - minimum + 1)
+    for i in arr:  # record the number of times of every element in the array
+        countArr[i - minimum] += 1
+    # print(countArr)
+
+    for i in range(1, len(countArr)):  # calculate the position of every element
+        countArr[i] += countArr[i - 1]
+    # print(countArr)
+
+    targetArr = [None] * len(arr)
+    for i in range(len(arr) - 1, -1, -1):  # reverse-order traversal is for the stability
+        countIndex = arr[i] - minimum
+        targetArr[countArr[countIndex] - 1] = arr[i]
+        countArr[countIndex] -= 1
+    return targetArr
+
+
 if __name__ == '__main__':
     input = [1, 4, 7, 1, 5, 5, 3, 85, 34, 75, 23, 75, 2, 0]
-    input = [3,5,7,8,6,4,1,2,3]
+    input = [3, 5, 7, 8, 6, 4, 1, 2, 3]
+
+    print(countingSort(input))
+
     quick_sort(input, 0, 8)
     print(input)
     # input.sort()
