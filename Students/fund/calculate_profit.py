@@ -13,91 +13,88 @@ import pandas as pd
 import numpy as np
 
 
-def group(in_file):
+def process(in_file, index="收盘点位", strategy=0.08, start=100):
     raw_df = pd.read_excel(in_file)
-    raw_df = raw_df.fillna(0)
+    sequence_data = raw_df[index][::-1].values
 
-    classes = raw_df["申万一级行业"].unique()
+    sequence_data = list(map(lambda x: x.replace(",", ""), sequence_data))
+    sequence_data = list(map(float, sequence_data))
+    # sequence_data = sequence_data[-1000:]
 
-    class_df_arr = []
+    # 全部财产
+    all_money = start
+    # 股票数量
+    amount = None
 
-    for idx, cls in enumerate(classes):
-        class_df = raw_df[raw_df["申万一级行业"] == cls]
-        class_df_arr.append((cls, class_df))
+    # init
+    local_min = None
+    local_max = None
+    last = sequence_data[0]
+    now = sequence_data[1]
 
-    return class_df_arr
+    # ascend or not
+    is_ascend = 0 if last > now else 1
 
+    # money status
+    is_cashe = True
 
-def process(in_file, writer, topk=3):
-    class_df_arr = group(in_file)
+    results = []
 
-    top3_df = pd.DataFrame()
+    for price in sequence_data[1:]:
+        if price < last and is_ascend == 0:
+            if local_max and amount and (local_max - price) / local_max > strategy:
+                # full out
+                all_money = price * amount
+                is_cashe = True
+                pass
+            last = price
 
-    for cls, class_df in class_df_arr:
+        elif price < last and is_ascend == 1:
+            local_max = last
+            if local_max and amount and (local_max - price) / local_max > strategy:
+                # full out
+                all_money = price * amount
+                is_cashe = True
+                pass
+            is_ascend = 0
 
-        class_df = class_df.reset_index()
-        new_df = class_df.drop(drop_cols + ["index"], axis=1)  # drop不会就地修改，创建副本返回
+        elif price > last and is_ascend == 1:
+            if local_min is not None and (price - local_min) / local_min > strategy:
+                # full in
+                amount = all_money / price
+                is_cashe = False
+                pass
 
-        for col in ascend_cols:
-            if col == "流动资产/总资产" and (cls in {"银行", "非银金融"}):
-                new_df[col] = pd.Series([0] * new_df.shape[0])
-            else:
-                idxs = np.argsort(class_df[col])
-                for i, idx in enumerate(idxs):
-                    new_df[col][idx] = i + 1
+            last = price
 
-        for col in descend_cols:
-            idxs = np.argsort(class_df[col])[::-1]
-            for i, idx in enumerate(idxs):
-                new_df[col][idx] = i + 1
+        elif price > last and is_ascend == 0:
+            local_min = last
+            if local_min is not None and (price - local_min) / local_min > strategy:
+                # full in
+                amount = all_money / price
+                is_cashe = False
+                pass
+            is_ascend = 1
 
-        # class_df.loc['sum'] = class_df.apply(lambda x: x.sum())
-        new_df["sum"] = new_df.apply(lambda x: x.sum(), axis=1)
+        results.append(all_money)
 
-        dropped_df = class_df[drop_cols]
-        new_df = pd.concat([dropped_df, new_df], axis=1)
-        new_df = new_df.sort_values(by="sum", ascending=False)
-        new_df = new_df.reset_index()
-        new_df = new_df.drop(["index"], axis=1)  # drop不会就地修改，创建副本返回
+    # print(results)
 
-        new_df.to_excel(writer, cls)
+    results = results[::-1]
+    col = pd.DataFrame(results, columns=["收益"])
 
-        # 各行业top3汇总
-        top3_df = pd.concat([top3_df, new_df.iloc[:topk]], ignore_index=True)
+    all_df = pd.concat([raw_df, col], axis=1)
+    all_df.to_excel(in_file.split(".")[0] + str(strategy) + ".xlsx", index=False)
 
-    top3_df.to_excel(writer, "top_k汇总")
-
-    writer.save()
+    return (all_money, is_cashe)
 
 
 if __name__ == "__main__":
-    # in_file = "基础数据.xlsx"
-    # drop_cols = ["代码", "简称", "申万一级行业"]
-    # ascend_cols = [
-    #     "总市值（亿元）↓",
-    #     "主营业务利润/主营业务收入",
-    #     "净利润/主营业务利润",
-    #     "流动资产/总资产",
-    #     "经营现金流量净额/主营业务收入",
-    #     "净资产收益率(%)",
-    # ]
-    # descend_cols = ["资产负债率(%)"]
-    # writer = pd.ExcelWriter(in_file.split(".")[0] + "_score.xlsx")
-    #
-    # process(in_file, writer)
 
-    in_file = "中证800基础数据.xlsx"
-    drop_cols = ["代码", "简称", "申万一级行业"]
-    ascend_cols = [
-        "流通市值/总市值",
-        "主营业务利润/主营业务收入",
-        "净利润/主营业务利润",
-        "流动资产/总资产",
-        "经营现金流量净额(亿元)",
-        "经营现金流量净额/主营业务收入",
-        "净资产收益率(%)",
-    ]
-    descend_cols = ["资产负债率(%)"]
-    writer = pd.ExcelWriter(in_file.split(".")[0] + "_score.xlsx")
+    in_file = "道琼斯工业指数行情统计.xlsx"
 
-    process(in_file, writer, topk=5)
+    # index: 对比指标
+    # stratege: 策略，如0.08, 可任意修改
+    # start: 起始资金
+    all_money = process(in_file, index="收盘点位", strategy=0.08, start=100)
+    print(all_money)
