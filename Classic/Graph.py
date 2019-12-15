@@ -161,7 +161,7 @@ if __name__ == '__main__':
 
     print('find_one_path: ', find_one_path(graph, 'A', 'E'))
     print('find_shortest_path: ', find_shortest_path(graph, 'A', 'E'))
-    print('find_all_paths: ', find_all_paths_dfs(graph, 'A', 'E'))
+    print('find_all_paths dfs: ', find_all_paths_dfs(graph, 'A', 'E'))
 
     print("##" * 20)
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@Time    : 2019/11/05 7:36 PM
+@Time    : 2019/11/04 8:36 PM
 @Author  : ddlee
 @File    : calculate_profit.py
 """
@@ -38,7 +38,7 @@ def split_k_fold(in_file, k=10):
     writer.save()
 
 
-def process(in_file, index="收盘点位", strategy=0.08, start=100, sheet_name=0):
+def process(in_file, index="收盘点位", strategy=0.08, start=100):
     """calculate profit while use strategy.
 
     Args:
@@ -50,7 +50,7 @@ def process(in_file, index="收盘点位", strategy=0.08, start=100, sheet_name=
     Returns:
 
     """
-    raw_df = pd.read_excel(in_file, sheet_name=sheet_name)
+    raw_df = pd.read_excel(in_file, sheet_name=0)
     sequence_data = raw_df[index][::-1].values
 
     # plt.plot(range(len(sequence_data)), sequence_data, color="r")
@@ -90,8 +90,6 @@ def process(in_file, index="收盘点位", strategy=0.08, start=100, sheet_name=
 
                 amount = None
                 is_cashe = True
-
-                local_min = sys.maxsize
                 local_max = -sys.maxsize
                 pass
 
@@ -103,8 +101,6 @@ def process(in_file, index="收盘点位", strategy=0.08, start=100, sheet_name=
 
                 amount = None
                 is_cashe = True
-
-                local_min = sys.maxsize
                 local_max = -sys.maxsize
                 pass
             is_ascend = 0
@@ -114,8 +110,7 @@ def process(in_file, index="收盘点位", strategy=0.08, start=100, sheet_name=
                 # full in
                 amount = all_money / price
                 is_cashe = False
-                # local_min = sys.maxsize
-                local_max = -sys.maxsize
+                local_min = sys.maxsize
                 pass
 
         elif price > last and is_ascend == 0:
@@ -124,8 +119,7 @@ def process(in_file, index="收盘点位", strategy=0.08, start=100, sheet_name=
                 # full in
                 amount = all_money / price
                 is_cashe = False
-                # local_min = sys.maxsize
-                local_max = -sys.maxsize
+                local_min = sys.maxsize
                 pass
             is_ascend = 1
 
@@ -158,23 +152,20 @@ def process(in_file, index="收盘点位", strategy=0.08, start=100, sheet_name=
         [raw_df, profit_col, status_col, amount_col, local_min_col, local_max_col],
         axis=1,
     )
-
     to_file = in_file.split(".")[0] + str(strategy) + ".xlsx"
     all_df.to_excel(to_file, index=False)
     print("save to file: {}".format(to_file))
-
     return (all_money, is_cashe)
 
 
 if __name__ == "__main__":
     in_file = "道琼斯工业指数行情统计.xlsx"
-    # split_k_fold(in_file, k=10)
+    # split_k_fold(in_file)
     # in_file = "道琼斯工业指数行情统计_split.xlsx"
 
     # index: 对比指标
     # stratege: 策略，如0.08, 可任意修改
     # start: 起始资金
-    # sheet_name: excel 表格的名称或者下标(0, 1, 2...)
 
-    all_money = process(in_file, index="收盘点位", strategy=0.08, start=100, sheet_name=0)
+    all_money = process(in_file, index="收盘点位", strategy=0.08, start=100)
     print(all_money)
